@@ -34,7 +34,7 @@ settings[toggle_search] = 0
 ; Advanced
 ; --------------
 settings[bootstrap_cdn] = 3.0.2
-settings[bootstrap_bootswatch] = 'Yeti'
+settings[bootstrap_bootswatch] = 'yeti'
 
 ; For information on choosing the desired method, please read the Drupal
 ; Bootstrap sub-theme "how-to" documentation:
