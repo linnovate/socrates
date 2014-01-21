@@ -1,0 +1,192 @@
+
+/*------------------++
+
+  Drupal.behaviors.isHasOpinion = {
+    attach: function (context, settings) {
+       if ($(".panel-panel.top-first").find('.node-opinion').length > 0) {
+           $(".panel-panel.top-first").find('.node-article').addClass('has-opinion');
+       }
+    }
+  };
+
+  Drupal.behaviors.isLast = {
+    attach: function (context, settings) {
+       var elements = '.views-row:last-child';
+           elements += ', .inside > .pane-ih-node:last-child';
+           elements += ', .panels-ipe-portlet-wrapper:last-child';
+       $(elements).addClass('last-child');
+    }
+  };
+
+++------------------*/
+
+@mixin mixin-icon($name,$width, $height,$margin: false){
+  content: '';
+  display: block;
+  width: $width;
+  height: $height;
+  @if $margin {
+    margin: $margin;
+  }
+  @include icons-smart-sprite($name); 
+}
+
+@mixin mixin-css-triangle($direction:bottom, $color:#89D4E7, $width:6px) {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  right: 45%;
+  margin-right: - $width/2; 
+  border: $width solid transparent;
+  @if $direction == left { border-right: $width solid $color; }  
+  @if $direction == right { border-left: $width solid $color; }
+  @if $direction == bottom { border-top: $width solid $color; }
+  @if $direction == top { border-bottom: $width solid $color; } 
+}
+
+@mixin mixin-reset-ul-li {  
+  ul{ 
+    margin: 0px; padding: 0px;
+    li{  list-style: none; margin: 0px; padding: 0px; }
+  }  
+}
+@mixin mixin-slash-before {
+  &:before {
+    content: "/";
+    font-size: 100%;
+    margin-left: 4px;
+    margin-right: 0px;
+  }
+}
+
+@mixin mixin-slash-after {
+  &:after {
+    content: "//";
+    margin-right: 2px;
+    margin-left: 4px;
+  }
+}
+
+@mixin mixin-arrow-after {
+  &:after {
+    color: $red;
+    content: ">";
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+  }
+}
+
+@mixin mixin-comment-icon{
+  color: #696969;
+  font-size: 12px;
+  float: none;
+  display: inline-block !important;
+  width: auto;
+  &:after {
+    @include icons-smart-sprite(talkback-light);
+    content: '';
+    display: inline-block;
+    padding: 0;
+    float: left;
+    width: 17px;
+    height: 20px;
+    margin: -2px 5px 0 0px;
+  }
+}
+
+@mixin mixin-image-label($status: new,$font-size: 13px, $padding: 2px 10px,$line-height: false){
+  @if $status != override{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    padding: $padding;
+    font-size: $font-size;
+    font-weight: lighter;
+    @if $line-height { 
+      line-height: $line-height; 
+    }
+    width: 100%;
+    color: #fff;
+    //background-image: url('../images/bgie8.png');
+    background-color: #2b2b2b;
+    background-color: rgba(#2b2b2b, 0.8);
+    @include box-sizing(border-box);
+    &:empty, &.empty{ padding: 0; }
+  }
+  @if $status == override{
+    padding: $padding;
+    font-size: $font-size;
+    @if $line-height { 
+      line-height: $line-height; 
+    }
+  }
+}
+
+@mixin mixin-max-width($max-width: 100%){
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin mixin-margin-and-border($status: display, $padding: 15px, $margin: 15px, $direction:'bottom'){
+  padding-#{$direction}: $padding;
+  margin-#{$direction}: $margin;
+  @if $status == display {
+      @if $direction == top{ background: url('../images/dots_horiz.gif') repeat-x 100% 0; }
+      @if $direction == bottom{ background: url('../images/dots_horiz.gif') repeat-x 0 100%; }
+      @if $direction == right{ background: url('../images/dots_vertical.gif') repeat-y 100% 0; }
+      @if $direction == left{ background: url('../images/dots_vertical.gif') repeat-y 0 100%; }
+  }
+  @if $status == hidden {
+      background: none;
+  } 
+}
+ 
+@mixin mixin-width-items($selector: '',$selector-last: '', $width: 48%, $margin-left: 2%, $padding-left: 1%){
+  display: table;
+  #{$selector}{ 
+    width: $width;
+    display: table-cell;
+    float: right; 
+    margin-left: $margin-left;
+    padding-left: $padding-left;
+  } 
+  #{$selector-last}{ float: left;  margin-left: 0;  padding-left: 0; background-image: none; }      
+}
+
+@mixin mixin-margin-border-for-blocks($status: display, $padding-bottom: 15px, $margin-bottom: 15px){
+  @if $status == display {
+    .panel-pane {
+      background: url('../images/dots_horiz.gif') repeat-x 0 100%;
+      font-size: 13px;
+      padding-bottom: $padding-bottom;
+      margin-bottom: $margin-bottom;
+      @include clear;
+      width: 100%;
+      display: inline-block;
+    }
+    .inside > .panel-pane:last-child,
+    .inside > .panel-pane.last-child,
+    .panels-ipe-portlet-wrapper:last-child .panel-pane,
+    .panels-ipe-portlet-wrapper.last-child .panel-pane {
+      background: none; padding-bottom: 0; margin-bottom: 19px;
+    } 
+    .pane-articles-section-title { 
+      background: none; padding-bottom: 0; 
+    }
+  } 
+  @if $status == hidden{
+    .panel-pane {
+      background: none;
+      margin-bottom: 19px;
+      padding-bottom: 0;
+      @if $param == all{ 
+        margin-bottom: 0px;
+      }
+    } 
+  }
+}
+

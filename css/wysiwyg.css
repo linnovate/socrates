@@ -1,0 +1,84 @@
+/* 
+
+-- added in 'admin' --
+
+admin/config/content/wysiwyg/profile/full_html/edit
+admin/config/content/wysiwyg/profile/filtered_html/edit
+
+*/
+/* line 12, ../sass/wysiwyg.scss */
+.cke_editor,
+.cke_show_borders {
+  background: #fff;
+  font: 13px/1.333em Arial, Helvetica, sans-serif;
+  color: #333;
+  direction: rtl;
+}
+
+/* line 22, ../sass/wysiwyg.scss */
+.cke_editor p, .cke_editor div,
+.cke_show_borders p,
+.cke_show_borders div,
+.field-type-text-with-summary p,
+.field-type-text-with-summary div,
+.field-type-text-long p,
+.field-type-text-long div {
+  margin: 0 0 14px;
+}
+/* line 26, ../sass/wysiwyg.scss */
+.cke_editor h1,
+.cke_show_borders h1,
+.field-type-text-with-summary h1,
+.field-type-text-long h1 {
+  color: #333;
+  font-size: 20px;
+  margin: 10px 0 0;
+}
+
+/* line 32, ../sass/wysiwyg.scss */
+.h2_article {
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #464646;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* line 40, ../sass/wysiwyg.scss */
+.h3_article {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* line 47, ../sass/wysiwyg.scss */
+.h4_article {
+  font-size: 12px;
+}
+
+/* line 50, ../sass/wysiwyg.scss */
+p.default {
+  font-size: 14px;
+}
+
+/* line 53, ../sass/wysiwyg.scss */
+div.leads {
+  float: right;
+  color: #c9000a;
+  max-width: 200px;
+  margin: 0px 0 17px 15px;
+  line-height: 27px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 62, ../sass/wysiwyg.scss */
+div.leads span {
+  margin-left: 13px;
+}
+
+/* line 63, ../sass/wysiwyg.scss */
+div.leads + div {
+  margin-top: 15px;
+}

@@ -1,0 +1,79 @@
+/* ############################################# *
+ * ##### Sasson - advanced drupal theming. ##### *
+ * ############################################# */
+
+// ==== Grid & Layout settings ==============================================
+//   Set the values for the layout system
+// ==========================================================================
+
+// Grid dimensions
+$container-width: 1216px;
+$columns: 100;
+$gutter-width: 0;
+
+// Sidebars widths
+$sidebar-first: 17;
+$sidebar-second: 20;
+
+// Directionality 
+$flow: right;
+
+// ==== Mobile support. ==========================================
+//   Define break-points for media queries
+// ===============================================================
+
+$largest: 1216px;
+$large: 960px;
+$medium: 800px;
+$small: 700px;
+$tiny: 500px; 
+  
+// -----------------------------------------------
+//                 Typography
+// -----------------------------------------------
+
+$fonts-basic: Arial, Helvetica, sans-serif;
+
+/*-----------------------------------------------
+           Imports and Definitions
+-----------------------------------------------*/
+
+@import "compass/css3";
+@import "compass/typography/text/replacement";
+@import "salsa/salsa";
+
+/*-----------------------------------------------
+                   Sprites
+-----------------------------------------------*/
+
+$icons-smart-layout:smart;
+@import "icons-smart/*.png";
+
+$icons-diagonal-layout:diagonal;
+@import "icons-diagonal/*.png";
+
+.icons-smart-sprite{
+  background: url('../images/icons-smart-s8fe7de41e3.png') no-repeat;
+}
+
+/*-----------------------------------------------
+                   Colors
+-----------------------------------------------*/
+
+$light-gray: #e9eaec;
+$text-gray: #413f43;
+$red: #d70010;
+ 
+/*-----------------------------------------------
+                Define CSS3Pie stuff
+-----------------------------------------------*/ 
+
+// Load defaults
+@import "compass/css3/pie";
+
+// Path to PIE.htc 
+$pie-behavior: url("/interactive/sites/all/themes/ihtheme/stylesheets/PIE.htc");
+
+/*-----------------------------------------------
+                       END
+-----------------------------------------------*/

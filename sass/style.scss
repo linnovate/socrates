@@ -1,0 +1,89 @@
+
+/* #############################################
+ * ##### Socrates - drupal theming. #####
+ * #############################################
+ *  
+ * Socrates theme main stylesheet.
+ *
+ *  Index
+ *  ----------- 
+ *  1. Imports
+ *
+ *  2. Space: Layout
+ *
+ *  3. Space: Header / footer
+ *
+ *  4. Elements
+ *
+ *  5. Blocks
+ *
+ */
+
+/*-----------------------------------------------
+                   Imports
+-----------------------------------------------*/
+
+@import "partials/settings";
+
+@import "partials/mixins"; 
+ 
+@import "partials/block-elements/elements";
+
+@import "partials/block-elements/blocks"; 
+
+
+
+/*-----------------------------------------------
+                   Space: Layout
+-----------------------------------------------*/
+
+@import "partials/pages-spaces/space-layout";
+
+//@include space-layout-general;
+
+//@include space-layout-general-responsive;
+
+
+
+/*-----------------------------------------------
+               Space: Header / footer
+-----------------------------------------------*/
+
+@import "partials/pages-spaces/space-header-footer";
+
+
+
+/*-----------------------------------------------
+                   Elements
+-----------------------------------------------*/
+
+//@include element-disable-responsive;
+
+//@include element-img-reads;
+
+
+
+/*-----------------------------------------------
+                     Blocks
+-----------------------------------------------*/
+
+//@include block-push_newsflash_wrapper;
+
+//@include block-pane-bar-index;
+
+
+
+/*-----------------------------------------------
+                      Pages
+-----------------------------------------------*/
+
+@import "partials/pages-spaces/front-page";
+
+@import "partials/pages-spaces/inner-page";
+
+
+
+/*-----------------------------------------------
+                       END
+-----------------------------------------------*/
+

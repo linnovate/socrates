@@ -1,5 +1,146 @@
-/**
- * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
- * remove this comment and start adding your styles to this file.
+/* #############################################
+ * ##### Socrates - drupal theming. #####
+ * #############################################
+ *  
+ * Socrates theme main stylesheet.
+ *
+ *  Index
+ *  ----------- 
+ *  1. Imports
+ *
+ *  2. Space: Layout
+ *
+ *  3. Space: Header / footer
+ *
+ *  4. Elements
+ *
+ *  5. Blocks
+ *
  */
+/*-----------------------------------------------
+                   Imports
+-----------------------------------------------*/
+/* ############################################# *
+ * ##### Sasson - advanced drupal theming. ##### *
+ * ############################################# */
+/*-----------------------------------------------
+           Imports and Definitions
+-----------------------------------------------*/
+/*-----------------------------------------------
+                   Sprites
+-----------------------------------------------*/
+/* line 338, icons-smart/*.png */
+.icons-smart-sprite {
+  background: url('/images/icons-smart-s8fe7de41e3.png') no-repeat;
+}
 
+/* line 50, icons-diagonal/*.png */
+.icons-diagonal-sprite {
+  background: url('/images/icons-diagonal-s021e07dbee.png') no-repeat;
+}
+
+/* line 55, ../sass/partials/_settings.scss */
+.icons-smart-sprite {
+  background: url("../images/icons-smart-s8fe7de41e3.png") no-repeat;
+}
+
+/*-----------------------------------------------
+                   Colors
+-----------------------------------------------*/
+/*-----------------------------------------------
+                Define CSS3Pie stuff
+-----------------------------------------------*/
+/*-----------------------------------------------
+                       END
+-----------------------------------------------*/
+/*------------------++
+
+  Drupal.behaviors.isHasOpinion = {
+    attach: function (context, settings) {
+       if ($(".panel-panel.top-first").find('.node-opinion').length > 0) {
+           $(".panel-panel.top-first").find('.node-article').addClass('has-opinion');
+       }
+    }
+  };
+
+  Drupal.behaviors.isLast = {
+    attach: function (context, settings) {
+       var elements = '.views-row:last-child';
+           elements += ', .inside > .pane-ih-node:last-child';
+           elements += ', .panels-ipe-portlet-wrapper:last-child';
+       $(elements).addClass('last-child');
+    }
+  };
+
+++------------------*/
+/*-----------------------------------------------
+                     Elements
+-----------------------------------------------*/
+/*-----------------------------------------------
+                      Blocks
+-----------------------------------------------*/
+/*-----------------------------------------------
+                   Space: Layout
+-----------------------------------------------*/
+/*-----------------------------------------------
+                     Layouts
+-----------------------------------------------*/
+/* line 6, ../sass/partials/pages-spaces/_space-layout.scss */
+body {
+  border: 2px solid #e4e4e4;
+  width: 95%;
+  margin: 0 auto;
+  position: static;
+}
+/* line 13, ../sass/partials/pages-spaces/_space-layout.scss */
+body header#navbar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+}
+/* line 22, ../sass/partials/pages-spaces/_space-layout.scss */
+body header#navbar > .container,
+body .main-container.container,
+body .footer .region-footer {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 28, ../sass/partials/pages-spaces/_space-layout.scss */
+body .footer {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+/* line 34, ../sass/partials/pages-spaces/_space-layout.scss */
+body .region-page-bottom {
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+}
+
+/*-----------------------------------------------
+               Space: Header / footer
+-----------------------------------------------*/
+/*-----------------------------------------------
+                   Header / footer
+-----------------------------------------------*/
+/*-----------------------------------------------
+                   Elements
+-----------------------------------------------*/
+/*-----------------------------------------------
+                     Blocks
+-----------------------------------------------*/
+/*-----------------------------------------------
+                      Pages
+-----------------------------------------------*/
+/*-----------------------------------------------
+                   Front - page
+-----------------------------------------------*/
+/*-----------------------------------------------
+                   Inner - page
+-----------------------------------------------*/
+/*-----------------------------------------------
+                       END
+-----------------------------------------------*/

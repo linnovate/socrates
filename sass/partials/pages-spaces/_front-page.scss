@@ -1,0 +1,12 @@
+
+/*-----------------------------------------------
+                   Front - page
+-----------------------------------------------*/
+
+body.front {
+  &:before {
+    //@include mixin-icon(arrow-carusel-right,36px,36px);
+    //content: 'Sprite Icon Experience';
+  }
+}
+

@@ -1,0 +1,106 @@
+
+
+/* #######################################################################
+
+   --- this file is loading by module '****' - ( function ***_init() ) 
+   --- get the fix style for theme of admin and panels
+
+   ####################################################################### */
+
+/* panels ipe (in place editing?) fix: */
+.dir-rtl div.panels-ipe-handlebar-wrapper li a span,
+.dir-rtl div.panels-ipe-newblock a span {
+  text-align: right;
+}
+.dir-rtl div.panels-ipe-newblock {
+  right: auto;
+  left: 10px;
+  margin-right: -30px;
+  margin-left: auto;
+}
+
+/* mini panels preview */
+.page-admin-structure-mini-panels-list {
+  #panels-preview {
+    text-align: center;
+    .pane-ih-ui-printed-edition-image {
+      margin: 0 auto;
+    }
+    .panel-pane {
+      margin-bottom: 20px;
+    }
+  }
+  .region-content {
+    padding-bottom: 20px;
+  }
+}
+.page-banners .region-content {
+  padding-bottom: 20px;
+}
+
+/* add content */
+.dir-rtl {
+  div.ctools-modal-content {
+    text-align: right;
+    a.close {
+      float: left;
+    }
+    label.hidden-options {
+      background: transparent url(../images/panels/arrow-active-rtl.png) no-repeat left;
+      padding-right: 0;
+      padding-left: 12px;
+    }
+    label.expanded-options {
+      background-position: left center;
+      padding-right: 0;
+      padding-left: 16px;
+    }
+  }
+  .panels-add-content-modal {
+    padding-right: 175px;
+    padding-left: 0;
+    background: url(../images/panels/bg-content-modal-rtl.png) right center repeat-y;
+
+    .panels-modal-add-category {
+      padding-right: .5em;
+      padding-left: 0;
+      margin-right: -2px;
+      margin-left: 0;
+      &.active {
+        background: url(../images/panels/arrow-active-rtl.png) center left no-repeat white;
+        border-left: none;
+      }
+    }
+  }
+  .panels-section-column {
+    float: right;
+    .content-type-button {
+      text-align: right;
+      div {
+        left: auto;
+        right: 2px;
+        float: right;
+        padding-right: 3px;
+        padding-left: 0;
+      }
+      img {
+        float: right;
+      }
+    }
+  }
+  .panels-section-column-categories {
+    float: right;
+    margin-right: -173px;
+    margin-left: 0;
+  }
+
+  .option-text-aligner .form-item {
+    float: right;
+    padding-right: 0;
+
+    .label {
+      margin-right: 1em;
+    }
+  }
+}
+
