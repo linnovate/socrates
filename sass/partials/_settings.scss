@@ -40,7 +40,6 @@ $fonts-basic: Arial, Helvetica, sans-serif;
 
 @import "compass/css3";
 @import "compass/typography/text/replacement";
-@import "salsa/salsa";
 
 /*-----------------------------------------------
                    Sprites
@@ -52,7 +51,7 @@ $icons-smart-layout:smart;
 $icons-diagonal-layout:diagonal;
 @import "icons-diagonal/*.png";
 
-.icons-smart-sprite{ 
+.icons-smart-sprite{  
   background: url('../images/icons-smart-s03d7c9d8c3.png') no-repeat;
 }
 
@@ -64,15 +63,6 @@ $light-gray: #e9eaec;
 $text-gray: #413f43;
 $red: #d70010;
  
-/*-----------------------------------------------
-                Define CSS3Pie stuff
------------------------------------------------*/ 
-
-// Load defaults
-@import "compass/css3/pie";
-
-// Path to PIE.htc 
-$pie-behavior: url("/interactive/sites/all/themes/ihtheme/stylesheets/PIE.htc");
 
 /*-----------------------------------------------
                        END
