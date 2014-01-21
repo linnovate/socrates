@@ -29,9 +29,9 @@
 /*-----------------------------------------------
                    Sprites
 -----------------------------------------------*/
-/* line 338, icons-smart/*.png */
+/* line 58, icons-smart/*.png */
 .icons-smart-sprite {
-  background: url('/images/icons-smart-s8fe7de41e3.png') no-repeat;
+  background: url('/images/icons-smart-s03d7c9d8c3.png') no-repeat;
 }
 
 /* line 50, icons-diagonal/*.png */
@@ -41,7 +41,7 @@
 
 /* line 55, ../sass/partials/_settings.scss */
 .icons-smart-sprite {
-  background: url("../images/icons-smart-s8fe7de41e3.png") no-repeat;
+  background: url("../images/icons-smart-s03d7c9d8c3.png") no-repeat;
 }
 
 /*-----------------------------------------------
