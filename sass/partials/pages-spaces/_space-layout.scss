@@ -6,7 +6,7 @@
 body {
 
 	border: 2px solid #e4e4e4;
-  width: 95%;
+  width: 93%;
 	margin: 0 auto;
   position: static;
 
@@ -20,10 +20,15 @@ body {
 	header#navbar >.container,
 	.main-container.container,
   .footer .region-footer {
-		max-width: 90%;
+		max-width: 82.5%;
     width: 100%;
 		margin: 0 auto;
   }
+
+	.main-container.container {
+		clear: both;
+		margin: 40px auto;
+	}
 
 	.footer {
 		margin: 0;
@@ -38,3 +43,16 @@ body {
 	}
 
 }
+
+#panel-bootstrap-region-content_views {
+	padding-right: 45px;
+}
+
+#panel-bootstrap-region-sidebar {
+	padding-left: 0;
+}
+
+.panel-bootstrap .panel-separator {
+	margin: 0 0 2.5em 0;
+}
+

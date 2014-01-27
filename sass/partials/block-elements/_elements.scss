@@ -3,3 +3,39 @@
                      Elements
 -----------------------------------------------*/
 
+iframe {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.glyphicon:before {
+  margin: 0px 5px;
+	position: relative;
+	top: 2px;
+} 
+
+.glyphicon-th-list {
+	@include mixin-font-icon('\e604');
+}
+
+.glyphicon-calendar {
+  	@include mixin-font-icon('\e607',16px);
+}
+
+.glyphicon-map-marker {
+  	@include mixin-font-icon('\e60c',24px);
+		&:before { top: 5px; line-height: 0; }
+}
+
+.caption {
+	@include mixin-image-label;
+}
+
+.mouseover {
+	@include mixin-image-label;
+}
+

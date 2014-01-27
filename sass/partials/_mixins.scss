@@ -1,4 +1,8 @@
 
+/*-----------------------------------------------
+                    Mixins
+-----------------------------------------------*/
+
 /*------------------++
 
   Drupal.behaviors.isHasOpinion = {
@@ -20,15 +24,33 @@
 
 ++------------------*/
 
-@mixin mixin-icon($name,$width, $height,$margin: false){
-  content: '';
-  display: block;
-  width: $width;
-  height: $height;
-  @if $margin {
-    margin: $margin;
-  }
-  @include icons-smart-sprite($name); 
+@mixin mixin-font-icon($name,$font-size: false, $margin: false, $font-family: 'OpenIdeal') {
+  &:before {
+		font-family: $font-family;
+		content: $name;
+		@if font-size {
+		  font-size: $font-size;
+		}
+		@if $margin {
+		  margin: $margin;
+		}
+	}
+}
+
+@mixin mixin-pane-title($type) {
+	@if $type == block {
+		background-color: $blue;
+    color: white;
+		padding: 8px 15px;
+		font-size: 26px;
+		margin: 0;
+	}
+	@if $type == text {
+		border-bottom: 2px solid #e4e4e4;
+		padding-bottom: 8px;
+		margin-bottom: 13px;
+		font-size: 30px;
+	}
 }
 
 @mixin mixin-css-triangle($direction:bottom, $color:#89D4E7, $width:6px) {
@@ -51,77 +73,25 @@
     li{  list-style: none; margin: 0px; padding: 0px; }
   }  
 }
-@mixin mixin-slash-before {
-  &:before {
-    content: "/";
-    font-size: 100%;
-    margin-left: 4px;
-    margin-right: 0px;
-  }
-}
 
-@mixin mixin-slash-after {
-  &:after {
-    content: "//";
-    margin-right: 2px;
-    margin-left: 4px;
-  }
-}
-
-@mixin mixin-arrow-after {
-  &:after {
-    color: $red;
-    content: ">";
-    position: relative;
-    top: 1px;
-    margin-right: 5px;
-  }
-}
-
-@mixin mixin-comment-icon{
-  color: #696969;
-  font-size: 12px;
-  float: none;
-  display: inline-block !important;
-  width: auto;
-  &:after {
-    @include icons-smart-sprite(talkback-light);
-    content: '';
-    display: inline-block;
-    padding: 0;
-    float: left;
-    width: 17px;
-    height: 20px;
-    margin: -2px 5px 0 0px;
-  }
-}
-
-@mixin mixin-image-label($status: new,$font-size: 13px, $padding: 2px 10px,$line-height: false){
-  @if $status != override{
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    left: 0;
-    padding: $padding;
-    font-size: $font-size;
-    font-weight: lighter;
-    @if $line-height { 
-      line-height: $line-height; 
-    }
-    width: 100%;
-    color: #fff;
-    //background-image: url('../images/bgie8.png');
-    background-color: #2b2b2b;
-    background-color: rgba(#2b2b2b, 0.8);
-    @include box-sizing(border-box);
-    &:empty, &.empty{ padding: 0; }
-  }
-  @if $status == override{
-    padding: $padding;
-    font-size: $font-size;
-    @if $line-height { 
-      line-height: $line-height; 
-    }
+@mixin mixin-image-label($font-size: 15px, $padding: 7px,$line-height: false){
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+	right: 0;
+  padding: $padding;
+  font-size: $font-size;
+  font-weight: lighter;
+  width: 100%;
+  color: #fff;
+  background-color: #2b2b2b;
+  background-color: rgba(#2b2b2b, 0.8);
+  @include box-sizing(border-box);
+  a { color: #fff; }
+  &:empty, &.empty { padding: 0; }
+  @if $line-height { 
+    line-height: $line-height; 
   }
 }
 

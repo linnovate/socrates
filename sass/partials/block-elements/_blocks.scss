@@ -3,3 +3,139 @@
                       Blocks
 -----------------------------------------------*/
 
+.pane-views-default-challenge-block {
+	.carousel-indicators {
+		position: absolute;
+		top: 15px;
+		left: 45px;
+		bottom: auto;
+		li {
+			border-radius: 0;
+			border: 0;
+			background-color: gray;
+			width: 8px;
+			height: 8px;
+			margin: 0 -1px 0 0;
+			&.active {
+				width: 8px;
+				height: 8px;
+				margin: 0 -1px 0 0;
+				background-color: $blue;
+			}
+		}
+	}
+	.text {
+		padding: 0px 15px;
+	  height: 100%;
+		width: 41%;
+		padding: 22px 23px;
+    position: absolute;
+    color: white;
+		h2 &, h5 { color: $text-white; }
+		.title {
+			font-size: 29px;
+			margin-bottom: 15px;
+		}
+		.summary {
+			line-height: 22px;
+		}
+	}  
+
+	.row {
+		position: relative;
+		z-index: 2;
+		background-color: black;
+		color: white;
+		padding-bottom: 3px;
+		font-size: 13px;
+    a { color: white; }
+		.author {
+			.picture {
+				width: 36px;
+				height: 37px;
+				margin: 5px 7px 0 7px;
+				//background: red;
+				float: left;
+			}
+			.name {
+				color: $blue;
+				font-weight: bold;
+				margin-top: 7px;
+	 			a { color: $blue; }
+			}
+		}
+		.moderator {
+			margin-top: 12px;
+		}
+		.dates{ 
+			margin-top: 12px; 
+		}
+		.count { 
+			margin-top: 15px;
+		}
+	}
+}
+
+.pane-views-challenges-featured-front-block {
+	.pane-title {
+		@include mixin-pane-title(text);
+	}
+
+	.row > .col:hover {
+		.caption {
+			display: none;  
+		}
+		.mouseover {
+			 display: block;  
+		}
+	}
+	.row {
+		margin: 0px -6px;
+		> .col {
+			padding-right: 6px;
+			padding-left: 6px;
+		}
+		.caption {
+  		width: auto;
+			margin: 0 3%;
+		}
+	}
+	.mouseover {
+    display: none;
+		margin: 0px 3%;
+		padding: 0px 9px;
+		width: auto;
+		top: 0;
+		.body {
+			max-height: 64%;
+			overflow: hidden;
+			font-size: 14px;
+			line-height: 20px;
+		}
+		.read-more {
+			position: absolute;
+			bottom: 9px;
+			right: 14px;
+			font-size: 13px;
+			a { color: $blue; }
+		}
+  }
+}
+
+.pane-latest-and-greatest {
+	.pane-title {
+		@include mixin-pane-title(text);
+	}
+}
+
+.pane-comment-recent {
+	.pane-title {
+		@include mixin-pane-title(block);
+	}
+}
+
+.pane-custom {
+	.pane-title {
+		@include mixin-pane-title(block);
+	}
+}
