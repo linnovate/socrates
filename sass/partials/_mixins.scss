@@ -24,15 +24,15 @@
 
 ++------------------*/
 
-@mixin mixin-font-icon($name,$font-size: false, $margin: false, $font-family: 'OpenIdeal') {
+@mixin mixin-font-icon($name,$font-size: false, $color: false, $font-family: 'OpenIdeal') {
   &:before {
 		font-family: $font-family;
 		content: $name;
-		@if font-size {
+		@if $font-size {
 		  font-size: $font-size;
 		}
-		@if $margin {
-		  margin: $margin;
+		@if $color {
+		  color: $color;
 		}
 	}
 }
@@ -46,10 +46,12 @@
 		margin: 0;
 	}
 	@if $type == text {
-		border-bottom: 2px solid #e4e4e4;
+		border-bottom: 1px solid $light-border;
 		padding-bottom: 8px;
 		margin-bottom: 13px;
 		font-size: 30px;
+		background-color: transparent;
+		color: black;
 	}
 }
 
