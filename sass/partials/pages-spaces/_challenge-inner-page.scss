@@ -75,7 +75,8 @@ body.node-type-challenge {
 	}
 }
 
-.pane-ideal-blocks-challenge-stats {
+.pane-ideal-blocks-ideal-challenge_stats,
+.pane-ideal-blocks-ideal-key-stats {
 	.pane-title {
 		@include mixin-pane-title(block);
 		padding: 11px 12px;
@@ -119,6 +120,9 @@ body.node-type-challenge {
 					font-weight: normal;
 				}
 			}
+		}
+		.ideas .count{
+			@include mixin-font-icon('\e60c',22px,$green);
 		}
 		.users .count{
 			@include mixin-font-icon('\e602',22px,$green);
