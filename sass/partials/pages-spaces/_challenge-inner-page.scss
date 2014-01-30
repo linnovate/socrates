@@ -1,0 +1,139 @@
+
+/*-----------------------------------------------
+       Inner - page ( node-type-challenge )
+-----------------------------------------------*/
+
+body.node-type-challenge {
+	#page-header {
+		display: none;
+	}
+	.panel-panel.left.col-lg-9 {
+		width: 63%;
+	}
+	.panel-panel.right.col-lg-3 {
+		width: 37%;
+		padding-left: 32px;
+	}
+}
+
+
+.pane-ideal-challenge-challenge-add-idea-button {
+	.challenge-add-idea-button a.btn-success {
+		display: inline-block;
+		width: 100%;
+		font-size: 27px;
+		padding: 8px 0;
+		@include mixin-font-icon('\e60c',28px);
+		&:before { 
+			top: 2px;
+			position: relative;			
+			margin-right: 10px; 
+		}
+	}
+}
+
+.pane-ideal-challenge-challenge-data {
+	.pane-title {
+		@include mixin-pane-title(block);
+		@include mixin-font-icon('\e607',19px);
+		&:before { margin-right: 13px; }
+		padding: 14px 13px;
+		font-size: 20px;
+	}
+	.pane-content {
+		background-color: $blue;
+		color: white;
+		display: inline-block;
+		width: 100%;
+		padding: 0 10px 10px 10px;
+		a { color: white; }
+		#challenge-dates.row {
+			margin-right: 0;
+			margin-left: 0;
+			.col-xs-4 {
+				padding: 0 5px;
+			}
+		}
+		#challenge-dates .badge { 
+			background-color: $navy-blue; 
+			color: white;
+			width: 100%;  
+			border-radius: 30px;
+			padding: 7px 0 12px 0;
+			.challenge-date-value {
+				margin: 0;
+				font-weight: bold;
+				font-size: 29px;
+			}
+			.challenge-date-label {
+				font-size: 15px;
+			}
+		}
+		#challenge-dates-start-end {
+			margin: 9px 7px 0 7px;
+		}
+	}
+}
+
+.pane-ideal-blocks-challenge-stats {
+	.pane-title {
+		@include mixin-pane-title(block);
+		padding: 11px 12px;
+		font-size: 20px;
+	}
+	.pane-content {
+		overflow: hidden;
+		.row.ideas .count{
+			text-align: center;
+			color: $green;
+			font-size: 55px;
+			font-weight: bold;
+			margin: 9px 0;
+			@include mixin-font-icon('\e60c',55px);
+			&:before { 
+				margin-right: 11px;
+				font-weight: normal;
+			}
+			.text {
+				display: inline;
+				margin-left: 4px;
+				font-size: 29px;
+				font-weight: normal;
+				color: $black;
+			}
+		}
+		.row.counts{
+			margin-top: 7px;
+			border-top: 1px solid $light-border;
+			.col-xs-4 {
+				padding-top: 10px;
+				padding-bottom: 17px;
+			}
+			.count {
+				font-size: 28px;
+				font-weight: bold;
+				line-height: 1;
+				margin: 0;
+				&:before { 
+					margin-right: 4px;
+					font-weight: normal;
+				}
+			}
+		}
+		.users .count{
+			@include mixin-font-icon('\e602',22px,$green);
+		}
+		.votes {
+			border: solid $light-border;
+			border-width: 0 1px;
+			.count{
+				@include mixin-font-icon('\e60f',22px,$green);
+			}
+		}
+		.comments .count{
+			@include mixin-font-icon('\e608',22px,$green);
+		}
+	}
+}
+
+

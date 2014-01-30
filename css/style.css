@@ -47,7 +47,7 @@
   background: url('/images/icons-diagonal-s021e07dbee.png') no-repeat;
 }
 
-/* line 66, ../sass/partials/_settings.scss */
+/* line 65, ../sass/partials/_settings.scss */
 .icons-smart-sprite {
   background: url("../images/icons-smart-s03d7c9d8c3.png") no-repeat;
 }
@@ -81,6 +81,13 @@
   };
 
 ++------------------*/
+/*// Directionality 
+$flow: right;
+
+@function flow($flow) {
+	@if $flow == left { @return $flow; }
+	@else { @return $flow; }
+}*/
 /*-----------------------------------------------
                      Elements
 -----------------------------------------------*/
@@ -91,43 +98,46 @@ iframe {
 
 /* line 10, ../sass/partials/block-elements/_elements.scss */
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
-/* line 15, ../sass/partials/block-elements/_elements.scss */
+/* line 16, ../sass/partials/block-elements/_elements.scss */
 .glyphicon:before {
   margin: 0px 5px;
   position: relative;
   top: 2px;
 }
 
-/* line 28, ../sass/partials/_mixins.scss */
+/* line 36, ../sass/partials/_mixins.scss */
 .glyphicon-th-list:before {
   font-family: "OpenIdeal";
   content: "\e604";
+  margin-right: 7px;
 }
 
-/* line 28, ../sass/partials/_mixins.scss */
+/* line 36, ../sass/partials/_mixins.scss */
 .glyphicon-calendar:before {
   font-family: "OpenIdeal";
   content: "\e607";
+  margin-right: 7px;
   font-size: 16px;
 }
 
-/* line 28, ../sass/partials/_mixins.scss */
+/* line 36, ../sass/partials/_mixins.scss */
 .glyphicon-map-marker:before {
   font-family: "OpenIdeal";
   content: "\e60c";
+  margin-right: 7px;
   font-size: 24px;
 }
-/* line 31, ../sass/partials/block-elements/_elements.scss */
+/* line 32, ../sass/partials/block-elements/_elements.scss */
 .glyphicon-map-marker:before {
   top: 5px;
   line-height: 0;
 }
 
-/* line 34, ../sass/partials/block-elements/_elements.scss */
+/* line 35, ../sass/partials/block-elements/_elements.scss */
 .caption {
   position: absolute;
   bottom: 0;
@@ -145,16 +155,16 @@ img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 93, ../sass/partials/_mixins.scss */
+/* line 109, ../sass/partials/_mixins.scss */
 .caption a {
   color: #fff;
 }
-/* line 94, ../sass/partials/_mixins.scss */
+/* line 110, ../sass/partials/_mixins.scss */
 .caption:empty, .caption.empty {
   padding: 0;
 }
 
-/* line 38, ../sass/partials/block-elements/_elements.scss */
+/* line 39, ../sass/partials/block-elements/_elements.scss */
 .mouseover {
   position: absolute;
   bottom: 0;
@@ -172,65 +182,30 @@ img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 93, ../sass/partials/_mixins.scss */
+/* line 109, ../sass/partials/_mixins.scss */
 .mouseover a {
   color: #fff;
 }
-/* line 94, ../sass/partials/_mixins.scss */
+/* line 110, ../sass/partials/_mixins.scss */
 .mouseover:empty, .mouseover.empty {
   padding: 0;
 }
 
-/*-----------------------------------------------
-                      Blocks
------------------------------------------------*/
-/* line 7, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .carousel-indicators {
-  position: absolute;
-  top: 15px;
-  left: 45px;
-  bottom: auto;
-}
-/* line 12, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .carousel-indicators li {
-  border-radius: 0;
+/* line 44, ../sass/partials/block-elements/_elements.scss */
+.page-header {
+  line-height: 1;
   border: 0;
-  background-color: gray;
-  width: 8px;
-  height: 8px;
-  margin: 0 -1px 0 0;
+  margin: -5px 0px 20px 0;
 }
-/* line 19, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .carousel-indicators li.active {
-  width: 8px;
-  height: 8px;
-  margin: 0 -1px 0 0;
-  background-color: #028cbb;
+
+/* line 50, ../sass/partials/block-elements/_elements.scss */
+.pagination {
+  margin-top: 45px;
 }
-/* line 27, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .text {
-  padding: 0px 15px;
-  height: 100%;
-  width: 41%;
-  padding: 22px 23px;
-  position: absolute;
-  color: white;
-}
-/* line 34, ../sass/partials/block-elements/_blocks.scss */
-h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-block .text h5 {
-  color: #d5d5d5;
-}
-/* line 35, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .text .title {
-  font-size: 29px;
-  margin-bottom: 15px;
-}
-/* line 39, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .text .summary {
-  line-height: 22px;
-}
-/* line 44, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .row {
+
+/* line 55, ../sass/partials/block-elements/_elements.scss */
+.pane-views-default-challenge-block .row, .pane-views-default-challenge-block .idea-footer-block, .view-challenges-list .row, .view-challenges-list .idea-footer-block {
+  clear: both;
   position: relative;
   z-index: 2;
   background-color: black;
@@ -238,252 +213,43 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
   padding-bottom: 3px;
   font-size: 13px;
 }
-/* line 51, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .row a {
+/* line 63, ../sass/partials/block-elements/_elements.scss */
+.pane-views-default-challenge-block .row a, .pane-views-default-challenge-block .idea-footer-block a, .view-challenges-list .row a, .view-challenges-list .idea-footer-block a {
   color: white;
 }
-/* line 53, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .row .author .picture {
+/* line 65, ../sass/partials/block-elements/_elements.scss */
+.pane-views-default-challenge-block .row .author .picture, .pane-views-default-challenge-block .idea-footer-block .author .picture, .view-challenges-list .row .author .picture, .view-challenges-list .idea-footer-block .author .picture {
   width: 36px;
   height: 37px;
   margin: 5px 7px 0 7px;
   float: left;
 }
-/* line 60, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .row .author .name {
+/* line 72, ../sass/partials/block-elements/_elements.scss */
+.pane-views-default-challenge-block .row .author .name, .pane-views-default-challenge-block .idea-footer-block .author .name, .view-challenges-list .row .author .name, .view-challenges-list .idea-footer-block .author .name {
   color: #028cbb;
   font-weight: bold;
   margin-top: 7px;
 }
-/* line 64, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .row .author .name a {
+/* line 76, ../sass/partials/block-elements/_elements.scss */
+.pane-views-default-challenge-block .row .author .name a, .pane-views-default-challenge-block .idea-footer-block .author .name a, .view-challenges-list .row .author .name a, .view-challenges-list .idea-footer-block .author .name a {
   color: #028cbb;
 }
-/* line 67, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .row .moderator {
+/* line 79, ../sass/partials/block-elements/_elements.scss */
+.pane-views-default-challenge-block .row .moderator, .pane-views-default-challenge-block .idea-footer-block .moderator, .view-challenges-list .row .moderator, .view-challenges-list .idea-footer-block .moderator {
   margin-top: 12px;
 }
-/* line 70, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .row .dates {
+/* line 82, ../sass/partials/block-elements/_elements.scss */
+.pane-views-default-challenge-block .row .dates, .pane-views-default-challenge-block .idea-footer-block .dates, .view-challenges-list .row .dates, .view-challenges-list .idea-footer-block .dates {
   margin-top: 12px;
 }
-/* line 73, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-default-challenge-block .row .count {
+/* line 85, ../sass/partials/block-elements/_elements.scss */
+.pane-views-default-challenge-block .row .count, .pane-views-default-challenge-block .idea-footer-block .count, .view-challenges-list .row .count, .view-challenges-list .idea-footer-block .count {
   margin-top: 15px;
 }
 
-/* line 80, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-challenges-featured-front-block .pane-title {
-  border-bottom: 1px solid #d5d5d5;
-  padding-bottom: 8px;
-  margin-bottom: 13px;
-  font-size: 30px;
-  background-color: transparent;
-  color: black;
-}
-/* line 85, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-challenges-featured-front-block .row > .col:hover .caption {
-  display: none;
-}
-/* line 88, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-challenges-featured-front-block .row > .col:hover .mouseover {
-  display: block;
-}
-/* line 92, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-challenges-featured-front-block .row {
-  margin: 0px -6px;
-}
-/* line 94, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-challenges-featured-front-block .row > .col {
-  padding-right: 6px;
-  padding-left: 6px;
-}
-/* line 98, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-challenges-featured-front-block .row .caption {
-  width: auto;
-  margin: 0 3%;
-}
-/* line 103, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-challenges-featured-front-block .mouseover {
-  display: none;
-  margin: 0px 3%;
-  padding: 0px 9px;
-  width: auto;
-  top: 0;
-}
-/* line 109, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-challenges-featured-front-block .mouseover .body {
-  max-height: 64%;
-  overflow: hidden;
-  font-size: 14px;
-  line-height: 20px;
-}
-/* line 115, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-challenges-featured-front-block .mouseover .read-more {
-  position: absolute;
-  bottom: 9px;
-  right: 14px;
-  font-size: 13px;
-}
-/* line 120, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-challenges-featured-front-block .mouseover .read-more a {
-  color: #028cbb;
-}
-
-/* line 127, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-highlighted-content-block .pane-title {
-  background-color: #028cbb;
-  color: white;
-  padding: 8px 15px;
-  font-size: 26px;
-  margin: 0;
-}
-/* line 130, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-highlighted-content-block .pane-content {
-  background: #f3f3f3;
-  padding: 16px 9px;
-}
-/* line 133, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-highlighted-content-block .pane-content .views-row {
-  padding-left: 30px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #d5d5d5;
-}
-/* line 139, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-highlighted-content-block .pane-content .views-row.views-row-last {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border-bottom: 0;
-}
-/* line 144, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-highlighted-content-block .pane-content .views-field-type {
-  margin: -3px 0 0 -28px;
-}
-/* line 28, ../sass/partials/_mixins.scss */
-.pane-views-highlighted-content-block .pane-content .views-field-type:before {
-  font-family: "OpenIdeal";
-  content: "\e609";
-  font-size: 24px;
-  color: #028cbb;
-}
-/* line 147, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-highlighted-content-block .pane-content .views-field-type .field-content {
-  display: none;
-}
-/* line 28, ../sass/partials/_mixins.scss */
-.pane-views-highlighted-content-block .pane-content .views-field-type.Challenge:before {
-  font-family: "OpenIdeal";
-  content: "\e609";
-  font-size: 24px;
-  color: #028cbb;
-}
-/* line 28, ../sass/partials/_mixins.scss */
-.pane-views-highlighted-content-block .pane-content .views-field-type.News:before {
-  font-family: "OpenIdeal";
-  content: "\e60c";
-  font-size: 24px;
-  color: #028cbb;
-}
-/* line 28, ../sass/partials/_mixins.scss */
-.pane-views-highlighted-content-block .pane-content .views-field-type.Article:before {
-  font-family: "OpenIdeal";
-  content: "\e600";
-  font-size: 24px;
-  color: #028cbb;
-}
-/* line 155, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-highlighted-content-block .pane-content .views-field-title {
-  color: black;
-  font-weight: bold;
-  float: left;
-  margin-right: 5px;
-}
-/* line 160, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-highlighted-content-block .pane-content .views-field-title a {
-  color: black;
-}
-/* line 162, ../sass/partials/block-elements/_blocks.scss */
-.pane-views-highlighted-content-block .pane-content .views-field-body {
-  line-height: 21px;
-}
-
-/* line 169, ../sass/partials/block-elements/_blocks.scss */
-.pane-panels-mini.pane-latest-and-greatest .pane-title {
-  border-bottom: 1px solid #d5d5d5;
-  padding: 0 0 9px 0;
-  margin: 7px 0px 0px 0px;
-  font-size: 19px;
-}
-/* line 174, ../sass/partials/block-elements/_blocks.scss */
-.pane-panels-mini.pane-latest-and-greatest .pane-title:before {
-  margin-right: 7px;
-}
-/* line 176, ../sass/partials/block-elements/_blocks.scss */
-.pane-panels-mini.pane-latest-and-greatest > .pane-title {
-  border-bottom: 1px solid #d5d5d5;
-  padding-bottom: 8px;
-  margin-bottom: 13px;
-  font-size: 30px;
-  background-color: transparent;
-  color: black;
-  margin-bottom: 0;
-}
-/* line 180, ../sass/partials/block-elements/_blocks.scss */
-.pane-panels-mini.pane-latest-and-greatest #mini-panel-latest_and_greatest > .row {
-  margin-right: -10px;
-  margin-left: -10px;
-}
-/* line 183, ../sass/partials/block-elements/_blocks.scss */
-.pane-panels-mini.pane-latest-and-greatest #mini-panel-latest_and_greatest > .row .column {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-/* line 28, ../sass/partials/_mixins.scss */
-.pane-panels-mini.pane-latest-and-greatest .pane-user-new .pane-title:before {
-  font-family: "OpenIdeal";
-  content: "\e602";
-  font-size: 24px;
-  color: #028cbb;
-}
-/* line 28, ../sass/partials/_mixins.scss */
-.pane-panels-mini.pane-latest-and-greatest .pane-views-ideas-all-block-2 .pane-title:before {
-  font-family: "OpenIdeal";
-  content: "\e60c";
-  font-size: 24px;
-  color: #028cbb;
-}
-/* line 199, ../sass/partials/block-elements/_blocks.scss */
-.pane-panels-mini.pane-latest-and-greatest .pane-comment-recent .pane-title {
-  background-color: transparent;
-  color: black;
-}
-/* line 28, ../sass/partials/_mixins.scss */
-.pane-panels-mini.pane-latest-and-greatest .pane-comment-recent .pane-title:before {
-  font-family: "OpenIdeal";
-  content: "\e606";
-  font-size: 24px;
-  color: #028cbb;
-}
-
-/* line 209, ../sass/partials/block-elements/_blocks.scss */
-.pane-comment-recent .pane-title {
-  background-color: #028cbb;
-  color: white;
-  padding: 8px 15px;
-  font-size: 26px;
-  margin: 0;
-}
-
-/* line 215, ../sass/partials/block-elements/_blocks.scss */
-.pane-custom .pane-title {
-  background-color: #028cbb;
-  color: white;
-  padding: 8px 15px;
-  font-size: 26px;
-  margin: 0;
-}
-
+/*-----------------------------------------------
+                      Blocks
+-----------------------------------------------*/
 /*-----------------------------------------------
                    Space: Layout
 -----------------------------------------------*/
@@ -545,6 +311,11 @@ body .region-page-bottom {
   margin: 0 0 2.5em 0;
 }
 
+/* line 59, ../sass/partials/pages-spaces/_space-layout.scss */
+body.panels-ipe .panel-pane {
+  margin-bottom: 2.7em;
+}
+
 /*-----------------------------------------------
                Space: Header / footer
 -----------------------------------------------*/
@@ -568,15 +339,542 @@ body.front #page-header {
   display: none;
 }
 
-/*-----------------------------------------------
-                   Inner - page
------------------------------------------------*/
-/* line 14, ../sass/partials/pages-spaces/_inner-page.scss */
-body.not-front .block-quicktabs-all-ideas .quicktabs-all_ideas .views-row {
-  background: #e4e4e4;
-  margin-bottom: 20px;
+/* line 14, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-default-challenge-block .carousel-indicators {
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  bottom: auto;
+}
+/* line 19, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-default-challenge-block .carousel-indicators li {
+  border-radius: 0;
+  border: 0;
+  background-color: gray;
+  width: 8px;
+  height: 8px;
+  margin: 0 -1px 0 0;
+}
+/* line 26, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-default-challenge-block .carousel-indicators li.active {
+  width: 8px;
+  height: 8px;
+  margin: 0 -1px 0 0;
+  background-color: #028cbb;
+}
+/* line 35, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-default-challenge-block .views-field-field-challenge-image img {
+  width: 100%;
+}
+/* line 37, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-default-challenge-block .text {
+  padding: 0px 15px;
+  height: 100%;
+  width: 41%;
+  padding: 22px 23px;
+  position: absolute;
+  color: white;
+}
+/* line 44, ../sass/partials/pages-spaces/_front-page.scss */
+h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-block .text h5 {
+  color: #d5d5d5;
+}
+/* line 45, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-default-challenge-block .text .title {
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+/* line 49, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-default-challenge-block .text .summary {
+  line-height: 22px;
 }
 
+/* line 56, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .pane-title {
+  border-bottom: 1px solid #d5d5d5;
+  padding-bottom: 8px;
+  margin-bottom: 13px;
+  font-size: 30px;
+  background-color: transparent;
+  color: black;
+}
+/* line 61, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row > .col:hover .caption {
+  display: none;
+}
+/* line 64, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row > .col:hover .mouseover {
+  display: block;
+}
+/* line 69, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row {
+  margin: 0px -6px;
+}
+/* line 71, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row > .col {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+/* line 76, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row .views-field-field-challenge-image img {
+  width: 100%;
+}
+/* line 78, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row .caption {
+  width: auto;
+  margin: 0 3%;
+}
+/* line 82, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row .mouseover {
+  display: none;
+  margin: 0px 3%;
+  padding: 0px 9px;
+  width: auto;
+  top: 0;
+}
+/* line 88, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row .mouseover .content {
+  max-height: 85%;
+  overflow: hidden;
+}
+/* line 91, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row .mouseover .content .body {
+  font-size: 14px;
+  line-height: 20px;
+}
+/* line 96, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row .mouseover .read-more {
+  position: absolute;
+  bottom: 9px;
+  right: 14px;
+  font-size: 13px;
+}
+/* line 101, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-challenges-featured-front-block .row .mouseover .read-more a {
+  color: #028cbb;
+}
+
+/* line 109, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-highlighted-content-block .pane-title {
+  background-color: #028cbb;
+  color: white;
+  padding: 8px 15px;
+  font-size: 26px;
+  margin: 0;
+}
+/* line 112, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-highlighted-content-block .pane-content {
+  background: #f3f3f3;
+  padding: 16px 9px;
+}
+/* line 115, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-highlighted-content-block .pane-content .views-row {
+  padding-left: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d5d5d5;
+}
+/* line 121, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-highlighted-content-block .pane-content .views-row.views-row-last {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+/* line 126, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-highlighted-content-block .pane-content .views-field-type {
+  margin: -3px 0 0 -28px;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-views-highlighted-content-block .pane-content .views-field-type:before {
+  font-family: "OpenIdeal";
+  content: "\e609";
+  margin-right: 7px;
+  font-size: 24px;
+  color: #028cbb;
+}
+/* line 129, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-highlighted-content-block .pane-content .views-field-type .field-content {
+  display: none;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-views-highlighted-content-block .pane-content .views-field-type.Challenge:before {
+  font-family: "OpenIdeal";
+  content: "\e609";
+  margin-right: 7px;
+  font-size: 24px;
+  color: #028cbb;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-views-highlighted-content-block .pane-content .views-field-type.News:before {
+  font-family: "OpenIdeal";
+  content: "\e60c";
+  margin-right: 7px;
+  font-size: 24px;
+  color: #028cbb;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-views-highlighted-content-block .pane-content .views-field-type.Article:before {
+  font-family: "OpenIdeal";
+  content: "\e600";
+  margin-right: 7px;
+  font-size: 24px;
+  color: #028cbb;
+}
+/* line 137, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-highlighted-content-block .pane-content .views-field-title {
+  color: black;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+}
+/* line 142, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-highlighted-content-block .pane-content .views-field-title a {
+  color: black;
+}
+/* line 144, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-views-highlighted-content-block .pane-content .views-field-body {
+  line-height: 21px;
+}
+
+/* line 151, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-panels-mini.pane-latest-and-greatest .pane-title {
+  border-bottom: 1px solid #d5d5d5;
+  padding: 0 0 9px 0;
+  margin: 7px 0px 0px 0px;
+  font-size: 19px;
+}
+/* line 156, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-panels-mini.pane-latest-and-greatest .pane-title:before {
+  margin-right: 7px;
+}
+/* line 158, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-panels-mini.pane-latest-and-greatest > .pane-title {
+  border-bottom: 1px solid #d5d5d5;
+  padding-bottom: 8px;
+  margin-bottom: 13px;
+  font-size: 30px;
+  background-color: transparent;
+  color: black;
+  margin-bottom: 0;
+}
+/* line 162, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-panels-mini.pane-latest-and-greatest #mini-panel-latest_and_greatest > .row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+/* line 165, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-panels-mini.pane-latest-and-greatest #mini-panel-latest_and_greatest > .row .column {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-panels-mini.pane-latest-and-greatest .pane-user-new .pane-title:before {
+  font-family: "OpenIdeal";
+  content: "\e602";
+  margin-right: 7px;
+  font-size: 24px;
+  color: #028cbb;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-panels-mini.pane-latest-and-greatest .pane-views-ideas-all-block-2 .pane-title:before {
+  font-family: "OpenIdeal";
+  content: "\e60c";
+  margin-right: 7px;
+  font-size: 24px;
+  color: #028cbb;
+}
+/* line 181, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-panels-mini.pane-latest-and-greatest .pane-comment-recent .pane-title {
+  background-color: transparent;
+  color: black;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-panels-mini.pane-latest-and-greatest .pane-comment-recent .pane-title:before {
+  font-family: "OpenIdeal";
+  content: "\e606";
+  margin-right: 7px;
+  font-size: 24px;
+  color: #028cbb;
+}
+
+/* line 191, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-comment-recent .pane-title {
+  background-color: #028cbb;
+  color: white;
+  padding: 8px 15px;
+  font-size: 26px;
+  margin: 0;
+}
+
+/* line 197, ../sass/partials/pages-spaces/_front-page.scss */
+.pane-custom .pane-title {
+  background-color: #028cbb;
+  color: white;
+  padding: 8px 15px;
+  font-size: 26px;
+  margin: 0;
+}
+
+/*-----------------------------------------------
+       Inner - page ( node-type-challenge )
+-----------------------------------------------*/
+/* line 7, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge #page-header {
+  display: none;
+}
+/* line 10, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge .panel-panel.left.col-lg-9 {
+  width: 63%;
+}
+/* line 13, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge .panel-panel.right.col-lg-3 {
+  width: 37%;
+  padding-left: 32px;
+}
+
+/* line 21, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success {
+  display: inline-block;
+  width: 100%;
+  font-size: 27px;
+  padding: 8px 0;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success:before {
+  font-family: "OpenIdeal";
+  content: "\e60c";
+  margin-right: 7px;
+  font-size: 28px;
+}
+/* line 27, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success:before {
+  top: 2px;
+  position: relative;
+  margin-right: 10px;
+}
+
+/* line 36, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-data .pane-title {
+  background-color: #028cbb;
+  color: white;
+  padding: 8px 15px;
+  font-size: 26px;
+  margin: 0;
+  padding: 14px 13px;
+  font-size: 20px;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-ideal-challenge-challenge-data .pane-title:before {
+  font-family: "OpenIdeal";
+  content: "\e607";
+  margin-right: 7px;
+  font-size: 19px;
+}
+/* line 39, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-data .pane-title:before {
+  margin-right: 13px;
+}
+/* line 43, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-data .pane-content {
+  background-color: #028cbb;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 0 10px 10px 10px;
+}
+/* line 49, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-data .pane-content a {
+  color: white;
+}
+/* line 50, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+/* line 53, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row .col-xs-4 {
+  padding: 0 5px;
+}
+/* line 57, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-data .pane-content #challenge-dates .badge {
+  background-color: #016ca2;
+  color: white;
+  width: 100%;
+  border-radius: 30px;
+  padding: 7px 0 12px 0;
+}
+/* line 63, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-data .pane-content #challenge-dates .badge .challenge-date-value {
+  margin: 0;
+  font-weight: bold;
+  font-size: 29px;
+}
+/* line 68, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-data .pane-content #challenge-dates .badge .challenge-date-label {
+  font-size: 15px;
+}
+/* line 72, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-challenge-challenge-data .pane-content #challenge-dates-start-end {
+  margin: 9px 7px 0 7px;
+}
+
+/* line 79, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-blocks-challenge-stats .pane-title {
+  background-color: #028cbb;
+  color: white;
+  padding: 8px 15px;
+  font-size: 26px;
+  margin: 0;
+  padding: 11px 12px;
+  font-size: 20px;
+}
+/* line 84, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-blocks-challenge-stats .pane-content {
+  overflow: hidden;
+}
+/* line 86, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .row.ideas .count {
+  text-align: center;
+  color: #43ac6a;
+  font-size: 55px;
+  font-weight: bold;
+  margin: 9px 0;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .row.ideas .count:before {
+  font-family: "OpenIdeal";
+  content: "\e60c";
+  margin-right: 7px;
+  font-size: 55px;
+}
+/* line 93, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .row.ideas .count:before {
+  margin-right: 11px;
+  font-weight: normal;
+}
+/* line 97, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .row.ideas .count .text {
+  display: inline;
+  margin-left: 4px;
+  font-size: 29px;
+  font-weight: normal;
+  color: black;
+}
+/* line 105, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .row.counts {
+  margin-top: 7px;
+  border-top: 1px solid #d5d5d5;
+}
+/* line 108, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .row.counts .col-xs-4 {
+  padding-top: 10px;
+  padding-bottom: 17px;
+}
+/* line 112, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .row.counts .count {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+}
+/* line 117, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .row.counts .count:before {
+  margin-right: 4px;
+  font-weight: normal;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .users .count:before {
+  font-family: "OpenIdeal";
+  content: "\e602";
+  margin-right: 7px;
+  font-size: 22px;
+  color: #43ac6a;
+}
+/* line 126, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .votes {
+  border: solid #d5d5d5;
+  border-width: 0 1px;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .votes .count:before {
+  font-family: "OpenIdeal";
+  content: "\e60f";
+  margin-right: 7px;
+  font-size: 22px;
+  color: #43ac6a;
+}
+/* line 36, ../sass/partials/_mixins.scss */
+.pane-ideal-blocks-challenge-stats .pane-content .comments .count:before {
+  font-family: "OpenIdeal";
+  content: "\e608";
+  margin-right: 7px;
+  font-size: 22px;
+  color: #43ac6a;
+}
+
+/*-----------------------------------------------
+                   Front - page
+-----------------------------------------------*/
+/* line 7, ../sass/partials/pages-spaces/_challenge-list-page.scss */
+body.page-challenges-list #page-header {
+  display: none;
+}
+
+/* line 13, ../sass/partials/pages-spaces/_challenge-list-page.scss */
+.view-challenges-list .views-row {
+  background: #f3f3f3;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 15px 15px 0px 18px;
+  margin-bottom: 38px;
+  color: black;
+}
+/* line 21, ../sass/partials/pages-spaces/_challenge-list-page.scss */
+.view-challenges-list .views-row.views-row-last {
+  margin-bottom: 0;
+}
+/* line 24, ../sass/partials/pages-spaces/_challenge-list-page.scss */
+.view-challenges-list .views-field-field-challenge-image {
+  margin: 3px 20px 15px 0px;
+}
+/* line 28, ../sass/partials/pages-spaces/_challenge-list-page.scss */
+.view-challenges-list .views-field-title h3 {
+  margin: 0;
+}
+/* line 29, ../sass/partials/pages-spaces/_challenge-list-page.scss */
+.view-challenges-list .views-field-title a {
+  color: black;
+}
+/* line 31, ../sass/partials/pages-spaces/_challenge-list-page.scss */
+.view-challenges-list .views-field-body {
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+/* line 34, ../sass/partials/pages-spaces/_challenge-list-page.scss */
+.view-challenges-list .views-field-body p {
+  margin: 0;
+}
+/* line 36, ../sass/partials/pages-spaces/_challenge-list-page.scss */
+.view-challenges-list .row {
+  margin-right: -17px;
+  margin-left: -17px;
+}
+/* line 39, ../sass/partials/pages-spaces/_challenge-list-page.scss */
+.view-challenges-list .row:before {
+  top: -12px;
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  right: 45%;
+  border: 6px solid transparent;
+  border-bottom: 6px solid black;
+}
+
+/*-----------------------------------------------
+                   Front - page
+-----------------------------------------------*/
 /*-----------------------------------------------
                        END
 -----------------------------------------------*/

@@ -1,0 +1,48 @@
+
+/*-----------------------------------------------
+                   Front - page
+-----------------------------------------------*/
+
+body.page-challenges-list {
+	#page-header {
+		display: none;
+	}
+}
+
+.view-challenges-list {
+	.views-row {
+		background: $light-gray;
+		margin-bottom: 30px;
+		overflow: hidden;
+		padding: 15px 15px 0px 18px;
+		margin-bottom: 38px;
+		color: $black;
+	}
+	.views-row.views-row-last {
+		margin-bottom: 0;
+	}
+	.views-field-field-challenge-image {
+		margin: 3px 20px 15px 0px;
+	}
+	.views-field-title {
+		h3 { margin: 0; }
+		a { color: $black; }
+	}
+	.views-field-body {
+		line-height: 21px;
+		margin-bottom: 15px;
+		p { margin: 0; }
+	}
+	.row {
+		margin-right: -17px;
+		margin-left: -17px;
+		&:before { 
+			top: -12px;
+			position: absolute;
+			@include mixin-css-triangle(top,6px,black);
+		}
+	}
+}
+
+
+

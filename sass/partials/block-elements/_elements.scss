@@ -8,7 +8,8 @@ iframe {
 }
 
 img {
-	width: 100%;
+	//width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -39,3 +40,50 @@ img {
 	@include mixin-image-label;
 }
 
+
+.page-header {
+	line-height: 1;
+	border: 0;
+	margin: -5px 0px 20px 0;
+}
+
+.pagination {
+	margin-top: 45px;
+}
+
+.pane-views-default-challenge-block, .view-challenges-list {
+	.row,.idea-footer-block {
+		clear: both;
+		position: relative;
+		z-index: 2;
+		background-color: black;
+		color: white;
+		padding-bottom: 3px;
+		font-size: 13px;
+    a { color: white; }
+		.author {
+			.picture {
+				width: 36px;
+				height: 37px;
+				margin: 5px 7px 0 7px;
+				//background: red;
+				float: left;
+			}
+			.name {
+				color: $blue;
+				font-weight: bold;
+				margin-top: 7px;
+	 			a { color: $blue; }
+			}
+		}
+		.moderator {
+			margin-top: 12px;
+		}
+		.dates{ 
+			margin-top: 12px; 
+		}
+		.count { 
+			margin-top: 15px;
+		}
+	}
+}

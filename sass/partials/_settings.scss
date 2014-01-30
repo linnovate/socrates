@@ -44,7 +44,6 @@ $tiny: 500px;
 	font-style: normal;
 }
 
-$fonts-basic: Arial, Helvetica, sans-serif;
 
 /*-----------------------------------------------
            Imports and Definitions
@@ -71,6 +70,11 @@ $icons-diagonal-layout:diagonal;
                    Colors
 -----------------------------------------------*/
 
+
+$green: #43ac6a;
+
+$navy-blue: #016ca2;
+
 $light-border: rgb(213, 213, 213);
 $light-gray: #f3f3f3;
 $text-gray: #413f43;
@@ -78,7 +82,7 @@ $red: #d70010;
  
 $text-white: rgb(213, 213, 213);
 $blue: #028cbb;
-
+$black: black;
 
 /*-----------------------------------------------
                        END

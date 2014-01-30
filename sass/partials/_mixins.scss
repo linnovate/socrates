@@ -24,10 +24,19 @@
 
 ++------------------*/
 
+/*// Directionality 
+$flow: right;
+
+@function flow($flow) {
+	@if $flow == left { @return $flow; }
+	@else { @return $flow; }
+}*/
+
 @mixin mixin-font-icon($name,$font-size: false, $color: false, $font-family: 'OpenIdeal') {
   &:before {
 		font-family: $font-family;
 		content: $name;
+		margin-right: 7px;
 		@if $font-size {
 		  font-size: $font-size;
 		}
@@ -55,18 +64,25 @@
 	}
 }
 
-@mixin mixin-css-triangle($direction:bottom, $color:#89D4E7, $width:6px) {
+@mixin mixin-css-triangle($direction:bottom, $width:6px, $color:false) {
   content: '';
   width: 0;
   height: 0;
   display: block;
   right: 45%;
-  margin-right: - $width/2; 
   border: $width solid transparent;
-  @if $direction == left { border-right: $width solid $color; }  
-  @if $direction == right { border-left: $width solid $color; }
-  @if $direction == bottom { border-top: $width solid $color; }
-  @if $direction == top { border-bottom: $width solid $color; } 
+  @if $color {
+		@if $direction == left { border-right: $width solid $color; }  
+		@if $direction == right { border-left: $width solid $color; }
+		@if $direction == bottom { border-top: $width solid $color; }
+		@if $direction == top { border-bottom: $width solid $color; }
+	}
+  @else {
+		@if $direction == left { border-right: $width solid; }  
+		@if $direction == right { border-left: $width solid; }
+		@if $direction == bottom { border-top: $width solid; }
+		@if $direction == top { border-bottom: $width solid; }
+	}
 }
 
 @mixin mixin-reset-ul-li {  
