@@ -74,8 +74,8 @@ body.node-type-challenge {
 		}
 	}
 }
-
-.pane-ideal-blocks-ideal-challenge_stats,
+.pane-ideal-blocks-idea-stats,
+.pane-ideal-blocks-challenge-stats,
 .pane-ideal-blocks-ideal-key-stats {
 	.pane-title {
 		@include mixin-pane-title(block);
@@ -103,6 +103,9 @@ body.node-type-challenge {
 				color: $black;
 			}
 		}
+		.row.challenges .count{
+			@include mixin-font-icon('\e609',55px); 
+		}
 		.row.counts{
 			margin-top: 7px;
 			border-top: 1px solid $light-border;
@@ -127,13 +130,14 @@ body.node-type-challenge {
 		.users .count{
 			@include mixin-font-icon('\e602',22px,$green);
 		}
-		.votes {
+		.row.counts >div+div{
 			border: solid $light-border;
-			border-width: 0 1px;
+			border-width: 0 0 0 1px;
 			.count{
 				@include mixin-font-icon('\e60f',22px,$green);
 			}
 		}
+
 		.comments .count{
 			@include mixin-font-icon('\e608',22px,$green);
 		}

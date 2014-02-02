@@ -9,6 +9,9 @@ body {
   width: 93%;
 	margin: 0 auto;
   position: static;
+	.logo img{
+		height: 35px;
+	}
 
 	header#navbar {
 		margin: 0;
@@ -23,6 +26,7 @@ body {
 		max-width: 82.5%;
     width: 100%;
 		margin: 0 auto;
+		padding: 0 15px;
   }
 
 	.main-container.container {
@@ -53,11 +57,14 @@ body {
 }
 
 .panel-bootstrap .panel-separator {
-	margin: 0 0 2.5em 0;
+	margin: 0;
 }
 
 body.panels-ipe .panel-pane {
 	margin-bottom: 2.7em; 
 }
 
+.panel-pane {
+	margin-bottom: 2.7em;
+}
 

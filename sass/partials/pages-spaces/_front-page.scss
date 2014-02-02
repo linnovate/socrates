@@ -159,6 +159,29 @@ body.front {
 		@include mixin-pane-title(text);
 		margin-bottom: 0;
 	}
+	.pane-content {
+		margin-top: 10px;
+		.views-row {
+			display: inline-block;
+			width: 100%;
+			font-size: 14px;
+			line-height: 15px;
+			color: $black;
+			a { color: $black; }
+			.user-image{
+				width: 36px;
+				float: left;
+				margin: 1px 10px 0px 0;
+			}
+			.user-text {
+
+			}
+		}
+		.views-row+.views-row {
+			margin-top: 20px;
+		}
+	}
+
 	#mini-panel-latest_and_greatest > .row {
 		margin-right: -10px;
 		margin-left: -10px;
@@ -167,24 +190,21 @@ body.front {
 			padding-left: 10px;
 		}
 	}
-	.pane-user-new {
+	.pane-views-activity-block-1 {
 		.pane-title { 
 			@include mixin-font-icon('\e602',24px,$blue);
 		}
 	}
-	.pane-views-ideas-all-block-2{
+	.pane-views-activity-block-2 {
 		.pane-title {
 			@include mixin-font-icon('\e60c',24px,$blue);
 		}
 	}
-	.pane-comment-recent {
+	.pane-views-activity-block-3 {
 		.pane-title {
-			background-color: transparent;
-			color: black;
 			@include mixin-font-icon('\e606',24px,$blue);
 		}
 	}
-
 }
 
 .pane-comment-recent {
@@ -199,5 +219,11 @@ body.front {
 	}
 }
 
+
+.pane-views-head-to-head-ideas-block {
+	.pane-title {
+		@include mixin-pane-title(text);
+	}
+}
 
 

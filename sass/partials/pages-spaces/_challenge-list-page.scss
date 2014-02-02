@@ -45,4 +45,34 @@ body.page-challenges {
 }
 
 
+.pane-views-activity-block {
+	.pane-title {
+		@include mixin-pane-title(block);
+	}
+	.pane-content {
+		margin-top: 15px;
+		.views-row {
+			display: inline-block;
+			width: 100%;
+			font-size: 14px;
+			line-height: 15px;
+			color: $black;
+			a { color: $black; }
+			.user-image{
+				width: 36px;
+				float: left;
+				margin: 1px 10px 0 0;
+			}
+			.user-text {
+
+			}
+		}
+		.views-row+.views-row {
+			padding-top: 12px;
+			margin-top: 12px;
+			border-top: 1px solid $light-border;
+		}
+	}
+}
+
 

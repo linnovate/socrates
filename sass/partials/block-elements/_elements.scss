@@ -2,6 +2,11 @@
 /*-----------------------------------------------
                      Elements
 -----------------------------------------------*/
+a {
+	text-decoration: none;
+	&:hover { text-decoration: none; }
+}
+
 
 iframe {
 	width: 100%;
