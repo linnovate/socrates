@@ -163,6 +163,6 @@
 
   </div>
 </div>
-<footer class="footer container">
+<footer class="footer container navbar navbar-default">
   <?php print render($page['footer']); ?>
 </footer>

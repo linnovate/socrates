@@ -1,21 +1,21 @@
 
 /*-----------------------------------------------
-       Inner - page ( node-type-challenge )
+              Challenge Inner - page
 -----------------------------------------------*/
 
+/* ------------------------------------------------- layout -------------------------------------------------- */
+
 body.node-type-challenge {
-	#page-header {
-		display: none;
-	}
 	.panel-panel.left.col-lg-9 {
-		width: 63%;
+		width: $column-left;
 	}
 	.panel-panel.right.col-lg-3 {
-		width: 37%;
+		width: $sidebar-right;
 		padding-left: 32px;
 	}
 }
 
+/* ------------------------------- pane-ideal-challenge-challenge-add-idea-button --------------------------- */
 
 .pane-ideal-challenge-challenge-add-idea-button {
 	.challenge-add-idea-button a.btn-success {
@@ -31,6 +31,8 @@ body.node-type-challenge {
 		}
 	}
 }
+
+/* ----------------------------------- pane-ideal-challenge-challenge-data ---------------------------------- */
 
 .pane-ideal-challenge-challenge-data {
 	.pane-title {
@@ -74,6 +76,9 @@ body.node-type-challenge {
 		}
 	}
 }
+
+/* -------------------------------------- pane-ideal-blocks-idea-*-stats ------------------------------------ */
+
 .pane-ideal-blocks-idea-stats,
 .pane-ideal-blocks-challenge-stats,
 .pane-ideal-blocks-ideal-key-stats {
@@ -124,23 +129,14 @@ body.node-type-challenge {
 				}
 			}
 		}
-		.ideas .count{
-			@include mixin-font-icon('\e60c',22px,$green);
-		}
-		.users .count{
-			@include mixin-font-icon('\e602',22px,$green);
-		}
-		.row.counts >div+div{
+		.row.counts > div + div{
 			border: solid $light-border;
 			border-width: 0 0 0 1px;
-			.count{
-				@include mixin-font-icon('\e60f',22px,$green);
-			}
+			.count{	@include mixin-font-icon('\e60f',22px,$green); }
 		}
-
-		.comments .count{
-			@include mixin-font-icon('\e608',22px,$green);
-		}
+		.ideas .count{ @include mixin-font-icon('\e60c',22px,$green);	}
+		.users .count{ @include mixin-font-icon('\e602',22px,$green);	}
+		.comments .count{ @include mixin-font-icon('\e608',22px,$green); }
 	}
 }
 

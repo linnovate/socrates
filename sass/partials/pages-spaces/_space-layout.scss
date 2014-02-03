@@ -9,6 +9,7 @@ body {
   width: 93%;
 	margin: 0 auto;
   position: static;
+
 	.logo img{
 		height: 35px;
 	}
@@ -38,6 +39,7 @@ body {
 		margin: 0;
 		padding: 10px;
 		width: 100%;
+		&.navbar.container { max-width: none; }
 	}
 
   .region-page-bottom{

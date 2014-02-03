@@ -1,4 +1,39 @@
 
 /*-----------------------------------------------
-                   Front - page
+                   Idea list - page
 -----------------------------------------------*/
+
+#block-quicktabs-all-ideas {
+	.block-title {
+		display: none;
+	}
+	ul.quicktabs-tabs {
+		border-bottom: 1px solid $light-border;
+		padding: 0 0 5px 0;
+		margin-bottom: 35px;
+		li {
+			margin: 0 40px 0 0;
+			padding: 0;
+			a {
+				font-weight: normal;
+				font-size: 16px;
+				color: black;
+				display: inline-block;
+				padding-bottom: 4px;
+			}
+			&:hover {
+				 a {
+					border-bottom: 4px solid $light-border;
+				}
+			}
+		}
+	}
+	.view-content {
+		.views-row {
+			background: red;
+		}
+		.views-row + .views-row{
+			margin-top: 38px;
+		}
+	}
+}

@@ -3,48 +3,8 @@
                     Mixins
 -----------------------------------------------*/
 
-/*------------------++
 
-  Drupal.behaviors.isHasOpinion = {
-    attach: function (context, settings) {
-       if ($(".panel-panel.top-first").find('.node-opinion').length > 0) {
-           $(".panel-panel.top-first").find('.node-article').addClass('has-opinion');
-       }
-    }
-  };
-
-  Drupal.behaviors.isLast = {
-    attach: function (context, settings) {
-       var elements = '.views-row:last-child';
-           elements += ', .inside > .pane-ih-node:last-child';
-           elements += ', .panels-ipe-portlet-wrapper:last-child';
-       $(elements).addClass('last-child');
-    }
-  };
-
-++------------------*/
-
-/*// Directionality 
-$flow: right;
-
-@function flow($flow) {
-	@if $flow == left { @return $flow; }
-	@else { @return $flow; }
-}*/
-
-@mixin mixin-font-icon($name,$font-size: false, $color: false, $font-family: 'OpenIdeal') {
-  &:before {
-		font-family: $font-family;
-		content: $name;
-		margin-right: 7px;
-		@if $font-size {
-		  font-size: $font-size;
-		}
-		@if $color {
-		  color: $color;
-		}
-	}
-}
+/* --------------------------------------------- mixin-pane-title ------------------------------------------- */
 
 @mixin mixin-pane-title($type) {
 	@if $type == block {
@@ -63,6 +23,47 @@ $flow: right;
 		color: black;
 	}
 }
+
+/* ---------------------------------------------- mixin-font-icon ------------------------------------------- */
+
+@mixin mixin-font-icon($name,$font-size: false, $color: false, $font-family: 'OpenIdeal') {
+  &:before {
+		font-family: $font-family;
+		content: $name;
+		margin-right: 7px;
+		@if $font-size {
+		  font-size: $font-size;
+		}
+		@if $color {
+		  color: $color;
+		}
+	}
+}
+
+/* --------------------------------------------- mixin-image-label ------------------------------------------ */
+
+@mixin mixin-image-label($font-size: 15px, $padding: 7px,$line-height: false){
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+	right: 0;
+  padding: $padding;
+  font-size: $font-size;
+  font-weight: lighter;
+  width: 100%;
+  color: #fff;
+  background-color: #2b2b2b;
+  background-color: rgba(#2b2b2b, 0.8);
+  box-sizing: border-box;
+  a { color: #fff; }
+  &:empty, &.empty { padding: 0; }
+  @if $line-height { 
+    line-height: $line-height; 
+  }
+}
+
+/* -------------------------------------------- mixin-css-triangle ------------------------------------------ */
 
 @mixin mixin-css-triangle($direction:bottom, $width:6px, $color:false) {
   content: '';
@@ -84,97 +85,3 @@ $flow: right;
 		@if $direction == top { border-bottom: $width solid; }
 	}
 }
-
-@mixin mixin-reset-ul-li {  
-  ul{ 
-    margin: 0px; padding: 0px;
-    li{  list-style: none; margin: 0px; padding: 0px; }
-  }  
-}
-
-@mixin mixin-image-label($font-size: 15px, $padding: 7px,$line-height: false){
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  left: 0;
-	right: 0;
-  padding: $padding;
-  font-size: $font-size;
-  font-weight: lighter;
-  width: 100%;
-  color: #fff;
-  background-color: #2b2b2b;
-  background-color: rgba(#2b2b2b, 0.8);
-  @include box-sizing(border-box);
-  a { color: #fff; }
-  &:empty, &.empty { padding: 0; }
-  @if $line-height { 
-    line-height: $line-height; 
-  }
-}
-
-@mixin mixin-max-width($max-width: 100%){
-    max-width: $max-width;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@mixin mixin-margin-and-border($status: display, $padding: 15px, $margin: 15px, $direction:'bottom'){
-  padding-#{$direction}: $padding;
-  margin-#{$direction}: $margin;
-  @if $status == display {
-      @if $direction == top{ background: url('../images/dots_horiz.gif') repeat-x 100% 0; }
-      @if $direction == bottom{ background: url('../images/dots_horiz.gif') repeat-x 0 100%; }
-      @if $direction == right{ background: url('../images/dots_vertical.gif') repeat-y 100% 0; }
-      @if $direction == left{ background: url('../images/dots_vertical.gif') repeat-y 0 100%; }
-  }
-  @if $status == hidden {
-      background: none;
-  } 
-}
- 
-@mixin mixin-width-items($selector: '',$selector-last: '', $width: 48%, $margin-left: 2%, $padding-left: 1%){
-  display: table;
-  #{$selector}{ 
-    width: $width;
-    display: table-cell;
-    float: right; 
-    margin-left: $margin-left;
-    padding-left: $padding-left;
-  } 
-  #{$selector-last}{ float: left;  margin-left: 0;  padding-left: 0; background-image: none; }      
-}
-
-@mixin mixin-margin-border-for-blocks($status: display, $padding-bottom: 15px, $margin-bottom: 15px){
-  @if $status == display {
-    .panel-pane {
-      background: url('../images/dots_horiz.gif') repeat-x 0 100%;
-      font-size: 13px;
-      padding-bottom: $padding-bottom;
-      margin-bottom: $margin-bottom;
-      @include clear;
-      width: 100%;
-      display: inline-block;
-    }
-    .inside > .panel-pane:last-child,
-    .inside > .panel-pane.last-child,
-    .panels-ipe-portlet-wrapper:last-child .panel-pane,
-    .panels-ipe-portlet-wrapper.last-child .panel-pane {
-      background: none; padding-bottom: 0; margin-bottom: 19px;
-    } 
-    .pane-articles-section-title { 
-      background: none; padding-bottom: 0; 
-    }
-  } 
-  @if $status == hidden{
-    .panel-pane {
-      background: none;
-      margin-bottom: 19px;
-      padding-bottom: 0;
-      @if $param == all{ 
-        margin-bottom: 0px;
-      }
-    } 
-  }
-}
-

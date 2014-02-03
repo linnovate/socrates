@@ -1,25 +1,28 @@
 
 /*-----------------------------------------------
-                   Front - page
+               Challenges list - page
 -----------------------------------------------*/
 
-body.page-challenges {
-	#page-header {
-		display: none;
-	}
-}
+/* ------------------------------------------- view-challenges-list ----------------------------------------- */
 
 .view-challenges-list {
 	.views-row {
 		background: $light-gray;
-		margin-bottom: 30px;
 		overflow: hidden;
 		padding: 15px 15px 0px 18px;
-		margin-bottom: 38px;
 		color: $black;
+		.row {
+			margin-right: -17px;
+			margin-left: -17px;
+			&:before { 
+				top: -12px;
+				position: absolute;
+				@include mixin-css-triangle(top,6px,black);
+			}
+		}
 	}
-	.views-row.views-row-last {
-		margin-bottom: 0;
+	.views-row + .views-row {
+		margin-top: 38px;
 	}
 	.views-field-field-challenge-image {
 		margin: 3px 20px 15px 0px;
@@ -33,17 +36,10 @@ body.page-challenges {
 		margin-bottom: 15px;
 		p { margin: 0; }
 	}
-	.row {
-		margin-right: -17px;
-		margin-left: -17px;
-		&:before { 
-			top: -12px;
-			position: absolute;
-			@include mixin-css-triangle(top,6px,black);
-		}
-	}
 }
 
+
+/* ----------------------------------------- pane-views-activity-block -------------------------------------- */
 
 .pane-views-activity-block {
 	.pane-title {
@@ -62,9 +58,6 @@ body.page-challenges {
 				width: 36px;
 				float: left;
 				margin: 1px 10px 0 0;
-			}
-			.user-text {
-
 			}
 		}
 		.views-row+.views-row {

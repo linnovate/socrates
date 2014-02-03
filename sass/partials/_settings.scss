@@ -1,37 +1,14 @@
 
 /*-----------------------------------------------
-                   Settings
+             Grid & Layout settings
 -----------------------------------------------*/
 
-// ==== Grid & Layout settings ==============================================
-//   Set the values for the layout system
-// ==========================================================================
-
-// Grid dimensions
-$container-width: 1216px;
-$columns: 100;
-$gutter-width: 0;
-
-// Sidebars widths
-$sidebar-first: 17;
-$sidebar-second: 20;
-
-// Directionality 
-$flow: right;
-
-// ==== Mobile support. ==========================================
-//   Define break-points for media queries
-// ===============================================================
-
-$largest: 1216px;
-$large: 960px;
-$medium: 800px;
-$small: 700px;
-$tiny: 500px; 
-  
-// -----------------------------------------------
-//                 Typography
-// -----------------------------------------------
+$column-left: 63%;
+$sidebar-right: 37%;
+ 
+/*-----------------------------------------------
+                   Typography
+-----------------------------------------------*/
 
 @font-face {
 	font-family: 'OpenIdeal';
@@ -44,43 +21,19 @@ $tiny: 500px;
 	font-style: normal;
 }
 
-
-/*-----------------------------------------------
-           Imports and Definitions
------------------------------------------------*/
-
-@import "compass/css3";
-@import "compass/typography/text/replacement";
-
-/*-----------------------------------------------
-                   Sprites
------------------------------------------------*/
-
-$icons-smart-layout:smart;
-@import "icons-smart/*.png";
-
-$icons-diagonal-layout:diagonal;
-@import "icons-diagonal/*.png";
-
-.icons-smart-sprite{  
-  background: url('../images/icons-smart-s03d7c9d8c3.png') no-repeat;
-}
-
 /*-----------------------------------------------
                    Colors
 -----------------------------------------------*/
 
-
-$green: #43ac6a;
-
-$navy-blue: #016ca2;
-
 $light-border: rgb(213, 213, 213);
 $light-gray: #f3f3f3;
+
 $text-gray: #413f43;
-$red: #d70010;
- 
 $text-white: rgb(213, 213, 213);
+
+$green: #43ac6a;
+$navy-blue: #016ca2;
+$red: #d70010;
 $blue: #028cbb;
 $black: black;
 
