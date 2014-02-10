@@ -99,13 +99,13 @@
 			border-top: 1px solid $light-border;
 		}
 		.views-field-type {
-			@include mixin-font-icon('\e609',24px,$blue);
+			@include mixin-font-icon('\e606',24px,$blue);
 			margin: -3px 0 0 -28px;
 			.field-content { display: none; }
 			&.Challenge { @include mixin-font-icon('\e609',24px,$blue); }
-			&.News { @include mixin-font-icon('\e60c',24px,$blue); }
-			&.Article { @include mixin-font-icon('\e600',24px,$blue); }
-			&.Iead { @include mixin-font-icon('\e609',24px,$blue); }
+			//&.News { @include mixin-font-icon('\e600',24px,$blue); }
+			//&.Article { @include mixin-font-icon('\e600',24px,$blue); }
+			&.Iead { @include mixin-font-icon('\e60c',24px,$blue); }
 		}
 		.views-field-title {
 			font-weight: bold;
@@ -195,6 +195,83 @@
 .pane-views-head-to-head-ideas-block {
 	.pane-title {
 		@include mixin-pane-title(text);
+	}
+	.pane-content {
+		position: relative;
+		.view-header {
+			margin-bottom: 15px;
+		}
+		.view-content {
+			border-top: 5px solid black;
+			.row {
+				margin-right: -6px;
+				margin-left: -6px;
+				.col { padding: 6px; }
+			}
+			.col .thumbnail {
+				padding: 10px;
+				background-color: $light-gray;
+				border-radius: 0;
+				border: 0;
+				.views-field {
+					margin-bottom: 15px; 
+				}
+				.views-field-field-vote{
+					.alternate-votes-display {
+						@include mixin-font-icon('\e60c',24px,$blue);
+						border: 0;
+						height: auto;
+						float: left;
+						border-radius: 100px;
+						background-color: red;
+					}
+					.up-active {
+						background: $green;
+						@include mixin-font-icon('\e60c',24px,$blue);
+					}
+				}
+				.views-field-title{
+					font-size: 20px;
+					line-height: 20px;
+					clear: both;
+					a{ color: $black; }
+				}
+				.views-field-field-idea-image {
+
+				}
+				.views-field-body {
+					font-size: 13px;
+					line-height: 15px;
+				}
+				.views-field-picture {
+					float: left;
+					margin: 4px 10px 0px 4px;
+					width: 35px;
+				}
+				.views-field-name {
+					background-color: rgb(218, 218, 218);
+					padding: 10px 10px 10px 51px;
+					min-height: 43px;
+					font-size: 14px;
+					a { color: $green; }
+				}
+			}
+		}
+		.view-footer {
+			position: absolute;
+			top: 54px;
+			left: 0;
+			right: 0;
+			width: 10px;
+			margin: 0 auto;
+			border-radius: 100px;
+			color: $green;
+			font-size: 25px;
+			background-color: white;
+			width: 47px;
+			padding: 3px 5px 7px 7px;
+			text-align: center;
+		}
 	}
 }
 
