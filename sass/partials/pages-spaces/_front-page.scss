@@ -46,6 +46,11 @@
 	.pane-title { 
 		@include mixin-pane-title(text);
 	}
+	.view-all {
+		float: right;
+		margin-top: -40px;
+		color: black;
+	}
 	.row {
 		margin: 0px -6px;
 		> .col {
@@ -217,6 +222,12 @@
 					margin-bottom: 15px; 
 				}
 				.views-field-field-vote{
+					.ajax-progress {
+						.glyphicon{
+							margin: 0;
+							&:before { top: 0;	margin: 0; }
+						}
+					}
 					.alternate-votes-display {
 						@include mixin-font-icon('\e60c',24px,$blue);
 						border: 0;
@@ -225,10 +236,18 @@
 						border-radius: 100px;
 						background-color: red;
 					}
-					.up-active {
+					.clear-block {
+						float: left;
+					}
+					.vote-current-score { 
+						float: left;
+						margin: -7px 0px 15px 10px;	
+					}
+					.voted-how { display:none;}
+					/*.up-active {
 						background: $green;
 						@include mixin-font-icon('\e60c',24px,$blue);
-					}
+					}*/
 				}
 				.views-field-title{
 					font-size: 20px;

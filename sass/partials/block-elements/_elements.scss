@@ -77,7 +77,11 @@ img {
 		}
 	}
 	.moderator { margin-top: 12px; }
-	.dates{ margin-top: 12px; }
+	.dates{ 
+		margin-top: 12px; font-size: 0; 
+		span { font-size: 13px; }
+		span + span:before { content: '-'; margin: 0 4px; }
+	}
 	.count { margin-top: 15px; }
 }
 

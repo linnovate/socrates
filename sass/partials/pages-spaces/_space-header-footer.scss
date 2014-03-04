@@ -4,8 +4,33 @@
 -----------------------------------------------*/
 
 
-body {
-
+header#navbar {
+	.panel-pane {
+		margin-bottom: 0;
+		float: left;
+	}
+	.nav>li {
+		float: left;
+		a { color: white; }
+	}
+	.pane-system-user-menu {
+		float: right;
+	}
 }
+
+footer.footer.navbar {
+	.panel-pane {
+		margin-bottom: 0;
+		float: left;
+	}
+	.nav>li {
+		float: left;
+		a { color: white; }
+	}
+	.pane-ideal-main-openideal-credits {
+		float: right;
+	}
+}
+
 
 

@@ -5,13 +5,70 @@
 
 /* ------------------------------------------------- layout -------------------------------------------------- */
 
-body.node-type-challenge {
+body.node-type-challenge, body.node-type-idea{
 	.panel-panel.left.col-lg-9 {
 		width: $column-left;
 	}
 	.panel-panel.right.col-lg-3 {
 		width: $sidebar-right;
 		padding-left: 32px;
+	}
+
+	#panel-bootstrap-region-center {
+		width: 95%;
+		margin-right: 35px;
+		background-color: $light-gray;
+	}
+	.panel-pane {
+		margin-bottom: 15px;
+	}
+	.pane-node-title {
+		font-size: 30px;
+	}
+	.pane-user-picture {
+		float: left;
+		margin: 5px 10px 5px 5px;
+		width: 50px;
+	}
+	.pane-node-author {
+		background: rgb(224, 224, 224);
+		height: 60px;
+	}
+	.pane-node-field-moderator {
+		float: right;
+		margin-top: -60px;
+		margin-right: 140px;
+		.field-item { @include mixin-font-icon('\e604',24px); }
+	}
+	.pane-node-field-share {
+		float: right;
+		margin-top: -60px;
+		margin-right: 62px;
+		.pane-title { @include mixin-font-icon('\e60d',24px); }
+		.pane-content {
+			display:none;
+		}
+	}
+	.pane-node-field-attachments {
+		.pane-title {
+			font-size: 20px;
+			margin-bottom: 5px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid;
+		}
+	}
+	.pane-node-comment-form,.pane-node-comments {
+		clear: both; 
+	}
+	.pane-node-comments {
+		.user-picture {
+			float: left;
+			margin: 0 10px 10px 0;
+			width: 36px;
+			height: 36px;
+			border: 1px solid;
+		}
+		.permalink,.submitted, .field-name-field-vote { display:none; }
 	}
 }
 
@@ -74,6 +131,38 @@ body.node-type-challenge {
 		}
 		#challenge-dates-start-end {
 			margin: 9px 7px 0 7px;
+		}
+	}
+}
+
+.pane-views-ideas-in-challenge-block {
+	.views-field-field-idea-image {
+		background: red;
+		float: left;
+		width: 40px;
+		margin: 0 10px 10px 0;
+		img { visibility: hidden; }
+	}
+	.views-field-body {
+		clear: both;
+	}
+	.views-field-created {
+		float: left;
+		margin-right: 5px;
+	}
+	.views-field-name {
+		float: left;
+	}
+	.views-field-field-vote {
+		.clear-block { display: none; }
+		.vote-current-score {
+			padding: 0;
+			line-height: 1;
+			font-size: 0;
+			strong {
+				font-size: 13px; 	
+				@include mixin-font-icon('\e60f',13px,$green);
+			}
 		}
 	}
 }
