@@ -322,39 +322,96 @@ body.panels-ipe .panel-pane {
                    Header / footer
 -----------------------------------------------*/
 /* line 8, ../sass/partials/pages-spaces/_space-header-footer.scss */
+header#navbar .navbar-collapse {
+  padding: 0;
+}
+/* line 11, ../sass/partials/pages-spaces/_space-header-footer.scss */
+header#navbar .pane-page-logo {
+  display: table;
+  height: 45px;
+  margin-right: 10px;
+}
+/* line 15, ../sass/partials/pages-spaces/_space-header-footer.scss */
+header#navbar .pane-page-logo .pane-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 18, ../sass/partials/pages-spaces/_space-header-footer.scss */
+header#navbar .pane-page-logo .pane-content img {
+  max-height: 40px;
+}
+/* line 21, ../sass/partials/pages-spaces/_space-header-footer.scss */
 header#navbar .panel-pane {
   margin-bottom: 0;
   float: left;
 }
-/* line 12, ../sass/partials/pages-spaces/_space-header-footer.scss */
+/* line 25, ../sass/partials/pages-spaces/_space-header-footer.scss */
 header#navbar .nav > li {
   float: left;
 }
-/* line 14, ../sass/partials/pages-spaces/_space-header-footer.scss */
+/* line 27, ../sass/partials/pages-spaces/_space-header-footer.scss */
 header#navbar .nav > li a {
   color: white;
+  padding: 13px 15px;
 }
-/* line 16, ../sass/partials/pages-spaces/_space-header-footer.scss */
+/* line 28, ../sass/partials/pages-spaces/_space-header-footer.scss */
+header#navbar .nav > li a:hover, header#navbar .nav > li a:focus {
+  text-decoration: none;
+  background-color: #000;
+}
+/* line 33, ../sass/partials/pages-spaces/_space-header-footer.scss */
 header#navbar .pane-system-user-menu {
   float: right;
 }
+/* line 36, ../sass/partials/pages-spaces/_space-header-footer.scss */
+header#navbar .pane-search-form {
+  float: right;
+  margin-left: 5px;
+}
+/* line 40, ../sass/partials/pages-spaces/_space-header-footer.scss */
+header#navbar .pane-search-form input.form-text {
+  height: 36px;
+  padding: 0px 10px;
+  width: 170px;
+  margin-top: 4px;
+}
+/* line 46, ../sass/partials/pages-spaces/_space-header-footer.scss */
+header#navbar .pane-search-form .input-group-btn {
+  display: none;
+}
 
-/* line 22, ../sass/partials/pages-spaces/_space-header-footer.scss */
+/* line 51, ../sass/partials/pages-spaces/_space-header-footer.scss */
 footer.footer.navbar .panel-pane {
   margin-bottom: 0;
   float: left;
 }
-/* line 26, ../sass/partials/pages-spaces/_space-header-footer.scss */
-footer.footer.navbar .nav > li {
+/* line 55, ../sass/partials/pages-spaces/_space-header-footer.scss */
+footer.footer.navbar ul.nav {
+  margin: 15px 0;
+}
+/* line 57, ../sass/partials/pages-spaces/_space-header-footer.scss */
+footer.footer.navbar ul.nav > li {
   float: left;
 }
-/* line 28, ../sass/partials/pages-spaces/_space-header-footer.scss */
-footer.footer.navbar .nav > li a {
+/* line 59, ../sass/partials/pages-spaces/_space-header-footer.scss */
+footer.footer.navbar ul.nav > li a {
   color: white;
 }
-/* line 30, ../sass/partials/pages-spaces/_space-header-footer.scss */
+/* line 61, ../sass/partials/pages-spaces/_space-header-footer.scss */
+footer.footer.navbar ul.nav a:hover, footer.footer.navbar ul.nav a:focus {
+  text-decoration: none;
+  background-color: #000;
+}
+/* line 66, ../sass/partials/pages-spaces/_space-header-footer.scss */
 footer.footer.navbar .pane-ideal-main-openideal-credits {
   float: right;
+  color: #fff;
+  padding: 25px 0;
+}
+/* line 70, ../sass/partials/pages-spaces/_space-header-footer.scss */
+footer.footer.navbar .pane-ideal-main-openideal-credits a {
+  font-weight: bold;
+  color: #028cbb;
 }
 
 /*-----------------------------------------------
@@ -809,81 +866,126 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 -----------------------------------------------*/
 /* ------------------------------------------------- layout -------------------------------------------------- */
 /* line 9, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
-body.node-type-challenge .panel-panel.left.col-lg-9, body.node-type-idea .panel-panel.left.col-lg-9 {
-  width: 63%;
+body.node-type-challenge #panel-bootstrap-column-main, body.node-type-idea #panel-bootstrap-column-main {
+  padding-right: 58px;
+  margin-left: 15px;
+  width: 64.6%;
 }
-/* line 12, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
-body.node-type-challenge .panel-panel.right.col-lg-3, body.node-type-idea .panel-panel.right.col-lg-3 {
-  width: 37%;
-  padding-left: 32px;
+/* line 16, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge #panel-bootstrap-column-main .pane-ideal-challenge-challenge-add-idea-button, body.node-type-idea #panel-bootstrap-column-main .pane-ideal-challenge-challenge-add-idea-button {
+  padding: 0;
+  width: 140px;
 }
-/* line 17, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 19, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge #panel-bootstrap-column-main .pane-ideal-challenge-challenge-add-idea-button a.btn.btn-success, body.node-type-idea #panel-bootstrap-column-main .pane-ideal-challenge-challenge-add-idea-button a.btn.btn-success {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 7px 0 11px 0px;
+  line-height: 15px;
+}
+/* line 24, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge #panel-bootstrap-column-main .pane-ideal-challenge-challenge-add-idea-button a.btn.btn-success:before, body.node-type-idea #panel-bootstrap-column-main .pane-ideal-challenge-challenge-add-idea-button a.btn.btn-success:before {
+  top: 6px;
+  font-weight: normal;
+  font-size: 24px;
+}
+/* line 33, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 body.node-type-challenge #panel-bootstrap-region-center, body.node-type-idea #panel-bootstrap-region-center {
-  width: 95%;
-  margin-right: 35px;
+  margin-bottom: 20px;
   background-color: #f3f3f3;
 }
-/* line 22, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
-body.node-type-challenge .panel-pane, body.node-type-idea .panel-pane {
-  margin-bottom: 15px;
+/* line 37, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge #panel-bootstrap-region-content_bottom, body.node-type-idea #panel-bootstrap-region-content_bottom {
+  padding: 0;
 }
-/* line 25, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
-body.node-type-challenge .pane-node-title, body.node-type-idea .pane-node-title {
+/* line 41, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge .panel-pane, body.node-type-idea .panel-pane {
+  margin-bottom: 17px;
+}
+/* line 45, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge .pane-node-title h3, body.node-type-idea .pane-node-title h3 {
+  margin: 12px 0 0 0;
   font-size: 30px;
 }
-/* line 28, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 50, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 body.node-type-challenge .pane-user-picture, body.node-type-idea .pane-user-picture {
   float: left;
   margin: 5px 10px 5px 5px;
-  width: 50px;
+  width: 35px;
 }
-/* line 33, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 55, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 body.node-type-challenge .pane-node-author, body.node-type-idea .pane-node-author {
   background: #e0e0e0;
-  height: 60px;
+  height: 45px;
+  margin-bottom: 22px;
+  padding-left: 10px;
 }
-/* line 37, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 60, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge .pane-node-author .username, body.node-type-idea .pane-node-author .username {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 13px;
+}
+/* line 67, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 body.node-type-challenge .pane-node-field-moderator, body.node-type-idea .pane-node-field-moderator {
   float: right;
-  margin-top: -60px;
-  margin-right: 140px;
+  margin-top: -52px;
+  margin-right: 100px;
+  font-size: 13px;
 }
 /* line 30, ../sass/partials/_mixins.scss */
 body.node-type-challenge .pane-node-field-moderator .field-item:before, body.node-type-idea .pane-node-field-moderator .field-item:before {
   font-family: "OpenIdeal";
   content: "\e604";
   margin-right: 7px;
-  font-size: 24px;
 }
-/* line 43, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 74, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 body.node-type-challenge .pane-node-field-share, body.node-type-idea .pane-node-field-share {
   float: right;
-  margin-top: -60px;
-  margin-right: 62px;
+  margin-top: -57px;
+  margin-right: 13px;
+  color: #028cbb;
+}
+/* line 79, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge .pane-node-field-share .pane-title, body.node-type-idea .pane-node-field-share .pane-title {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
 }
 /* line 30, ../sass/partials/_mixins.scss */
 body.node-type-challenge .pane-node-field-share .pane-title:before, body.node-type-idea .pane-node-field-share .pane-title:before {
   font-family: "OpenIdeal";
   content: "\e60d";
   margin-right: 7px;
-  font-size: 24px;
+  font-size: 19px;
 }
-/* line 48, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 84, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge .pane-node-field-share .pane-title:before, body.node-type-idea .pane-node-field-share .pane-title:before {
+  font-weight: normal;
+  position: relative;
+  top: 3px;
+}
+/* line 90, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 body.node-type-challenge .pane-node-field-share .pane-content, body.node-type-idea .pane-node-field-share .pane-content {
   display: none;
 }
-/* line 53, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 92, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+body.node-type-challenge .pane-node-body, body.node-type-idea .pane-node-body {
+  line-height: 22px;
+}
+/* line 96, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 body.node-type-challenge .pane-node-field-attachments .pane-title, body.node-type-idea .pane-node-field-attachments .pane-title {
   font-size: 20px;
   margin-bottom: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid;
 }
-/* line 60, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 103, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 body.node-type-challenge .pane-node-comment-form, body.node-type-challenge .pane-node-comments, body.node-type-idea .pane-node-comment-form, body.node-type-idea .pane-node-comments {
   clear: both;
 }
-/* line 64, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 107, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 body.node-type-challenge .pane-node-comments .user-picture, body.node-type-idea .pane-node-comments .user-picture {
   float: left;
   margin: 0 10px 10px 0;
@@ -891,14 +993,30 @@ body.node-type-challenge .pane-node-comments .user-picture, body.node-type-idea 
   height: 36px;
   border: 1px solid;
 }
-/* line 71, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 114, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 body.node-type-challenge .pane-node-comments .permalink, body.node-type-challenge .pane-node-comments .submitted, body.node-type-challenge .pane-node-comments .field-name-field-vote, body.node-type-idea .pane-node-comments .permalink, body.node-type-idea .pane-node-comments .submitted, body.node-type-idea .pane-node-comments .field-name-field-vote {
   display: none;
 }
 
 /* ------------------------------- pane-ideal-challenge-challenge-add-idea-button --------------------------- */
-/* line 78, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
-.pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success {
+/* line 124, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-custom .add-idea,
+.pane-ideal-challenge-challenge-add-idea-button .add-idea {
+  color: #fff;
+  background-color: #43ac6a;
+  border-color: #3c9a5f;
+  text-align: center;
+}
+/* line 129, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-custom .add-idea:hover,
+.pane-ideal-challenge-challenge-add-idea-button .add-idea:hover {
+  background-color: #388f58;
+  border-color: #2b6e44;
+}
+/* line 134, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-custom .challenge-add-idea-button a.btn-success, .pane-custom .add-idea,
+.pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success,
+.pane-ideal-challenge-challenge-add-idea-button .add-idea {
   display: inline-block;
   width: 100%;
   font-size: 27px;
@@ -906,21 +1024,25 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   border-radius: 0;
 }
 /* line 30, ../sass/partials/_mixins.scss */
-.pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success:before {
+.pane-custom .challenge-add-idea-button a.btn-success:before, .pane-custom .add-idea:before,
+.pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success:before,
+.pane-ideal-challenge-challenge-add-idea-button .add-idea:before {
   font-family: "OpenIdeal";
   content: "\e60c";
   margin-right: 7px;
   font-size: 28px;
 }
-/* line 85, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
-.pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success:before {
+/* line 141, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+.pane-custom .challenge-add-idea-button a.btn-success:before, .pane-custom .add-idea:before,
+.pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success:before,
+.pane-ideal-challenge-challenge-add-idea-button .add-idea:before {
   top: 2px;
   position: relative;
   margin-right: 10px;
 }
 
 /* ----------------------------------- pane-ideal-challenge-challenge-data ---------------------------------- */
-/* line 96, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 152, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-challenge-challenge-data .pane-title {
   background-color: #028cbb;
   color: white;
@@ -937,11 +1059,11 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   margin-right: 7px;
   font-size: 19px;
 }
-/* line 99, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 155, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-challenge-challenge-data .pane-title:before {
   margin-right: 13px;
 }
-/* line 103, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 159, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-challenge-challenge-data .pane-content {
   background-color: #028cbb;
   color: white;
@@ -949,20 +1071,20 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   width: 100%;
   padding: 0 10px 10px 10px;
 }
-/* line 109, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 165, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-challenge-challenge-data .pane-content a {
   color: white;
 }
-/* line 110, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 166, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row {
   margin-right: 0;
   margin-left: 0;
 }
-/* line 113, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 169, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row .col-xs-4 {
   padding: 0 5px;
 }
-/* line 117, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 173, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-challenge-challenge-data .pane-content #challenge-dates .badge {
   background-color: #016ca2;
   color: white;
@@ -970,56 +1092,56 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   border-radius: 30px;
   padding: 7px 0 12px 0;
 }
-/* line 123, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 179, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-challenge-challenge-data .pane-content #challenge-dates .badge .challenge-date-value {
   margin: 0;
   font-weight: bold;
   font-size: 29px;
 }
-/* line 128, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 184, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-challenge-challenge-data .pane-content #challenge-dates .badge .challenge-date-label {
   font-size: 15px;
 }
-/* line 132, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 188, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-challenge-challenge-data .pane-content #challenge-dates-start-end {
   margin: 9px 7px 0 7px;
 }
 
-/* line 139, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 195, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-views-ideas-in-challenge-block .views-field-field-idea-image {
   background: red;
   float: left;
   width: 40px;
   margin: 0 10px 10px 0;
 }
-/* line 144, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 200, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-views-ideas-in-challenge-block .views-field-field-idea-image img {
   visibility: hidden;
 }
-/* line 146, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 202, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-views-ideas-in-challenge-block .views-field-body {
   clear: both;
 }
-/* line 149, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 205, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-views-ideas-in-challenge-block .views-field-created {
   float: left;
   margin-right: 5px;
 }
-/* line 153, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 209, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-views-ideas-in-challenge-block .views-field-name {
   float: left;
 }
-/* line 157, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 213, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-views-ideas-in-challenge-block .views-field-field-vote .clear-block {
   display: none;
 }
-/* line 158, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 214, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-views-ideas-in-challenge-block .views-field-field-vote .vote-current-score {
   padding: 0;
   line-height: 1;
   font-size: 0;
 }
-/* line 162, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 218, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-views-ideas-in-challenge-block .views-field-field-vote .vote-current-score strong {
   font-size: 13px;
 }
@@ -1033,7 +1155,7 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
 }
 
 /* -------------------------------------- pane-ideal-blocks-idea-*-stats ------------------------------------ */
-/* line 175, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 231, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-blocks-idea-stats .pane-title,
 .pane-ideal-blocks-challenge-stats .pane-title,
 .pane-ideal-blocks-ideal-key-stats .pane-title {
@@ -1045,13 +1167,13 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   padding: 11px 12px;
   font-size: 20px;
 }
-/* line 180, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 236, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-blocks-idea-stats .pane-content,
 .pane-ideal-blocks-challenge-stats .pane-content,
 .pane-ideal-blocks-ideal-key-stats .pane-content {
   overflow: hidden;
 }
-/* line 183, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 239, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-blocks-idea-stats .pane-content .row.top .count,
 .pane-ideal-blocks-challenge-stats .pane-content .row.top .count,
 .pane-ideal-blocks-ideal-key-stats .pane-content .row.top .count {
@@ -1061,14 +1183,14 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   font-weight: bold;
   margin: 9px 0;
 }
-/* line 189, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 245, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-blocks-idea-stats .pane-content .row.top .count:before,
 .pane-ideal-blocks-challenge-stats .pane-content .row.top .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content .row.top .count:before {
   margin-right: 11px;
   font-weight: normal;
 }
-/* line 193, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 249, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-blocks-idea-stats .pane-content .row.top .count .name,
 .pane-ideal-blocks-challenge-stats .pane-content .row.top .count .name,
 .pane-ideal-blocks-ideal-key-stats .pane-content .row.top .count .name {
@@ -1096,7 +1218,7 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   margin-right: 7px;
   font-size: 55px;
 }
-/* line 208, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 264, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-blocks-idea-stats .pane-content table.counts,
 .pane-ideal-blocks-challenge-stats .pane-content table.counts,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts {
@@ -1104,14 +1226,14 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   margin-top: 7px;
   border-top: 1px solid #d5d5d5;
 }
-/* line 212, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 268, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-blocks-idea-stats .pane-content table.counts .col,
 .pane-ideal-blocks-challenge-stats .pane-content table.counts .col,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts .col {
   padding-top: 10px;
   padding-bottom: 17px;
 }
-/* line 216, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 272, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-blocks-idea-stats .pane-content table.counts .col + .col,
 .pane-ideal-blocks-challenge-stats .pane-content table.counts .col + .col,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts .col + .col {
@@ -1129,7 +1251,7 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   font-size: 22px;
   color: #43ac6a;
 }
-/* line 222, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 278, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-blocks-idea-stats .pane-content table.counts .count,
 .pane-ideal-blocks-challenge-stats .pane-content table.counts .count,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts .count {
@@ -1138,7 +1260,7 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   line-height: 1;
   margin: 0;
 }
-/* line 227, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
+/* line 283, ../sass/partials/pages-spaces/_challenge-inner-page.scss */
 .pane-ideal-blocks-idea-stats .pane-content table.counts .count:before,
 .pane-ideal-blocks-challenge-stats .pane-content table.counts .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts .count:before {
@@ -1281,18 +1403,33 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
 /*-----------------------------------------------
                    Idea list - page
 -----------------------------------------------*/
+/* line 7, ../sass/partials/pages-spaces/_idea-list-page.scss */
+body.page-ideas .page-header {
+  display: none;
+}
 /* line 10, ../sass/partials/pages-spaces/_idea-list-page.scss */
+body.page-ideas #panel-bootstrap-region-center {
+  width: 63.3%;
+  margin-right: 3.3%;
+}
+
+/* line 17, ../sass/partials/pages-spaces/_idea-list-page.scss */
+.pane-quicktabs-all-ideas .pane-title {
+  margin: 0 0 15px 0;
+}
+/* line 20, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .pane-quicktabs-all-ideas ul.quicktabs-tabs {
   border-bottom: 1px solid #d5d5d5;
-  padding: 0 0 5px 0;
+  padding: 0;
+  height: 30px;
   margin-bottom: 35px;
 }
-/* line 14, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 25, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .pane-quicktabs-all-ideas ul.quicktabs-tabs li {
   margin: 0 40px 0 0;
   padding: 0;
 }
-/* line 17, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 28, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .pane-quicktabs-all-ideas ul.quicktabs-tabs li a {
   font-weight: normal;
   font-size: 16px;
@@ -1300,8 +1437,8 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   display: inline-block;
   padding-bottom: 4px;
 }
-/* line 25, ../sass/partials/pages-spaces/_idea-list-page.scss */
-.pane-quicktabs-all-ideas ul.quicktabs-tabs li:hover a {
+/* line 36, ../sass/partials/pages-spaces/_idea-list-page.scss */
+.pane-quicktabs-all-ideas ul.quicktabs-tabs li:hover a, .pane-quicktabs-all-ideas ul.quicktabs-tabs li.active a {
   border-bottom: 4px solid #d5d5d5;
 }
 
@@ -1309,19 +1446,19 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
                Challenges list - page
 -----------------------------------------------*/
 /* ------------------------------------------- view-challenges-list ----------------------------------------- */
-/* line 44, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 55, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .view-ideas-all .views-row {
   background: #f3f3f3;
   overflow: hidden;
   padding: 15px 15px 0px 18px;
   color: black;
 }
-/* line 49, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 60, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .view-ideas-all .views-row .row {
   margin-right: -17px;
   margin-left: -17px;
 }
-/* line 52, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 63, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .view-ideas-all .views-row .row:before {
   top: -12px;
   position: absolute;
@@ -1333,16 +1470,16 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   border: 6px solid transparent;
   border-bottom: 6px solid black;
 }
-/* line 59, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 70, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .view-ideas-all .views-row + .views-row {
   margin-top: 38px;
 }
-/* line 62, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 73, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .view-ideas-all .views-field-field-idea-image {
   margin: 3px 20px 15px 0px;
   float: left;
 }
-/* line 65, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 76, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .view-ideas-all .views-field-title {
   font-size: 26px;
   border-bottom: 1px solid #B8B8B8;
@@ -1350,26 +1487,26 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   padding-bottom: 10px;
   margin-left: 240px;
 }
-/* line 71, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 82, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .view-ideas-all .views-field-title h3 {
   margin: 0;
 }
-/* line 72, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 83, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .view-ideas-all .views-field-title a {
   color: black;
 }
-/* line 74, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 85, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .view-ideas-all .views-field-body {
   line-height: 21px;
   margin-bottom: 15px;
 }
-/* line 77, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 88, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .view-ideas-all .views-field-body p {
   margin: 0;
 }
 
 /* ----------------------------------------- pane-views-activity-block -------------------------------------- */
-/* line 85, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 96, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .pane-views-activity-block .pane-title {
   background-color: #028cbb;
   color: white;
@@ -1377,11 +1514,11 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   font-size: 26px;
   margin: 0;
 }
-/* line 88, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 99, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .pane-views-activity-block .pane-content {
   margin-top: 15px;
 }
-/* line 90, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 101, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .pane-views-activity-block .pane-content .views-row {
   display: inline-block;
   width: 100%;
@@ -1389,17 +1526,17 @@ body.node-type-challenge .pane-node-comments .permalink, body.node-type-challeng
   line-height: 15px;
   color: black;
 }
-/* line 96, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 107, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .pane-views-activity-block .pane-content .views-row a {
   color: black;
 }
-/* line 97, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 108, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .pane-views-activity-block .pane-content .views-row .user-image {
   width: 36px;
   float: left;
   margin: 1px 10px 0 0;
 }
-/* line 103, ../sass/partials/pages-spaces/_idea-list-page.scss */
+/* line 114, ../sass/partials/pages-spaces/_idea-list-page.scss */
 .pane-views-activity-block .pane-content .views-row + .views-row {
   padding-top: 12px;
   margin-top: 12px;

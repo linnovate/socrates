@@ -5,49 +5,92 @@
 
 /* ------------------------------------------------- layout -------------------------------------------------- */
 
-body.node-type-challenge, body.node-type-idea{
-	.panel-panel.left.col-lg-9 {
-		width: $column-left;
-	}
-	.panel-panel.right.col-lg-3 {
-		width: $sidebar-right;
-		padding-left: 32px;
-	}
+body.node-type-challenge, body.node-type-idea {
+	#panel-bootstrap-column-main {
+		
+		padding-right: 58px;
+		margin-left: 15px;
+		width: 64.6%;
+		.region {  }
 
+		.pane-ideal-challenge-challenge-add-idea-button {
+			padding: 0;
+			width: 140px;
+			a.btn.btn-success{
+				font-size: 15px;
+				font-weight: bold;
+				padding: 7px 0 11px 0px;
+				line-height: 15px;
+				&:before {
+					top: 6px;
+					font-weight: normal;
+					font-size: 24px;
+				}
+			}
+		} 
+
+	}
 	#panel-bootstrap-region-center {
-		width: 95%;
-		margin-right: 35px;
+		margin-bottom: 20px;
 		background-color: $light-gray;
 	}
+	#panel-bootstrap-region-content_bottom {
+		padding: 0;
+	}
+
 	.panel-pane {
-		margin-bottom: 15px;
+		margin-bottom: 17px;
 	}
 	.pane-node-title {
-		font-size: 30px;
+		h3 {
+			margin: 12px 0 0 0;
+			font-size: 30px;
+		}
 	}
 	.pane-user-picture {
 		float: left;
 		margin: 5px 10px 5px 5px;
-		width: 50px;
+		width: 35px;
 	}
 	.pane-node-author {
 		background: rgb(224, 224, 224);
-		height: 60px;
+		height: 45px;
+		margin-bottom: 22px;
+		padding-left: 10px;
+		.username {
+			display: inline-block;
+			margin-top: 12px;
+			font-weight: bold;
+			font-size: 13px;
+		}
 	}
 	.pane-node-field-moderator {
 		float: right;
-		margin-top: -60px;
-		margin-right: 140px;
-		.field-item { @include mixin-font-icon('\e604',24px); }
+		margin-top: -52px;
+		margin-right: 100px;
+		font-size: 13px;
+		.field-item { @include mixin-font-icon('\e604'); }
 	}
 	.pane-node-field-share {
 		float: right;
-		margin-top: -60px;
-		margin-right: 62px;
-		.pane-title { @include mixin-font-icon('\e60d',24px); }
-		.pane-content {
-			display:none;
+		margin-top: -57px;
+		margin-right: 13px;
+		color: $blue;
+		.pane-title { 
+			font-size: 13px;
+			font-weight: bold;
+			margin: 0;
+			@include mixin-font-icon('\e60d',19px);
+			&:before {
+				font-weight: normal;
+				position: relative;
+				top: 3px;
+			}
 		}
+		.pane-content { display:none;	}
+	}
+	.pane-node-body {
+		line-height: 22px;
 	}
 	.pane-node-field-attachments {
 		.pane-title {
@@ -74,8 +117,21 @@ body.node-type-challenge, body.node-type-idea{
 
 /* ------------------------------- pane-ideal-challenge-challenge-add-idea-button --------------------------- */
 
+
+
+.pane-custom,
 .pane-ideal-challenge-challenge-add-idea-button {
-	.challenge-add-idea-button a.btn-success {
+	.add-idea {
+		color: #fff;
+		background-color: #43ac6a;
+		border-color: #3c9a5f;
+		text-align: center;
+		&:hover {
+			background-color: #388f58;
+			border-color: #2b6e44;
+		}
+	}
+	.challenge-add-idea-button a.btn-success,.add-idea {
 		display: inline-block;
 		width: 100%;
 		font-size: 27px;
