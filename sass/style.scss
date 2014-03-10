@@ -1,6 +1,6 @@
 
 /* #############################################
- * ##### Socrates - drupal theming. #####
+ * #####    Socrates - drupal theming.     #####
  * #############################################
  *  
  * Socrates theme main stylesheet.
@@ -9,13 +9,11 @@
  *  ----------- 
  *  1. Imports
  *
- *  2. Space: Layout
+ *  2. General
  *
- *  3. Space: Header / footer
+ *  3. Spaces
  *
- *  4. Elements
- *
- *  5. Blocks
+ *  4. Pages
  *
  */
 
@@ -23,69 +21,35 @@
                    Imports
 -----------------------------------------------*/
 
-@import "partials/settings";
+@import "settings";
 
-@import "partials/mixins"; 
+@import "mixins"; 
  
-@import "partials/block-elements/elements";
-
-@import "partials/block-elements/blocks"; 
-
-
-
 /*-----------------------------------------------
-                   Space: Layout
+                   General
 -----------------------------------------------*/
 
-@import "partials/pages-spaces/space-layout";
+@import "partials/general-elements";
 
-//@include space-layout-general;
-
-//@include space-layout-general-responsive;
-
-
+@import "partials/general-blocks"; 
 
 /*-----------------------------------------------
-               Space: Header / footer
+                   Spaces
 -----------------------------------------------*/
 
-@import "partials/pages-spaces/space-header-footer";
+@import "partials/space-layout";
 
-
+@import "partials/space-header-footer";
 
 /*-----------------------------------------------
-                   Elements
+                    Pages
 -----------------------------------------------*/
 
-//@include element-disable-responsive;
+@import "partials/front-page";
 
-//@include element-img-reads;
+@import "partials/list-pages";
 
-
-
-/*-----------------------------------------------
-                     Blocks
------------------------------------------------*/
-
-//@include block-push_newsflash_wrapper;
-
-//@include block-pane-bar-index;
-
-
-
-/*-----------------------------------------------
-                      Pages
------------------------------------------------*/
-
-@import "partials/pages-spaces/front-page";
-
-@import "partials/pages-spaces/challenge-inner-page";
-
-@import "partials/pages-spaces/challenge-list-page.scss";
-
-@import "partials/pages-spaces/idea-list-page.scss";
-
-@import "partials/pages-spaces/idea-inner-page.scss";
+@import "partials/inner-pages";
 
 /*-----------------------------------------------
                        END

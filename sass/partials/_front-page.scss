@@ -1,0 +1,286 @@
+
+/*-----------------------------------------------
+                   Front - page
+-----------------------------------------------*/
+
+/* ------------------------------------ pane-views-default-challenge-block ---------------------------------- */
+
+.pane-views-default-challenge-block {
+  .carousel-indicators {
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    bottom: auto;
+    li {
+      border-radius: 0;
+      border: 0;
+      background-color: gray;
+      width: 8px;
+      height: 8px;
+      margin: 0 -1px 0 0;
+      &.active {
+        width: 8px;
+        height: 8px;
+        margin: 0 -1px 0 0;
+        background-color: $blue;
+      }
+    }
+  }
+  .views-field-field-challenge-image img { width: 100%; }
+  .text {
+    padding: 0px 15px;
+    height: 100%;
+    width: 41%;
+    padding: 22px 23px;
+    position: absolute;
+    color: white;
+    h2 &, h5 { color: $text-white; }
+    .title { font-size: 29px;  margin-bottom: 15px; }
+    .summary { line-height: 22px; }
+  }  
+}
+
+/* --------------------------------- pane-views-challenges-featured-front-block ----------------------------- */
+
+.pane-views-challenges-featured-front-block {
+  .pane-title { 
+    @include mixin-pane-title(text);
+  }
+  .view-all {
+    float: right;
+    margin-top: -40px;
+    color: black;
+  }
+  .row {
+    margin: 0px -6px;
+    > .col {
+      padding-right: 6px;
+      padding-left: 6px;
+      &:hover {
+        .caption { display: none;  }
+        .mouseover { display: block; }
+      }
+    }
+    .views-field-field-challenge-image img { width: 100%; }
+    .caption { width: auto;  margin: 0 3%;  }
+    .mouseover {
+      display: none;
+      margin: 0px 3%;
+      padding: 0px 9px;
+      width: auto;
+      top: 0;
+      .content {
+        max-height: 85%; 
+        overflow: hidden;
+        .body { font-size: 14px; line-height: 20px;  }
+      }
+      .read-more {
+        position: absolute;
+        bottom: 9px;
+        right: 14px;
+        font-size: 13px;
+        a { color: $blue; }
+      }
+    }
+  }
+}
+
+/* ----------------------------------- pane-views-highlighted-content-block --------------------------------- */
+
+.pane-views-highlighted-content-block {
+  .pane-title {
+    @include mixin-pane-title(block);
+  }
+  .pane-content {
+    background: $light-gray;
+    padding: 16px 9px;
+    margin-bottom: 10px;
+    .views-row {
+      padding-left: 30px;
+    }
+    .views-row + .views-row {
+      padding-top: 15px;
+      margin-top: 15px;
+      border-top: 1px solid $light-border;
+    }
+    .views-field-type {
+      @include mixin-font-icon('\e606',24px,$blue);
+      margin: -3px 0 0 -28px;
+      .field-content { display: none; }
+      &.Challenge { @include mixin-font-icon('\e609',24px,$blue); }
+      //&.News { @include mixin-font-icon('\e600',24px,$blue); }
+      //&.Article { @include mixin-font-icon('\e600',24px,$blue); }
+      &.Iead { @include mixin-font-icon('\e60c',24px,$blue); }
+    }
+    .views-field-title {
+      font-weight: bold;
+      float: left;
+      margin-right: 5px;
+      color: black;
+      a { color: black; }
+    }
+    .views-field-body {
+      line-height: 21px;
+    }
+  }
+}
+
+/* --------------------------------- pane-panels-mini.pane-latest-and-greatest ------------------------------ */
+
+.pane-panels-mini.pane-latest-and-greatest {
+  #mini-panel-latest_and_greatest > .row {
+    margin-right: -10px; 
+    margin-left: -10px;
+    .column { padding-right: 10px; padding-left: 10px; }
+  }
+  .pane-title { 
+    //sub titles
+    border-bottom: 1px solid $light-border;
+    padding: 0 0 9px 0;
+    margin: 7px 0px 0px 0px;
+    font-size: 19px;
+    &:before { margin-right: 7px; }
+  }
+  >.pane-title {
+    //main title
+    @include mixin-pane-title(text);
+    margin-bottom: 0;
+  }
+  .pane-content {
+    margin-top: 10px;
+    .views-row {
+      display: inline-block;
+      width: 100%;
+      font-size: 14px;
+      line-height: 15px;
+      color: $black;
+      a { color: $black; }
+      .user-image{
+        width: 36px;
+        float: left;
+        margin: 1px 10px 0px 0;
+      }
+    }
+    .views-row + .views-row { margin-top: 20px; }
+  }
+  .pane-views-activity-block-1 .pane-title { 
+    @include mixin-font-icon('\e602',24px,$blue);
+  }
+  .pane-views-activity-block-2 .pane-title {
+    @include mixin-font-icon('\e60c',24px,$blue);
+  }
+  .pane-views-activity-block-3 .pane-title {
+    @include mixin-font-icon('\e606',24px,$blue);
+  }
+}
+
+/* ------------------------------------------ pane-comment-recent ------------------------------------------- */
+
+.pane-comment-recent {
+  .pane-title {
+    @include mixin-pane-title(block);
+  }
+}
+
+/* ---------------------------------------------- pane-custom ----------------------------------------------- */
+
+.pane-custom {
+  .pane-title {
+    @include mixin-pane-title(block);
+  }
+}
+
+/* --------------------------------- pane-views-head-to-head-ideas-block  ----------------------------------- */
+
+.pane-views-head-to-head-ideas-block {
+  .pane-title {
+    @include mixin-pane-title(text);
+  }
+  .pane-content {
+    position: relative;
+    .view-header { margin-bottom: 15px; }
+    .view-content {
+      border-top: 5px solid black;
+      .row {
+        margin-right: -6px;
+        margin-left: -6px;
+        .col { padding: 6px; }
+      }
+      .col .thumbnail {
+        padding: 10px;
+        background-color: $light-gray;
+        border-radius: 0;
+        border: 0;
+        .views-field {
+          margin-bottom: 15px; 
+        }
+        .views-field-field-vote{
+          .ajax-progress {
+            .glyphicon{
+              margin: 0;
+              &:before { top: 0;  margin: 0; }
+            }
+          }
+          .alternate-votes-display {
+            @include mixin-font-icon('\e60c',24px,$blue);
+            border: 0;
+            height: auto;
+            float: left;
+            border-radius: 100px;
+            background-color: red;
+          }
+          .clear-block { float: left; }
+          .vote-current-score { 
+            float: left;
+            margin: -7px 0px 15px 10px;  
+          }
+          .voted-how { display:none; }
+        }
+        .views-field-title{
+          font-size: 20px;
+          line-height: 20px;
+          clear: both;
+          a{ color: $black; }
+        }
+        .views-field-field-idea-image {
+
+        }
+        .views-field-body {
+          font-size: 13px;
+          line-height: 15px;
+        }
+        .views-field-picture {
+          float: left;
+          margin: 4px 10px 0px 4px;
+          width: 35px;
+        }
+        .views-field-name {
+          background-color: rgb(218, 218, 218);
+          padding: 10px 10px 10px 51px;
+          min-height: 43px;
+          font-size: 14px;
+          a { color: $green; }
+        }
+      }
+    }
+    .view-footer {
+      position: absolute;
+      top: 54px;
+      left: 0;
+      right: 0;
+      width: 10px;
+      margin: 0 auto;
+      border-radius: 100px;
+      color: $green;
+      font-size: 25px;
+      background-color: white;
+      width: 47px;
+      padding: 3px 5px 7px 7px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+
