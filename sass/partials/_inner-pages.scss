@@ -19,7 +19,9 @@ body .panels-bootstrap-inner_page {
   #panel-bootstrap-region-content_bottom {
     padding: 0;
   }
-
+	#panel-bootstrap-region-sidebar {
+		padding: 0;
+	}
   .panel-pane {
     margin-bottom: 17px;
   }
@@ -54,9 +56,9 @@ body .panels-bootstrap-inner_page {
     }
   }
 
-  /* --- pane-node-field-moderator --- */
+  /* --- pane-node-field-status --- */
 
-  .pane-node-field-moderator {
+  .pane-node-field-status {
     float: right;
     margin-top: -52px;
     margin-right: 100px;
@@ -64,6 +66,22 @@ body .panels-bootstrap-inner_page {
     .field-item { @include mixin-font-icon('\e604'); }
   }
 
+  /* --- pane-node-field-status --- */
+
+  .pane-node-created {
+    float: right;
+    margin-top: -57px;
+    margin-right: 100px;
+    font-size: 13px;
+    .pane-content {
+			@include mixin-font-icon('\e607',16px); 
+			&:before {
+				margin-right: 5px;
+				top: 2px;
+				position: relative;
+      }
+		}
+	}
   /* --- pane-node-field-share --- */
 
   .pane-node-field-share {
@@ -85,15 +103,28 @@ body .panels-bootstrap-inner_page {
     .pane-content { display:none;  }
   }
 
+  /* --- pane-node-field-challenge-ref --- */
+
+  .pane-node-field-challenge-ref {
+		margin-bottom: 8px;
+		font-size: 19px;
+		font-weight: lighter;
+    .pane-title {
+			margin: 0 7px 0 0;
+			line-height: 25px;
+			float: left;
+		}
+  }
+
   /* --- pane-node-body --- */
 
   .pane-node-body {
     line-height: 22px;
   }
 
-  /* --- pane-node-field-attachments --- */
+  /* --- pane-node-field-idea-image --- */
 
-  .pane-node-field-attachments {
+  .pane-node-field-idea-image {
     .pane-title {
       font-size: 20px;
       margin-bottom: 5px;
@@ -218,15 +249,20 @@ body .panels-bootstrap-inner_page {
 .pane-views-ideas-in-challenge-block {
   .pane-title {
     @include mixin-pane-title(text);
-    @include mixin-font-icon('\e60c',27px,$green);
+    @include mixin-font-icon('\e619',27px,$green);
     &:before { margin-right: 12px;  top: 3px; position: relative; }
   }
+	ul { padding-left: 30px; }
   .views-row {
-    display: inline-block;
+		color: $green;
+		font-size: 20px;
+		> div { color: $black; font-size: 15px; }
     width: 100%;
-    margin-bottom: 30px;
-    padding-bottom: 2px;
     border-bottom: 1px solid $light-border;
+		list-style-type: decimal;
+		display: list-item;
+		margin-bottom: 20px;
+		padding-bottom: 5px;
     &.views-row-last { margin-bottom: 0; }
   }
   .views-field-field-idea-image {
@@ -249,12 +285,12 @@ body .panels-bootstrap-inner_page {
     margin-bottom: 12px;
   }
   .views-field-created {
-    float: left;
+    display: inline;
     margin-right: 5px;
     font-size: 13px;
   }
   .views-field-name {
-    float: left;
+    display: inline;
     font-size: 13px;
     font-weight: bold;
     margin-right: 12px;
@@ -263,7 +299,13 @@ body .panels-bootstrap-inner_page {
     }
   }
   .views-field-field-vote {
+		display: inline;
+		* { display: inline; }
     .clear-block { display: none; }
+		.vud-widget-thumbs {
+			margin: 5px 0;
+			float: none;
+		}
     .vote-current-score {
       padding: 0;
       line-height: 1;
@@ -282,7 +324,9 @@ body .panels-bootstrap-inner_page {
 -----------------------------------------------------------------------------*/
 
 
+.pane-node-field-vote {
 
+}
 
 
 

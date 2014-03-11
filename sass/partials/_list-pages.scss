@@ -92,7 +92,7 @@ body.page-ideas {
   .views-row {
     background: $light-gray;
     overflow: hidden;
-    padding: 15px 15px 0px 18px;
+    padding: 10px 18px 0px 13px;
     color: $black;
     .row {
       margin-right: -17px;
@@ -108,18 +108,27 @@ body.page-ideas {
     margin-top: 38px;
   }
   .views-field-field-idea-image {
-    padding: 3px 20px 15px 0;
+    padding: 3px 18px 15px 0;
     float: left;
     background: $light-gray;
   }
   .views-field-title {
-    font-size: 26px;
-    border-bottom: 1px solid $light-border;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+		font-size: 28px;
+		font-weight: lighter;
+		line-height: 1.2;
+		border-bottom: 1px solid #d5d5d5;
+		margin-bottom: 6px;
+		padding-bottom: 7px;
     h3 { margin: 0; }
     a { color: $black; }
   }
+	.views-field-title-1{
+		font-size: 19px;
+		font-weight: lighter;
+		line-height: 1.2;
+		margin-bottom: 18px;
+		a { color: $black; }
+	}
   .views-field-body {
     display: table;
     line-height: 21px;

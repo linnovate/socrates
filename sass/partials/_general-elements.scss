@@ -44,8 +44,8 @@ img {
 }
 
 .glyphicon-map-marker {
-  @include mixin-font-icon('\e60c',24px);
-  &:before { top: 5px; line-height: 0; }
+  @include mixin-font-icon('\e619',18px);
+  &:before { top: 3px; line-height: 0; }
 }
 
 .caption { @include mixin-image-label; }
