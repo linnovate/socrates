@@ -50,7 +50,7 @@ img {
 
 .caption { @include mixin-image-label; }
 
-.mouseover { @include mixin-image-label; }
+.mouseover { @include mixin-image-label; top: 0; display: none; }
 
 
 .page-header {
@@ -97,13 +97,28 @@ img {
        a { color: $blue; }
     }
   }
-  .moderator { margin-top: 12px; }
   .dates{ 
-    margin-top: 12px; font-size: 0; 
+    margin-top: 12px; font-size: 0;
     span { font-size: 13px; }
     span + span:before { content: '-'; margin: 0 4px; }
   }
-  .vote { display: none; }
+  //.vote { display: none; }
+  .vote {
+    .clear-block,.voted-how { display: none; }
+		.vud-widget-thumbs {
+			margin: 5px 0;
+			float: none;
+		}
+    .vote-current-score {
+      padding: 0;
+      line-height: 1;
+      font-size: 0;
+      strong {
+        font-size: 13px;   
+        @include mixin-font-icon('\e60f',13px,$green);
+      }
+    }
+  }
 }
 
 

@@ -113,6 +113,7 @@ body .panels-bootstrap-inner_page {
 			margin: 0 7px 0 0;
 			line-height: 25px;
 			float: left;
+			font-size: 19px;
 		}
   }
 
@@ -210,6 +211,7 @@ body .panels-bootstrap-inner_page {
     font-size: 20px;
   }
   .pane-content {
+		.well { color: $black;  }
     background-color: $blue;
     color: white;
     display: inline-block;
@@ -249,10 +251,11 @@ body .panels-bootstrap-inner_page {
 .pane-views-ideas-in-challenge-block {
   .pane-title {
     @include mixin-pane-title(text);
-    @include mixin-font-icon('\e619',27px,$green);
-    &:before { margin-right: 12px;  top: 3px; position: relative; }
+    @include mixin-font-icon('\e619',25px,$green);
+    &:before { margin: 0 5px 0 -6px; }
+		margin-bottom: 10px;
   }
-	ul { padding-left: 30px; }
+	ul { padding-left: 25px; }
   .views-row {
 		color: $green;
 		font-size: 20px;
@@ -261,30 +264,31 @@ body .panels-bootstrap-inner_page {
     border-bottom: 1px solid $light-border;
 		list-style-type: decimal;
 		display: list-item;
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 		padding-bottom: 5px;
     &.views-row-last { margin-bottom: 0; }
   }
-  .views-field-field-idea-image {
-    float: left;
+  div.views-field-field-idea-image {
+		display: inline-block;
     width: 36px;
     height: 36px;
     margin: 3px 10px 8px 0;
     img { visibility: hidden; }
   }
-  .views-field-title {
+  div.views-field-title {
+		display: inline;
     font-size: 19px;
     line-height: 22px;
     margin-bottom: 13px;
     a { color: $black; }
   }
-  .views-field-body {
+  div.views-field-body {
     clear: both;
     font-size: 13px;
     line-height: 15px;
     margin-bottom: 12px;
   }
-  .views-field-created {
+  div.views-field-created {
     display: inline;
     margin-right: 5px;
     font-size: 13px;
@@ -298,7 +302,7 @@ body .panels-bootstrap-inner_page {
       font-size: 12px; font-weight: normal; margin-right: 4px;
     }
   }
-  .views-field-field-vote {
+  div.views-field-field-vote {
 		display: inline;
 		* { display: inline; }
     .clear-block { display: none; }
@@ -325,10 +329,61 @@ body .panels-bootstrap-inner_page {
 
 
 .pane-node-field-vote {
+	display: inline-block;
+	width: 100%;
+	.pane-title,.element-invisible,.vote-current-score,.voted-how {
+		display: none;
+	}
 
+	.vud-widget-thumbs{ width: 100%; margin: 0; }
+	.clear-block {
+		width: 47%;
+		margin-right: 3%;
+		height: 56px;
+		padding: 15px;
+		text-align: center;
+		display: block;
+		background: $green;
+		.vote-thumb {
+			color: white; 
+			background: none;
+		  &:empty:before { display: block !important; }
+		}
+		&.up-score {
+			float: left;
+			.vote-thumb { @include mixin-font-icon('\e60f',21px); }
+		}
+		&.down-score {
+			float: right;
+			margin: 0;
+			.vote-thumb { @include mixin-font-icon('\e60e',21px); }
+		}
+	}
 }
 
-
+.pane-node-field-attachments {
+	margin-bottom: 38px;
+	clear: both;
+  .pane-title {
+    @include mixin-pane-title(block);
+    @include mixin-font-icon('\e610',19px);
+		margin: 0 0 15px 0;
+    &:before {  } 
+  }
+	.field-item {
+		font-size: 13px;
+		font-weight: bold;
+		img {  
+			height: 25px;
+			margin-left: -3px; 
+		}
+		+ .field-item {
+			border-top: 1px solid $light-border;
+			margin-top: 10px;
+			padding-top: 15px;
+		}
+	}
+}
 
 
 

@@ -30,6 +30,7 @@
     margin: 3px 20px 15px 0px;
   }
   .views-field-title {
+		margin-bottom: 15px;
     h3 { margin: 0; }
     a { color: $black; }
   }
@@ -38,6 +39,23 @@
     line-height: 21px;
     margin-bottom: 15px;
     p { margin: 0; }
+  }
+  .row-bottom-openideal {
+		.status {  max-width: 40px; }
+		.dates{ max-width: 40px; }
+    .count { max-width: 20px; }
+		&:before {
+			content: '';
+			width: 0;
+			height: 0;
+			display: block;
+			right: 50%;
+			top: -15px;
+			color: black;
+			position: absolute;
+			border: 8px solid transparent;
+			border-bottom: 8px solid $black;
+		}
   }
 }
 

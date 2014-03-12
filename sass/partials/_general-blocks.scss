@@ -3,6 +3,58 @@
                       Blocks
 -----------------------------------------------*/
 
+
+/* ----------------------------------------- pane-Featured Challenges
+ -------------------------------------- */
+
+.pane-views-f82b385d04a27538a1646ec3e53c5fef {
+  .pane-title {
+    @include mixin-pane-title(block);
+ 		@include mixin-font-icon('\e609',28px);
+		&:before { 
+		  top: 2px;
+		  position: relative;      
+		}
+  }
+	.pane-content {
+		position: relative;
+		img { width: 100% }
+		.caption {
+			padding: 9px 13px;
+			font-size: 19px;
+			line-height: 1.2;
+		}
+		.mouseover { 
+			padding: 5px 13px;
+			.content {
+				overflow: hidden;
+				max-height: 68%;
+			}
+			.body {		
+				font-size: 13px;
+				line-height: 20px;
+			}
+			.author {
+				bottom: 0;
+				position: absolute;
+				padding: 5px 10px;
+				min-height: 45px;
+				width: 100%;
+				margin-left: -13px;
+				background-color: rgba(0, 0, 0, 0.5);
+				color: $blue;
+				font-weight: bold;
+				a { color: $blue; }
+			}
+		}
+    &:hover {
+      .caption { display: none;  }
+      .mouseover { display: block; }
+    }
+	}
+} 
+
+
 /* ----------------------------------------- pane-custom - "Add-Idea" -------------------------------------- */
 
 .pane-custom  {
@@ -67,6 +119,7 @@
 .pane-ideal-blocks-idea-stats,
 .pane-ideal-blocks-challenge-stats,
 .pane-ideal-blocks-ideal-key-stats {
+	clear: both;
   .pane-title {
     @include mixin-pane-title(block);
     padding: 11px 12px;
