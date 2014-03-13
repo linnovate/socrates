@@ -28,23 +28,26 @@ img {
 } 
 
 .glyphicon-comment {
-  @include mixin-font-icon('\e608');
+  @include mixin-font-icon($comment);
 }
 
 .glyphicon-read {
-  @include mixin-font-icon('\e601',18px);
+	top: 0;
+  @include mixin-font-icon($eye,18px);
+  &:before { top: 3px; }
 }
 
 .glyphicon-th-list { 
-  @include mixin-font-icon('\e604');
+  @include mixin-font-icon($list);
 }
 
 .glyphicon-calendar { 
-  @include mixin-font-icon('\e607',16px); 
+  @include mixin-font-icon($calendar,16px); 
 }
 
+
 .glyphicon-map-marker {
-  @include mixin-font-icon('\e619',18px);
+  @include mixin-font-icon($light,18px);
   &:before { top: 3px; line-height: 0; }
 }
 
@@ -102,22 +105,30 @@ img {
     span { font-size: 13px; }
     span + span:before { content: '-'; margin: 0 4px; }
   }
-  //.vote { display: none; }
   .vote {
-    .clear-block,.voted-how { display: none; }
-		.vud-widget-thumbs {
-			margin: 5px 0;
-			float: none;
+	  .ajax-progress {
+	    .glyphicon{
+	      margin: 0;
+	      &:before { top: 0;  margin: 0; }
+	    }
+	  }
+		.vud-link-reset { display: none; }
+		.vud-widget-alternate { 
+			float: none; height: auto;
+			width: auto;
+			margin: 3px 0 0; 
 		}
-    .vote-current-score {
-      padding: 0;
-      line-height: 1;
-      font-size: 0;
-      strong {
-        font-size: 13px;   
-        @include mixin-font-icon('\e60f',13px,$green);
-      }
-    }
+		.alternate-votes-display {
+			font-size: 13px;
+			height: auto;
+			border: 0;
+			line-height: 1.1;
+			font-weight: bold;
+			font-family: Arial;
+			@include mixin-font-icon($vote,13px,$green);
+			&:before { position: relative; top: 1px; }
+		}
+		.up-active,.up-inactive {	display: none; }
   }
 }
 

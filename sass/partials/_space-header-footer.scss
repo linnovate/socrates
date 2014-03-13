@@ -69,10 +69,26 @@ footer.footer.navbar {
       background-color: #000;
     }
   }
+	.pane-social-links {
+		float: right;
+		a.social_link {
+			font-size: 0;
+			&:before {
+				font-size: 37px;
+				margin-right: 9px !important;
+				color: #D8D8D8;
+			}
+			&:hover:before { color: rgb(204, 200, 200); }
+  		&.facebook { @include mixin-font-icon($facebook-footer); }
+  		&.twitter { @include mixin-font-icon($twitter-footer); }
+  		&.google { @include mixin-font-icon($google-footer); }
+  		&.linkedin { @include mixin-font-icon($linkedin-footer);  margin-right: 0 !important; }
+		}
+	}
   .pane-ideal-main-openideal-credits {
     float: right;
+		clear: right;
     color: #fff;
-    padding: 25px 0;
     a {
       font-weight: bold;
       color: $blue;

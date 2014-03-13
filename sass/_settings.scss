@@ -3,8 +3,8 @@
              Grid & Layout settings
 -----------------------------------------------*/
 
-$column-left: 63%;
-$sidebar-right: 37%;
+//$column-left: 63%;
+//$sidebar-right: 37%;
  
 /*-----------------------------------------------
                    Typography
@@ -20,6 +20,69 @@ $sidebar-right: 37%;
   font-weight: normal;
   font-style: normal;
 }
+
+/*-----------------------------------------------
+                   Sprites
+-----------------------------------------------*/
+
+$icons-smart-layout:smart;
+@import "icons-smart/*.png";
+
+// fix url image-sprite
+.icons-smart-sprite{
+  background: url('../images/icons-smart-sc6718674dc.png') no-repeat;
+} 
+
+/*-----------------------------------------------
+                   Font icon
+-----------------------------------------------*/
+
+$comment: '\e608';
+
+$eye: '\e601';
+
+$list: '\e604';
+
+$calendar: '\e607';
+
+$light: '\e619';
+
+$vote: '\e60f';
+
+$vote-dislike: '\e60e';
+
+$idea: '\e60c';
+
+$user: '\e602';
+
+$challenge: '\e609';
+
+$discussions: '\e606';
+
+$share: '\e60d';
+
+$arrow-right: '\e60a';
+
+$arrow-left: '\e60b';
+
+$attachments: '\e610';
+
+
+$fb-like: '\e61a';
+
+$google: '\e61b';
+
+$linkedin: '\e61c';
+
+$twitter: '\e61d';
+
+$facebook-footer: '\e611';
+
+$twitter-footer: '\e612';
+
+$google-footer: '\e613';
+
+$linkedin-footer: '\e614';
 
 /*-----------------------------------------------
                    Colors

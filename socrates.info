@@ -48,8 +48,10 @@ settings[bootstrap_bootswatch] = 'yeti'
 ; ;;;;;;;;;;;;;;;;;;;;;
 ; ;; Scripts
 ; ;;;;;;;;;;;;;;;;;;;;;
-; 
-  scripts[] = 'socrates.js'
+;
+  scripts[] = 'scripts/jquery.bxslider.min.js'
+  scripts[] = 'scripts/socrates.js'
+
 ; scripts[] = 'bootstrap/js/affix.js'
 ; scripts[] = 'bootstrap/js/alert.js'
 ; scripts[] = 'bootstrap/js/button.js'

@@ -10,7 +10,7 @@
 .pane-views-f82b385d04a27538a1646ec3e53c5fef {
   .pane-title {
     @include mixin-pane-title(block);
- 		@include mixin-font-icon('\e609',28px);
+ 		@include mixin-font-icon($challenge,28px);
 		&:before { 
 		  top: 2px;
 		  position: relative;      
@@ -68,7 +68,7 @@
     font-size: 27px;
     padding: 8px 0;
     border-radius: 0;
-    @include mixin-font-icon('\e60c',28px);
+    @include mixin-font-icon($idea,28px);
     &:hover {
       background-color: #388f58;
       border-color: #2b6e44;
@@ -131,6 +131,7 @@
 			border-top: 1px solid $light-border;
 			border-bottom: 1px solid $light-border;	
 			margin-bottom: -7px;
+			padding-bottom: 5px;
 		}
     .top {
       float: none;
@@ -165,21 +166,22 @@
 					color: $black;  margin: 0; line-height: 1;
 				}
 		    &.idea-page .votes .count{
-		      @include mixin-font-icon('\e60f',43px,$green); 
+		      @include mixin-font-icon($vote,43px,$green); 
 		    }
 		    .dislikes {
+					display: none;
 					border-left: 1px solid $light-border; 
 					padding-left: 15px;
 					.count{
-		      	@include mixin-font-icon('\e60e',43px, #A8A8A8); 
+		      	@include mixin-font-icon($vote-dislike,43px, #A8A8A8); 
 					}
 		    }
 			}
       &.ideas .count{
-        @include mixin-font-icon('\e619',55px);
+        @include mixin-font-icon($light ,55px);
       }
       &.challenges .count{
-        @include mixin-font-icon('\e609',55px); 
+        @include mixin-font-icon($challenge,55px); 
       }
     }
     table.counts{
@@ -199,7 +201,6 @@
         border: solid $light-border;
         border-width: 0 0 0 1px;
         padding-left: 15px;
-        //.count{  @include mixin-font-icon('\e60f',22px,$green); }
       }
       .count {
         font-size: 28px;
@@ -211,18 +212,18 @@
           font-weight: normal;
         }
       }
-      .ideas .count{ @include mixin-font-icon('\e60c',22px,$green);  }
-      .users .count{ @include mixin-font-icon('\e602',22px,$green);  }
-      .votes .count{ @include mixin-font-icon('\e60f',22px,$green); }
+      .ideas .count{ @include mixin-font-icon($idea,22px,$green);  }
+      .users .count{ @include mixin-font-icon($user,22px,$green);  }
+      .votes .count{ @include mixin-font-icon($vote,22px,$green); }
       .views .count{
-				@include mixin-font-icon('\e601',28px,$green); 
+				@include mixin-font-icon($eye,28px,$green); 
 				&:before {
 					top: 3px;
 					position: relative;
 				}
 			}
-      .phase .count{ font-size: 26px; @include mixin-font-icon('\e604',18px,$green); }
-      .comments .count{ @include mixin-font-icon('\e608',22px,$green); }
+      .phase .count{ font-size: 26px; @include mixin-font-icon($list,18px,$green); }
+      .comments .count{ @include mixin-font-icon($comment,22px,$green); }
     }
   }
 }

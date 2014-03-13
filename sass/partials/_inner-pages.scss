@@ -63,7 +63,7 @@ body .panels-bootstrap-inner_page {
     margin-top: -52px;
     margin-right: 100px;
     font-size: 13px;
-    .field-item { @include mixin-font-icon('\e604'); }
+    .field-item { @include mixin-font-icon($list); }
   }
 
   /* --- pane-node-field-status --- */
@@ -74,7 +74,7 @@ body .panels-bootstrap-inner_page {
     margin-right: 100px;
     font-size: 13px;
     .pane-content {
-			@include mixin-font-icon('\e607',16px); 
+			@include mixin-font-icon($calendar,16px); 
 			&:before {
 				margin-right: 5px;
 				top: 2px;
@@ -85,22 +85,68 @@ body .panels-bootstrap-inner_page {
   /* --- pane-node-field-share --- */
 
   .pane-node-field-share {
+		cursor: default;
+		position: relative;
+		padding-bottom: 15px;
     float: right;
     margin-top: -57px;
     margin-right: 13px;
     color: $blue;
+		&:hover .pane-content { display: block; opacity: 1;  }
     .pane-title { 
       font-size: 13px;
       font-weight: bold;
       margin: 0;
-      @include mixin-font-icon('\e60d',19px);
+      @include mixin-font-icon($share,19px);
       &:before {
         font-weight: normal;
         position: relative;
         top: 3px;
       }
     }
-    .pane-content { display:none;  }
+    .pane-content { 
+			opacity: 0;
+			display:none;
+			-webkit-transition: all 200ms;
+			position: absolute;
+			top: 35px;
+			right: -13px;
+			width: 165px;
+			padding: 5px 15px;
+			background: #BDBDBD;
+			color: black;
+			.social-botton {
+				overflow: hidden;
+				display: inline-block;
+				width: 25px;
+				line-height: 1;
+				height: 25px;
+				&:before { position: absolute; }
+				iframe,.IN-widget { opacity: 0; }
+
+				// 1
+				@include mixin-font-icon($fb-like,25px);
+				&:hover { color: #050075; }
+
+			  // 2
+				+.social-botton { 
+					margin-left: 10px; 	@include mixin-font-icon($twitter,25px); 
+					&:hover { color: $blue; } 
+				} 
+
+				// 3 
+				+.social-botton + .social-botton { 
+					@include mixin-font-icon($google,25px); 
+					&:hover { color: red; }
+				}  
+
+				// 4
+				+.social-botton + .social-botton + .social-botton { 
+					@include mixin-font-icon($linkedin,25px); 
+					&:hover { color: #006081; } 
+				}  
+			}
+  	}
   }
 
   /* --- pane-node-field-challenge-ref --- */
@@ -128,10 +174,34 @@ body .panels-bootstrap-inner_page {
   .pane-node-field-idea-image {
     .pane-title {
       font-size: 20px;
-      margin-bottom: 5px;
+      margin-bottom: 12px;
       padding-bottom: 5px;
       border-bottom: 1px solid;
     }
+		.pane-content {  position: relative; }
+		.bx-prev,.bx-next {
+			position: absolute;
+			top: 45%; 
+			font-size: 0; 
+			&:before {
+				background: rgb(119, 117, 117);
+				font-family: 'OpenIdeal';
+				font-size: 16px;
+				color: #fff;
+			}
+		}
+		.bx-next { right: 0; }
+		.bx-next:before {
+			border-radius: 100px 0px 0 100px;
+			content: $arrow-right;
+			padding: 14px 3px 14px 7px;
+		}
+		.bx-prev:before {
+			border-radius: 0 100px 100px 0;
+			content: $arrow-left;
+			padding: 14px 7px 14px 3px;
+		}
+		
   }
 
   /* --- pane-node-comment-form --- */
@@ -173,7 +243,7 @@ body .panels-bootstrap-inner_page {
     font-size: 27px;
     padding: 8px 0;
     border-radius: 0;
-    @include mixin-font-icon('\e60c',28px);
+    @include mixin-font-icon($idea,28px);
     &:before { 
       top: 2px;
       position: relative;      
@@ -205,7 +275,7 @@ body .panels-bootstrap-inner_page {
   clear: both;
   .pane-title {
     @include mixin-pane-title(block);
-    @include mixin-font-icon('\e607',19px);
+    @include mixin-font-icon($calendar,19px);
     &:before { margin-right: 13px; }
     padding: 14px 13px;
     font-size: 20px;
@@ -251,7 +321,7 @@ body .panels-bootstrap-inner_page {
 .pane-views-ideas-in-challenge-block {
   .pane-title {
     @include mixin-pane-title(text);
-    @include mixin-font-icon('\e619',25px,$green);
+    @include mixin-font-icon($light,25px,$green);
     &:before { margin: 0 5px 0 -6px; }
 		margin-bottom: 10px;
   }
@@ -302,24 +372,67 @@ body .panels-bootstrap-inner_page {
       font-size: 12px; font-weight: normal; margin-right: 4px;
     }
   }
-  div.views-field-field-vote {
+
+	div.views-field-field-vote{
 		display: inline;
 		* { display: inline; }
-    .clear-block { display: none; }
-		.vud-widget-thumbs {
-			margin: 5px 0;
-			float: none;
-		}
-    .vote-current-score {
-      padding: 0;
-      line-height: 1;
-      font-size: 0;
-      strong {
-        font-size: 13px;   
-        @include mixin-font-icon('\e60f',13px,$green);
+    .ajax-progress {
+      .glyphicon{
+        margin: 0;
+        &:before { top: 0;  margin: 0; }
       }
     }
+		.vud-link-reset { display: none; }
+		.vud-widget-alternate { float: none; }
+		.alternate-votes-display {
+			font-size: 13px;
+			height: auto;
+			border: 0;
+			line-height: 1.1;
+			font-weight: bold;
+			font-family: Arial;
+			@include mixin-font-icon($vote,13px,$green);
+			&:before { position: relative; top: 1px; }
+		}
+		.up-active,.up-inactive {	display: none; }
   }
+	/*div.views-field-field-vote{
+		display: inline;
+		* { display: inline; }
+    .ajax-progress {
+      .glyphicon{
+        margin: 0;
+        &:before { top: 0;  margin: 0; }
+      }
+    }
+		.vud-link-reset {
+			display: none;
+		}
+		.vud-widget-alternate {
+			float: none; position: relative;
+		}
+		.alternate-votes-display {
+			font-size: 13px;
+			height: auto;
+			border: 1px solid $light-border;
+			border-radius: 20px;
+			padding: 1px 10px 2px 25px;
+			line-height: 1.1;
+			font-weight: bold;
+			font-family: Arial;
+		}
+		.up-active,.up-inactive {
+			position: absolute;
+			left: 5px;
+			top: 0px;
+			width: auto;	
+			display: inline-block;
+			background: none;
+			@include mixin-font-icon('\e605',13px,$green);
+			&:empty:before { display: inline-block !important; }
+		}
+		.up-active:before { color: #8DD5A8;  }
+  }*/
 }
 
 
@@ -329,13 +442,48 @@ body .panels-bootstrap-inner_page {
 
 
 .pane-node-field-vote {
+	margin: 0 0 -4px !important;
 	display: inline-block;
 	width: 100%;
-	.pane-title,.element-invisible,.vote-current-score,.voted-how {
+	.pane-title {
 		display: none;
 	}
+  .ajax-progress {
+    .glyphicon{
+      margin: 0;
+      &:before { top: 0;  margin: 0; }
+    }
+  }
+	.vud-link-reset {
+		display: none;
+	}
+	.vud-widget-alternate {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	}
+	.alternate-votes-display {
+		display: none;
+	}
+	.up-active,.up-inactive {	
+		margin-left: 0;
+		display: inline-block;
+		color: #fff;
+		padding: 10px;
+		height: 55px;
+		width: 100%;
+		background: $green;
+		@include mixin-font-icon($vote,22px, #fff);
+		&:empty:before { display: inline-block !important; }
+		&:after {
+			content: "Vote Up";
+			font-size: 25px;
+			font-weight: normal;
+		}
+	}
+	//.up-active { background: #8DD5A8;  }
 
-	.vud-widget-thumbs{ width: 100%; margin: 0; }
+	/*.vud-widget-thumbs{ width: 100%; margin: 0; }
 	.clear-block {
 		width: 47%;
 		margin-right: 3%;
@@ -358,30 +506,35 @@ body .panels-bootstrap-inner_page {
 			margin: 0;
 			.vote-thumb { @include mixin-font-icon('\e60e',21px); }
 		}
-	}
+	}*/
 }
 
 .pane-node-field-attachments {
-	margin-bottom: 38px;
+	margin-bottom: 38px !important;
 	clear: both;
   .pane-title {
     @include mixin-pane-title(block);
-    @include mixin-font-icon('\e610',19px);
+    @include mixin-font-icon($attachments,19px);
 		margin: 0 0 15px 0;
     &:before {  } 
   }
 	.field-item {
 		font-size: 13px;
 		font-weight: bold;
-		img {  
-			height: 25px;
-			margin-left: -3px; 
-		}
 		+ .field-item {
 			border-top: 1px solid $light-border;
 			margin-top: 10px;
 			padding-top: 15px;
 		}
+		a:before { 
+			content: ''; 
+			padding: 4px 10px;
+			margin-right: 10px;
+			@include icons-smart-sprite(DOC-S-icon);
+		}
+		a[type*='text']:before {  @include icons-smart-sprite(DOC-S-icon);  }
+		a[type*='pdf']:before {  @include icons-smart-sprite(PDF-S-icon);  }
+		img { display: none; }
 	}
 }
 
