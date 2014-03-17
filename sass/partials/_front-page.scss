@@ -162,6 +162,7 @@
     }
     .views-row + .views-row { margin-top: 20px; }
   }
+	.panel-pane { margin-bottom: 0; }
   .pane-views-activity-block-1 .pane-title { 
     @include mixin-font-icon($user,24px,$blue);
   }

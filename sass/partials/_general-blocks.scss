@@ -132,6 +132,8 @@
 			border-bottom: 1px solid $light-border;	
 			margin-bottom: -7px;
 			padding-bottom: 5px;
+			padding-bottom: 0px;
+			border-top: 0;
 		}
     .top {
       float: none;
@@ -156,6 +158,7 @@
       }
       &.idea-page {	
 				width: 100%;
+				display: none;
 				.votes, .dislikes{
 					padding-top: 10px;
 		   	}

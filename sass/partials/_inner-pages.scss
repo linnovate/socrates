@@ -15,6 +15,9 @@ body .panels-bootstrap-inner_page {
   #panel-bootstrap-region-center {
     margin-bottom: 20px;
     background-color: $light-gray;
+		.panel-pane {
+   		margin-bottom: 17px;
+  	}
   }
   #panel-bootstrap-region-content_bottom {
     padding: 0;
@@ -22,9 +25,6 @@ body .panels-bootstrap-inner_page {
 	#panel-bootstrap-region-sidebar {
 		padding: 0;
 	}
-  .panel-pane {
-    margin-bottom: 17px;
-  }
 
   /* --- pane-node-title --- */
 
@@ -46,7 +46,7 @@ body .panels-bootstrap-inner_page {
   .pane-node-author {
     background: rgb(224, 224, 224);
     height: 45px;
-    margin-bottom: 22px;
+    margin-bottom: 22px !important;
     padding-left: 10px;
     .username {
       display: inline-block;
@@ -204,26 +204,144 @@ body .panels-bootstrap-inner_page {
 		
   }
 
-  /* --- pane-node-comment-form --- */
+}
 
-  .pane-node-comment-form {
-    clear: both; 
+/* --- pane-node-comment-form --- */
+
+.pane-node-comment-form {
+	.pane-title {
+    @include mixin-pane-title(text);
+		margin-bottom: 20px;
+    @include mixin-font-icon($comment,24px,$green);
+    &:before { top: 2px; position: relative; }
+	}
+	.pane-content {
+
+	}
+  clear: both; 
+}
+
+.comment-form {
+	background: $light-gray;
+	padding: 15px;
+	display: inline-block;
+	width: 100%;
+	textarea {
+		font-size: 13px;
+		padding: 7px 10px;
+		height: 75px;
+	}
+	.form-group {
+		margin-bottom: 12px;
+	}
+	.form-item-subject { display: none !important; }
+	.field-type-text-long ~ .form-item {
+		display: table;
+		float: left;
+		margin-bottom: 0;
+		margin-top: -3px;
+	}
+	.user-picture {
+	  float: left;
+	  margin-right: 10px;
+	  width: 37px;
+	  height: 37px;
+		img { width: 100%; }
+	}
+	.username { 
+		display: table-cell;
+		vertical-align: middle;  font-weight: bold; font-size: 13px; 
+	}
+	.form-submit {
+		float: right; 
+		font-weight: bold;
+		font-size: 15px;
+		padding: 2px 32px 7px 32px;
+		@include mixin-font-icon($comment,17px,#fff);
+		&:before {
+			top: 4px;
+			position: relative;
+			font-weight: normal;
+		}
+	}
+	label, .grippie { display:none; }
+}
+/* --- pane-node-comments --- */
+
+.pane-node-comments {
+  clear: both; 
+	font-size: 13px;
+	.comment ~.comment, .comment ~.indented .comment { 
+		border-top: 1px solid $light-border;
+		padding-top: 12px;
+		margin-top: 3px;
   }
+	.indented  {
+		padding-left: 47px;
+	}
+	.comment-form { display:none;  margin: 35px 0px 10px; }
 
-  /* --- pane-node-comments --- */
-
-  .pane-node-comments {
-     clear: both; 
-    .user-picture {
-      float: left;
-      margin: 0 10px 10px 0;
-      width: 36px;
-      height: 36px;
-      border: 1px solid;
+  .comment {
+	  > .user-picture {
+		  float: left;
+		  margin: 2px 10px 10px 0;
+		  width: 37px;
+		  height: 37px;
+			img { width: 100%; }
+		}
+		> span .username {
+			font-weight: bold;
+			float: left;
+			margin-right: 5px;
+		}
+		.submitted {	
+			margin: 0; 
+			font-style: normal;
+			.username { display:none; }
+			.field-name-comment-body {
+				margin-bottom: 3px;
+			}
+			span { float: left; margin-right: 10px; }
+		}
+	}
+  .field-name-field-vote{
+		float: right;
+		* { display: inline; }
+    .ajax-progress {
+      .glyphicon{
+        margin: 0;
+        &:before { top: 0;  margin: 0; }
+      }
     }
-    .permalink,.submitted, .field-name-field-vote { display:none; }
+		.vud-link-reset,.field-label {
+			display: none;
+		}
+		.vud-widget-alternate {
+			float: none; position: relative; margin: 0;
+		}
+		.alternate-votes-display {
+			font-size: 11px;
+			height: auto;
+			border: 1px solid $light-border;
+			border-radius: 20px;
+			padding: 5px 8px 3px 23px;
+			line-height: 1.1;
+			font-weight: bold;
+			font-family: Arial;
+		}
+		.up-active,.up-inactive {
+			position: absolute;
+			left: 7px;
+			top: -1px;
+			width: auto;	
+			display: inline-block;
+			background: none;
+			@include mixin-font-icon('\e605',13px,$green);
+			&:empty:before { display: inline-block !important; }
+		}
+		.up-active:before { color: #8DD5A8;  }
   }
-
+	.links.list-inline a { font-weight: bold; color: $green; }
 }
 
 
@@ -396,43 +514,6 @@ body .panels-bootstrap-inner_page {
 		}
 		.up-active,.up-inactive {	display: none; }
   }
-	/*div.views-field-field-vote{
-		display: inline;
-		* { display: inline; }
-    .ajax-progress {
-      .glyphicon{
-        margin: 0;
-        &:before { top: 0;  margin: 0; }
-      }
-    }
-		.vud-link-reset {
-			display: none;
-		}
-		.vud-widget-alternate {
-			float: none; position: relative;
-		}
-		.alternate-votes-display {
-			font-size: 13px;
-			height: auto;
-			border: 1px solid $light-border;
-			border-radius: 20px;
-			padding: 1px 10px 2px 25px;
-			line-height: 1.1;
-			font-weight: bold;
-			font-family: Arial;
-		}
-		.up-active,.up-inactive {
-			position: absolute;
-			left: 5px;
-			top: 0px;
-			width: auto;	
-			display: inline-block;
-			background: none;
-			@include mixin-font-icon('\e605',13px,$green);
-			&:empty:before { display: inline-block !important; }
-		}
-		.up-active:before { color: #8DD5A8;  }
-  }*/
 }
 
 
@@ -461,11 +542,29 @@ body .panels-bootstrap-inner_page {
 		width: 100%;
 		text-align: center;
 		margin: 0;
+		height: auto;
 	}
 	.alternate-votes-display {
-		display: none;
+		font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 55px;
+		font-weight: bold;
+		border: 0;
+		height: auto;
+		position: relative;
+		top: 57px;
+		@include mixin-font-icon($vote,43px,$green); 
+		&:after {
+			content: 'Votes';
+			position: absolute;
+			top: 4px;
+			left: 0px;
+			font-size: 16px;
+			font-weight: normal;
+		}
 	}
 	.up-active,.up-inactive {	
+		position: relative;
+		top: -82px;
 		margin-left: 0;
 		display: inline-block;
 		color: #fff;

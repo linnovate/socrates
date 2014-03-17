@@ -82,7 +82,7 @@ footer.footer.navbar {
   		&.facebook { @include mixin-font-icon($facebook-footer); }
   		&.twitter { @include mixin-font-icon($twitter-footer); }
   		&.google { @include mixin-font-icon($google-footer); }
-  		&.linkedin { @include mixin-font-icon($linkedin-footer);  margin-right: 0 !important; }
+  		&.linkedin { @include mixin-font-icon($linkedin-footer);  &:before { margin-right: 0 !important; } }
 		}
 	}
   .pane-ideal-main-openideal-credits {
