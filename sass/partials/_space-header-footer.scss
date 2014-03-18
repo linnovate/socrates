@@ -5,9 +5,12 @@
 
 
 header#navbar {
-  .navbar-collapse {
-    padding: 0;
-  }
+  .navbar-collapse { padding: 0; }
+
+  .panel-pane { margin-bottom: 0; float: left; }
+
+  /* --- logo --- */
+
   .pane-page-logo {
     display: table;
     height: 45px;
@@ -18,10 +21,17 @@ header#navbar {
       img { max-height: 40px; }
     }
   }
-  .panel-pane {
-    margin-bottom: 0;
+
+  /* --- menu --- */
+
+  .user-picture {
     float: left;
+    width: 37px;
+    height: 37px;
+    margin-top: 4px;
+    img { width: 100%; }
   }
+
   .nav>li {
     float: left;
     a { color: white;  padding: 13px 15px; }
@@ -30,13 +40,14 @@ header#navbar {
       background-color: #000;
     }
   }
-  .pane-system-user-menu {
-    float: right;
-  }
+
+  .pane-system-user-menu { float: right; }
+
+  /* --- search --- */
+
   .pane-search-form {
     float: right;
     margin-left: 5px;
-
     input.form-text {
       height: 36px;
       padding: 0px 10px;
@@ -45,7 +56,10 @@ header#navbar {
     }
     .input-group-btn { display: none;  }
   }
+
 }
+
+
 
 
 /*-----------------------------------------------
@@ -54,10 +68,10 @@ header#navbar {
 
 
 footer.footer.navbar {
-  .panel-pane {
-    margin-bottom: 0;
-    float: left;
-  }
+  .panel-pane { margin-bottom: 0; float: left; }
+
+  /* --- menu --- */
+
   ul.nav{
     margin: 15px 0;
     >li {
@@ -69,31 +83,35 @@ footer.footer.navbar {
       background-color: #000;
     }
   }
-	.pane-social-links {
-		float: right;
-		a.social_link {
-			font-size: 0;
-			&:before {
-				font-size: 37px;
-				margin-right: 9px !important;
-				color: #D8D8D8;
-			}
-			&:hover:before { color: rgb(204, 200, 200); }
-  		&.facebook { @include mixin-font-icon($facebook-footer); }
-  		&.twitter { @include mixin-font-icon($twitter-footer); }
-  		&.google { @include mixin-font-icon($google-footer); }
-  		&.linkedin { @include mixin-font-icon($linkedin-footer);  &:before { margin-right: 0 !important; } }
-		}
-	}
-  .pane-ideal-main-openideal-credits {
+
+  /* --- social-links --- */
+
+  .pane-social-links {
     float: right;
-		clear: right;
-    color: #fff;
-    a {
-      font-weight: bold;
-      color: $blue;
+    a.social_link {
+      font-size: 0;
+      &:before {
+        font-size: 37px;
+        margin-right: 9px !important;
+        color: #D8D8D8;
+      }
+      &:hover:before { color: rgb(204, 200, 200); }
+      &.facebook { @include mixin-font-icon($facebook-footer); }
+      &.twitter { @include mixin-font-icon($twitter-footer); }
+      &.google { @include mixin-font-icon($google-footer); }
+      &.linkedin { @include mixin-font-icon($linkedin-footer);  &:before { margin-right: 0 !important; } }
     }
   }
+
+  /* --- openideal-credits --- */
+
+  .pane-ideal-main-openideal-credits {
+    float: right;
+    clear: right;
+    color: #fff;
+    a { font-weight: bold; color: $blue; }
+  }
+
 }
 
 

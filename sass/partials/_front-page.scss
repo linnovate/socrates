@@ -26,7 +26,13 @@
       }
     }
   }
+
+  /* --- img --- */
+
   .views-field-field-challenge-image img { width: 100%; }
+
+  /* --- text --- */
+
   .text {
     padding: 0px 15px;
     height: 100%;
@@ -38,7 +44,10 @@
     .title { font-size: 29px;  margin-bottom: 15px; }
     .summary { line-height: 22px; }
   }  
-	.row-bottom-openideal .dates { max-width: 75px; }
+
+  /* --- row-bottom --- */
+
+  .row-bottom-openideal .dates { max-width: 75px; }
 }
 
 /* --------------------------------- pane-views-challenges-featured-front-block ----------------------------- */
@@ -62,8 +71,17 @@
         .mouseover { display: block; }
       }
     }
+
+    /* --- img --- */
+
     .views-field-field-challenge-image img { width: 100%; }
+
+    /* --- caption --- */
+
     .caption { width: auto;  margin: 0 3%;  }
+
+    /* --- mouseover - content --- */
+
     .mouseover {
       display: none;
       margin: 0px 3%;
@@ -96,6 +114,9 @@
     background: $light-gray;
     padding: 16px 9px;
     margin-bottom: 10px;
+  
+    /* --- views-row --- */
+
     .views-row {
       padding-left: 30px;
     }
@@ -104,6 +125,9 @@
       margin-top: 15px;
       border-top: 1px solid $light-border;
     }
+  
+    /* --- field-type --- */
+
     .views-field-type {
       @include mixin-font-icon($discussions,24px,$blue);
       margin: -3px 0 0 -28px;
@@ -111,6 +135,9 @@
       &.Challenge { @include mixin-font-icon($challenge,24px,$blue); }
       &.Iead { @include mixin-font-icon($idea,24px,$blue); }
     }
+  
+    /* --- title --- */
+
     .views-field-title {
       font-weight: bold;
       float: left;
@@ -118,6 +145,9 @@
       color: black;
       a { color: black; }
     }
+
+    /* --- body --- */
+
     .views-field-body {
       line-height: 21px;
     }
@@ -132,8 +162,11 @@
     margin-left: -10px;
     .column { padding-right: 10px; padding-left: 10px; }
   }
+
+  /* --- all pane-title --- */
+
   .pane-title { 
-    //sub titles
+    // sub titles
     border-bottom: 1px solid $light-border;
     padding: 0 0 9px 0;
     margin: 7px 0px 0px 0px;
@@ -141,10 +174,13 @@
     &:before { margin-right: 7px; }
   }
   >.pane-title {
-    //main title
+    // main title
     @include mixin-pane-title(text);
     margin-bottom: 0;
   }
+
+  /* --- all views-row --- */
+
   .pane-content {
     margin-top: 10px;
     .views-row {
@@ -162,7 +198,10 @@
     }
     .views-row + .views-row { margin-top: 20px; }
   }
-	.panel-pane { margin-bottom: 0; }
+
+  /* --- icons for titles --- */
+
+  .panel-pane { margin-bottom: 0; }
   .pane-views-activity-block-1 .pane-title { 
     @include mixin-font-icon($user,24px,$blue);
   }
@@ -172,6 +211,7 @@
   .pane-views-activity-block-3 .pane-title {
     @include mixin-font-icon($discussions,24px,$blue);
   }
+
 }
 
 /* ------------------------------------------ pane-comment-recent ------------------------------------------- */
@@ -201,112 +241,125 @@
     .view-header { margin-bottom: 15px; }
     .view-content {
       border-top: 5px solid black;
-			background-color: $light-gray;
+      background-color: $light-gray;
       .row {
         margin-right: -6px;
         margin-left: -6px;
         .col { 
-					position: static;
-					padding: 6px; 
-					border: solid white; 
-					border-width: 7px 5px 0 5px;
-					margin-right: -5px;
-				}
-				.col +.col { border-right: 0; }
+          position: static;
+          padding: 6px; 
+          border: solid white; 
+          border-width: 7px 5px 0 5px;
+          margin-right: -5px;
+          +.col { border-right: 0; }
+        }
       }
       .col .thumbnail {
         padding: 10px;
         border-radius: 0;
-				margin-bottom: 0;
-				background-color: $light-gray;
+        margin-bottom: 0;
+        background-color: $light-gray;
         border: 0;
         .views-field {
           margin-bottom: 15px; 
         }
 
+        /* -- field-vote -- */
 
-        .views-field-field-vote{
+        .views-field-field-vote {
           .ajax-progress {
             .glyphicon{
               margin: 0;
               &:before { top: 0;  margin: 0; }
             }
           }
-					.vud-link-reset {
-						display: none;
-					}
-					.vud-widget-alternate {
-						width: 100%;
-						text-align: center;
-						margin: 10px 0 5px;
-					}
-					.alternate-votes-display {
-						display: inline-block;
-						padding: 5px 16px;
-						border-radius: 21px;
-						border: 0;
-						background: #e0e0e0;
-						font-size: 29px;
-						height: auto;
-						line-height: 1.1;
-						font-weight: bold;
-						font-family: Arial;
-						@include mixin-font-icon($vote,22px,$green);
-					}
-					.up-active,.up-inactive {	
-						margin-left: 15px;
-						display: inline-block;
-						color: #fff;
-						padding: 7px 18px;
-						height: 39px;
-						width: 105px;
-						background: $green;
-						@include mixin-font-icon($vote,20px, #fff);
-						&:empty:before { display: inline-block !important; }
-						&:after {
-							position: relative;
-							top: -3px;
-							content: "That!";
-							font-weight: bold;
-						}
-					}
-					.up-active { background: #8DD5A8;  }
+          .vud-link-reset {
+            display: none;
+          }
+          .vud-widget-alternate {
+            width: 100%;
+            text-align: center;
+            margin: 10px 0 5px;
+          }
+          .alternate-votes-display {
+            display: inline-block;
+            padding: 5px 16px;
+            border-radius: 21px;
+            border: 0;
+            background: #e0e0e0;
+            font-size: 29px;
+            height: auto;
+            line-height: 1.1;
+            font-weight: bold;
+            font-family: Arial;
+            @include mixin-font-icon($vote,22px,$green);
+          }
+          .up-active,.up-inactive {  
+            margin-left: 15px;
+            display: inline-block;
+            color: #fff;
+            padding: 7px 18px;
+            height: 39px;
+            width: 105px;
+            background: $green;
+            @include mixin-font-icon($vote,20px, #fff);
+            &:empty:before { display: inline-block !important; }
+            &:after {
+              position: relative;
+              top: -3px;
+              content: "That!";
+              font-weight: bold;
+            }
+          }
+          .up-active { background: #8DD5A8;  }
         }
+
+        /* -- field-title -- */
+
         .views-field-title{
           font-size: 20px;
           line-height: 20px;
           clear: both;
           a{ color: $black; }
         }
-        .views-field-field-idea-image {
 
-        }
+        /* -- field-body -- */
+
         .views-field-body {
           font-size: 13px;
           line-height: 15px;
-					margin-bottom: 55px;
+          margin-bottom: 55px;
         }
+
+        /* -- field-picture -- */
+
         .views-field-picture {
-					position: absolute;
-					bottom: 16px;
-					z-index: 1;
+          position: absolute;
+          bottom: 16px;
+          z-index: 1;
           float: left;
           margin: 4px 10px 0px 4px;
           width: 35px;
         }
+
+        /* -- field-name -- */
+
         .views-field-name {
-					width: 268px;
-					position: absolute;
-					bottom: 12px;
+          width: 268px;
+          position: absolute;
+          bottom: 12px;
           background-color: rgb(218, 218, 218);
           padding: 10px 10px 10px 51px;
           min-height: 43px;
           font-size: 14px;
-					margin-bottom: 0;
+          margin-bottom: 0;
           a { color: $green; }
         }
       }
     }
+
+    /* -- view-footer -- */
+
     .view-footer {
       position: absolute;
       top: 65px;
@@ -322,6 +375,7 @@
       padding: 3px 5px 7px 7px;
       text-align: center;
     }
+
   }
 }
 

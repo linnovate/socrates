@@ -4,54 +4,44 @@
 -----------------------------------------------*/
 
 
-/* ----------------------------------------- pane-Featured Challenges
- -------------------------------------- */
+/* ----------------------------------------- pane-Featured Challenges -------------------------------------- */
 
 .pane-views-f82b385d04a27538a1646ec3e53c5fef {
   .pane-title {
     @include mixin-pane-title(block);
- 		@include mixin-font-icon($challenge,28px);
-		&:before { 
-		  top: 2px;
-		  position: relative;      
-		}
+    @include mixin-font-icon($challenge,28px);
+    &:before { top: 2px; position: relative; }
   }
-	.pane-content {
-		position: relative;
-		img { width: 100% }
-		.caption {
-			padding: 9px 13px;
-			font-size: 19px;
-			line-height: 1.2;
-		}
-		.mouseover { 
-			padding: 5px 13px;
-			.content {
-				overflow: hidden;
-				max-height: 68%;
-			}
-			.body {		
-				font-size: 13px;
-				line-height: 20px;
-			}
-			.author {
-				bottom: 0;
-				position: absolute;
-				padding: 5px 10px;
-				min-height: 45px;
-				width: 100%;
-				margin-left: -13px;
-				background-color: rgba(0, 0, 0, 0.5);
-				color: $blue;
-				font-weight: bold;
-				a { color: $blue; }
-			}
-		}
+  .pane-content {
+    position: relative;
+    img { width: 100% }
+    .caption {
+      padding: 9px 13px;
+      font-size: 19px;
+      line-height: 1.2;
+    }
+    .mouseover { 
+      padding: 5px 13px;
+      .content { overflow: hidden; max-height: 68%;  }
+      .body {  font-size: 13px; line-height: 20px;  }
+      .author {
+        bottom: 0;
+        position: absolute;
+        padding: 5px 10px;
+        min-height: 45px;
+        width: 100%;
+        margin-left: -13px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $blue;
+        font-weight: bold;
+        a { color: $blue; }
+      }
+    }
     &:hover {
       .caption { display: none;  }
       .mouseover { display: block; }
     }
-	}
+  }
 } 
 
 
@@ -85,7 +75,7 @@
 /* ----------------------------------------- pane-views-activity-block -------------------------------------- */
 
 .pane-views-activity-block {
-	clear: both;
+  clear: both;
   .pane-title {
     @include mixin-pane-title(block);
   }
@@ -119,7 +109,7 @@
 .pane-ideal-blocks-idea-stats,
 .pane-ideal-blocks-challenge-stats,
 .pane-ideal-blocks-ideal-key-stats {
-	clear: both;
+  clear: both;
   .pane-title {
     @include mixin-pane-title(block);
     padding: 11px 12px;
@@ -127,27 +117,25 @@
   }
   .pane-content {
     overflow: hidden;
-		#ideal-challenge-stats {
-			border-top: 1px solid $light-border;
-			border-bottom: 1px solid $light-border;	
-			margin-bottom: -7px;
-			padding-bottom: 5px;
-			padding-bottom: 0px;
-			border-top: 0;
-		}
+    #ideal-challenge-stats {
+      border-top: 1px solid $light-border;
+      border-bottom: 1px solid $light-border;  
+      margin-bottom: -7px;
+      padding-bottom: 0px;
+      border-top: 0;
+    }
+
+    /* ---  top-line --- */  
+
     .top {
-      float: none;
-      margin: 0;
-       .count{
+      float: none; margin: 0;
+      .count{
         text-align: center;
         color: $green;
         font-size: 55px;
         font-weight: bold;
         margin: 9px 0;
-        &:before { 
-          margin-right: 11px;
-          font-weight: normal;
-        }
+        &:before { margin-right: 11px; font-weight: normal; }
         .name {
           display: inline;
           margin-left: 4px;
@@ -156,50 +144,40 @@
           color: $black;
         }
       }
-      &.idea-page {	
-				width: 100%;
-				display: none;
-				.votes, .dislikes{
-					padding-top: 10px;
-		   	}
-				.name {
-					margin-bottom: -10px;
-				}
-				.count {
-					color: $black;  margin: 0; line-height: 1;
-				}
-		    &.idea-page .votes .count{
-		      @include mixin-font-icon($vote,43px,$green); 
-		    }
-		    .dislikes {
-					display: none;
-					border-left: 1px solid $light-border; 
-					padding-left: 15px;
-					.count{
-		      	@include mixin-font-icon($vote-dislike,43px, #A8A8A8); 
-					}
-		    }
-			}
-      &.ideas .count{
-        @include mixin-font-icon($light ,55px);
+
+      &.idea-page {  
+        width: 100%;
+        display: none;
+        .votes, .dislikes{ padding-top: 10px;  }
+        .name { margin-bottom: -10px; }
+        .count { color: $black;  margin: 0; line-height: 1; }
+
+        &.idea-page .votes .count{ 
+          @include mixin-font-icon($vote,43px,$green); 
+        }
+        .dislikes {
+          display: none;
+          border-left: 1px solid $light-border; 
+          padding-left: 15px;
+          .count{ @include mixin-font-icon($vote-dislike,43px, #A8A8A8); }
+        }
       }
-      &.challenges .count{
-        @include mixin-font-icon($challenge,55px); 
-      }
+
+      /* -- count - icons -- */  
+
+      &.ideas .count{ @include mixin-font-icon($light ,55px); }
+      &.challenges .count{ @include mixin-font-icon($challenge,55px); }
     }
+
+    /* --- bottom-line --- */    
+
     table.counts{
       table-layout: fixed;
       width: 100%;
       margin-top: 7px;
       border-top: 1px solid $light-border;
-			&.idea-page {
- 				width: 92%;
-				border-top: 0;
-			}
-      .col {
-        padding-top: 10px;
-        padding-bottom: 17px;
-      }
+      &.idea-page { width: 92%;  border-top: 0; }
+      .col { padding-top: 10px; padding-bottom: 17px; }
       .col + .col {
         border: solid $light-border;
         border-width: 0 0 0 1px;
@@ -210,21 +188,18 @@
         font-weight: bold;
         line-height: 1;
         margin: 0;
-        &:before { 
-          margin-right: 4px;
-          font-weight: normal;
-        }
+        &:before { margin-right: 4px; font-weight: normal; }
       }
+
+      /* -- count - icons -- */      
+
       .ideas .count{ @include mixin-font-icon($idea,22px,$green);  }
       .users .count{ @include mixin-font-icon($user,22px,$green);  }
       .votes .count{ @include mixin-font-icon($vote,22px,$green); }
       .views .count{
-				@include mixin-font-icon($eye,28px,$green); 
-				&:before {
-					top: 3px;
-					position: relative;
-				}
-			}
+        @include mixin-font-icon($eye,28px,$green); 
+        &:before { top: 3px; position: relative; }
+      }
       .phase .count{ font-size: 26px; @include mixin-font-icon($list,18px,$green); }
       .comments .count{ @include mixin-font-icon($comment,22px,$green); }
     }
@@ -232,8 +207,8 @@
 }
 
 .pane-ideal-blocks-idea-stats{
-	.pane-content{ 
-		border-bottom: 1px solid $light-border;	
-	}
+  .pane-content{ 
+    border-bottom: 1px solid $light-border;  
+  }
 }
 
