@@ -139,6 +139,25 @@ img { max-width: 100%; height: auto; }
   }
 
 }
-
+/*-----------------------------------------------
+         General: row - view-challenges-featured-front
+-----------------------------------------------*/
+.view-challenges-featured-front{
+  /* --- author --- */
+  .author {
+    .picture img { 
+      width: 36px;
+      height: 37px; 
+      margin: 0px 7px 0 7px;
+      float: left;
+    }
+    .name {
+      color: $blue;
+      font-weight: bold;
+      margin-top: 7px;
+       a { color: $blue; }
+    }
+  }
+}
 
 

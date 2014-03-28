@@ -296,6 +296,31 @@ img {
     display: none; }
 
 /*-----------------------------------------------
+         General: row - view-challenges-featured-front
+-----------------------------------------------*/
+/* line 147, ../sass/partials/_general-elements.scss */
+.view-challenges-featured-front {
+  /* --- author --- */
+}
+/* line 150, ../sass/partials/_general-elements.scss */
+.view-challenges-featured-front .author .picture img {
+  width: 36px;
+  height: 37px;
+  margin: 0px 7px 0 7px;
+  float: left;
+}
+/* line 156, ../sass/partials/_general-elements.scss */
+.view-challenges-featured-front .author .name {
+  color: #028cbb;
+  font-weight: bold;
+  margin-top: 7px;
+}
+/* line 160, ../sass/partials/_general-elements.scss */
+.view-challenges-featured-front .author .name a {
+  color: #028cbb;
+}
+
+/*-----------------------------------------------
                       Blocks
 -----------------------------------------------*/
 /* ----------------------------------------- pane-Featured Challenges -------------------------------------- */
