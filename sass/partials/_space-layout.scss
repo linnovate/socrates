@@ -17,7 +17,6 @@ body {
     padding: 0;
     width: 100%;
     max-width: none;
-    z-index:1;
   }
 
   header#navbar >.container,
@@ -52,12 +51,17 @@ body {
   .region-page-bottom{
     position: absolute;
     left: 50%;
+    z-index:5;
     margin-left: -50%;
   }
 
 }
 
 #panel-bootstrap-region-content_views { padding-right: 45px; }
+@media all and(max-width:991px)
+{
+  #panel-bootstrap-region-content_views { padding-right: 0; }
+}
 
 #panel-bootstrap-region-sidebar { padding-left: 0; }
 

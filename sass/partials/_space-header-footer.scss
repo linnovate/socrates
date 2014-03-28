@@ -50,15 +50,20 @@ header#navbar {
   .nav>li {
     /*float: left;*/
     a { color: white;  padding: 13px 15px; }
+    @media all and (max-width:991px){
+    a { color: white;  padding: 13px 10px; }
+
+    }
     a:hover, a:focus {
       text-decoration: none;
       background-color: #000;
     }
   }
 
+
   .pane-system-user-menu { float: right; }
  @media all and (max-width:767px){
-    .pane-system-user-menu { float: left; }
+    .pane-system-user-menu { float: none; }
   }
   /* --- search --- */
 
@@ -142,5 +147,12 @@ bottom:0;
  .nav>li {
     float: left;
     }
+}
+/*-----------------------------------------------
+                     Bottom
+-----------------------------------------------*/
+
+.panels-ipe footer.footer.navbar{
+  bottom:57px;
 }
 

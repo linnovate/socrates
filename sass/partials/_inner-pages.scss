@@ -12,6 +12,14 @@ body .panels-bootstrap-inner_page {
     margin-left: 15px;
     width: 64.6%;
   }
+  @media all and(max-width:991px)
+  {
+     #panel-bootstrap-column-main { 
+    padding-right: 0;
+    margin-left: 0;
+    width: 100%;
+    }
+  }
   #panel-bootstrap-region-center {
     margin-bottom: 20px;
     background-color: $light-gray;
