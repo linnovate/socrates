@@ -32,13 +32,13 @@
 /*-----------------------------------------------
                    Sprites
 -----------------------------------------------*/
-/* line 74, icons-smart/*.png */
-.icons-smart-sprite, .pane-node-field-attachments .field-item a:before, .pane-node-field-attachments .field-item a[type*='text']:before, .pane-node-field-attachments .field-item a[type*='pdf']:before {
-  background: url('/images/icons-smart-sc6718674dc.png') no-repeat;
+/* line 90, icons-smart/*.png */
+.icons-smart-sprite, .pane-node-field-attachments .field-item a:before, .pane-node-field-attachments .field-item a[type*='text']:before, .pane-node-field-attachments .field-item a[type*='pdf']:before, #popup .modal-footer .go-home, #popup .modal-footer .share-wrap .share-btn {
+  background: url('/images/icons-smart-s5603513990.png') no-repeat;
 }
 
 /* line 25, ../sass/_settings.scss */
-.icons-smart-sprite, .pane-node-field-attachments .field-item a:before, .pane-node-field-attachments .field-item a[type*='text']:before, .pane-node-field-attachments .field-item a[type*='pdf']:before {
+.icons-smart-sprite, .pane-node-field-attachments .field-item a:before, .pane-node-field-attachments .field-item a[type*='text']:before, .pane-node-field-attachments .field-item a[type*='pdf']:before, #popup .modal-footer .go-home, #popup .modal-footer .share-wrap .share-btn {
   background: url("../images/icons-smart-sc6718674dc.png") no-repeat;
 }
 
@@ -2885,19 +2885,175 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
   content: '';
   padding: 4px 10px;
   margin-right: 10px;
-  background-position: -35px 0;
+  background-position: -19px 0;
 }
 /* line 654, ../sass/partials/_inner-pages.scss */
 .pane-node-field-attachments .field-item a[type*='text']:before {
-  background-position: -35px 0;
+  background-position: -19px 0;
 }
 /* line 655, ../sass/partials/_inner-pages.scss */
 .pane-node-field-attachments .field-item a[type*='pdf']:before {
-  background-position: -16px 0;
+  background-position: 0 0;
 }
 /* line 656, ../sass/partials/_inner-pages.scss */
 .pane-node-field-attachments .field-item img {
   display: none;
+}
+
+/* line 661, ../sass/partials/_inner-pages.scss */
+#popup .modal-header {
+  border-bottom: 0;
+}
+/* line 663, ../sass/partials/_inner-pages.scss */
+#popup .modal-header h1 {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+/* line 668, ../sass/partials/_inner-pages.scss */
+#popup .modal-body {
+  padding: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 673, ../sass/partials/_inner-pages.scss */
+#popup p {
+  font-size: 150%;
+}
+/* line 676, ../sass/partials/_inner-pages.scss */
+#popup p.total-points {
+  font-size: 125%;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+/* line 684, ../sass/partials/_inner-pages.scss */
+#popup p b {
+  color: #078fbc;
+}
+/* line 687, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer {
+  border: 0;
+  text-align: center;
+}
+/* line 690, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer a, #popup .modal-footer button {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #43ac6a;
+}
+/* line 695, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .go-home {
+  background-position: -35px -26px;
+  background-color: #43ac6a;
+}
+/* line 699, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap {
+  position: relative;
+}
+/* line 701, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap:hover .share-content {
+  display: block;
+  opacity: 1;
+}
+/* line 703, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap .share-content {
+  opacity: 0;
+  display: none;
+  -webkit-transition: all 200ms;
+  position: absolute;
+  top: -48px;
+  right: 5px;
+  width: 167px;
+  padding: 5px 15px;
+  background: #BDBDBD;
+  color: black;
+}
+/* line 714, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton {
+  overflow: hidden;
+  display: inline-block;
+  width: 25px;
+  line-height: 1;
+  height: 25px;
+}
+/* line 720, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton iframe, #popup .modal-footer .share-wrap .share-content .social-botton .IN-widget {
+  opacity: 0;
+}
+/* line 722, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton:before {
+  position: absolute;
+}
+/* line 30, ../sass/_mixins.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton:before {
+  font-family: "OpenIdeal";
+  content: "\e61a";
+  margin-right: 7px;
+  font-size: 25px;
+}
+/* line 41, ../sass/_mixins.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton:empty:before {
+  display: none;
+}
+/* line 726, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton:hover {
+  color: #050075;
+}
+/* line 729, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton + .social-botton {
+  margin-left: 10px;
+}
+/* line 30, ../sass/_mixins.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton + .social-botton:before {
+  font-family: "OpenIdeal";
+  content: "\e61d";
+  margin-right: 7px;
+  font-size: 25px;
+}
+/* line 41, ../sass/_mixins.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton + .social-botton:empty:before {
+  display: none;
+}
+/* line 731, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton + .social-botton:hover {
+  color: #028cbb;
+}
+/* line 30, ../sass/_mixins.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton + .social-botton + .social-botton:before {
+  font-family: "OpenIdeal";
+  content: "\e61b";
+  margin-right: 7px;
+  font-size: 25px;
+}
+/* line 41, ../sass/_mixins.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton + .social-botton + .social-botton:empty:before {
+  display: none;
+}
+/* line 737, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton + .social-botton + .social-botton:hover {
+  color: red;
+}
+/* line 30, ../sass/_mixins.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton + .social-botton + .social-botton + .social-botton:before {
+  font-family: "OpenIdeal";
+  content: "\e61c";
+  margin-right: 7px;
+  font-size: 25px;
+}
+/* line 41, ../sass/_mixins.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton + .social-botton + .social-botton + .social-botton:empty:before {
+  display: none;
+}
+/* line 743, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap .share-content .social-botton + .social-botton + .social-botton + .social-botton:hover {
+  color: #006081;
+}
+/* line 748, ../sass/partials/_inner-pages.scss */
+#popup .modal-footer .share-wrap .share-btn {
+  background-position: -16px -26px;
+  background-color: #43ac6a;
 }
 
 /*-----------------------------------------------
