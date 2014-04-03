@@ -30,7 +30,8 @@ body {
   @media all and (max-width:767px){
   .main-container.container
     {
-    max-width:100%;
+    max-width:93%;
+    padding:0;
 
     }
   }
@@ -69,4 +70,8 @@ body {
 
 body.panels-ipe .panel-pane, .panel-pane { margin-bottom: 2.7em; }
 
-
+@media all and (max-width: 767px) {
+body{ width:100%; }
+.main-container { width:93%; }
+.panel-bootstrap-inside { margin:0; }
+}

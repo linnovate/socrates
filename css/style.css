@@ -298,27 +298,23 @@ img {
 /*-----------------------------------------------
          General: row - view-challenges-featured-front
 -----------------------------------------------*/
-/* line 147, ../sass/partials/_general-elements.scss */
+/* line 145, ../sass/partials/_general-elements.scss */
 .view-challenges-featured-front {
-  /* --- author --- */
-}
-/* line 150, ../sass/partials/_general-elements.scss */
-.view-challenges-featured-front .author .picture img {
-  width: 36px;
-  height: 37px;
-  margin: 0px 7px 0 7px;
-  float: left;
-}
-/* line 156, ../sass/partials/_general-elements.scss */
-.view-challenges-featured-front .author .name {
-  color: #028cbb;
-  font-weight: bold;
-  margin-top: 7px;
-}
-/* line 160, ../sass/partials/_general-elements.scss */
-.view-challenges-featured-front .author .name a {
-  color: #028cbb;
-}
+  /* --- author --- */ }
+  /* line 148, ../sass/partials/_general-elements.scss */
+  .view-challenges-featured-front .author .picture img {
+    width: 36px;
+    height: 37px;
+    margin: 0px 7px 0 7px;
+    float: left; }
+  /* line 154, ../sass/partials/_general-elements.scss */
+  .view-challenges-featured-front .author .name {
+    color: #028cbb;
+    font-weight: bold;
+    margin-top: 7px; }
+    /* line 158, ../sass/partials/_general-elements.scss */
+    .view-challenges-featured-front .author .name a {
+      color: #028cbb; }
 
 /*-----------------------------------------------
                       Blocks
@@ -777,47 +773,60 @@ body {
   @media all and (max-width: 767px) {
     /* line 32, ../sass/partials/_space-layout.scss */
     body .main-container.container {
-      max-width: 100%; } }
-  /* line 38, ../sass/partials/_space-layout.scss */
+      max-width: 93%;
+      padding: 0; } }
+  /* line 39, ../sass/partials/_space-layout.scss */
   body .main-container.container {
     clear: both;
     margin: 40px auto;
     margin-bottom: 100px; }
-  /* line 44, ../sass/partials/_space-layout.scss */
+  /* line 45, ../sass/partials/_space-layout.scss */
   body .footer {
     margin: 0;
     padding: 10px;
     width: 100%; }
-    /* line 48, ../sass/partials/_space-layout.scss */
+    /* line 49, ../sass/partials/_space-layout.scss */
     body .footer.navbar.container {
       max-width: none; }
-  /* line 51, ../sass/partials/_space-layout.scss */
+  /* line 52, ../sass/partials/_space-layout.scss */
   body .region-page-bottom {
     position: absolute;
     left: 50%;
     z-index: 5;
     margin-left: -50%; }
 
-/* line 60, ../sass/partials/_space-layout.scss */
+/* line 61, ../sass/partials/_space-layout.scss */
 #panel-bootstrap-region-content_views {
   padding-right: 45px; }
 
 @media all and (max-width: 991px) {
-  /* line 63, ../sass/partials/_space-layout.scss */
+  /* line 64, ../sass/partials/_space-layout.scss */
   #panel-bootstrap-region-content_views {
     padding-right: 0; } }
-/* line 66, ../sass/partials/_space-layout.scss */
+/* line 67, ../sass/partials/_space-layout.scss */
 #panel-bootstrap-region-sidebar {
   padding-left: 0; }
 
-/* line 68, ../sass/partials/_space-layout.scss */
+/* line 69, ../sass/partials/_space-layout.scss */
 .panel-bootstrap .panel-separator {
   margin: 0; }
 
-/* line 70, ../sass/partials/_space-layout.scss */
+/* line 71, ../sass/partials/_space-layout.scss */
 body.panels-ipe .panel-pane, .panel-pane {
   margin-bottom: 2.7em; }
 
+@media all and (max-width: 767px) {
+  /* line 74, ../sass/partials/_space-layout.scss */
+  body {
+    width: 100%; }
+
+  /* line 75, ../sass/partials/_space-layout.scss */
+  .main-container {
+    width: 93%; }
+
+  /* line 76, ../sass/partials/_space-layout.scss */
+  .panel-bootstrap-inside {
+    margin: 0; } }
 /*-----------------------------------------------
                      Top
 -----------------------------------------------*/
@@ -918,35 +927,39 @@ footer.footer.navbar {
   footer.footer.navbar .panel-pane {
     margin-bottom: 0;
     float: left; }
-  /* line 100, ../sass/partials/_space-header-footer.scss */
+  @media all and (max-width: 767px) {
+    /* line 98, ../sass/partials/_space-header-footer.scss */
+    footer.footer.navbar .panel-pane {
+      float: none !important; } }
+  /* line 102, ../sass/partials/_space-header-footer.scss */
   footer.footer.navbar ul.nav {
     margin: 15px 0; }
-    /* line 102, ../sass/partials/_space-header-footer.scss */
+    /* line 104, ../sass/partials/_space-header-footer.scss */
     footer.footer.navbar ul.nav > li {
       float: left; }
-      /* line 104, ../sass/partials/_space-header-footer.scss */
+      /* line 106, ../sass/partials/_space-header-footer.scss */
       footer.footer.navbar ul.nav > li a {
         color: white; }
-    /* line 106, ../sass/partials/_space-header-footer.scss */
+    @media all and (max-width: 767px) {
+      /* line 109, ../sass/partials/_space-header-footer.scss */
+      footer.footer.navbar ul.nav > li {
+        float: none !important; } }
+    /* line 111, ../sass/partials/_space-header-footer.scss */
     footer.footer.navbar ul.nav a:hover, footer.footer.navbar ul.nav a:focus {
       text-decoration: none;
       background-color: #000; }
-  @media all and (max-size: 767px) {
-    /* line 114, ../sass/partials/_space-header-footer.scss */
-    footer.footer.navbar .pane-social-links {
-      display: none; } }
-  /* line 118, ../sass/partials/_space-header-footer.scss */
+  /* line 119, ../sass/partials/_space-header-footer.scss */
   footer.footer.navbar .pane-social-links {
     float: right; }
-    /* line 120, ../sass/partials/_space-header-footer.scss */
+    /* line 121, ../sass/partials/_space-header-footer.scss */
     footer.footer.navbar .pane-social-links a.social_link {
       font-size: 0; }
-      /* line 122, ../sass/partials/_space-header-footer.scss */
+      /* line 123, ../sass/partials/_space-header-footer.scss */
       footer.footer.navbar .pane-social-links a.social_link:before {
         font-size: 37px;
         margin-right: 9px !important;
         color: #D8D8D8; }
-      /* line 127, ../sass/partials/_space-header-footer.scss */
+      /* line 128, ../sass/partials/_space-header-footer.scss */
       footer.footer.navbar .pane-social-links a.social_link:hover:before {
         color: #ccc8c8; }
       /* line 30, ../sass/_mixins.scss */
@@ -981,31 +994,49 @@ footer.footer.navbar {
       /* line 41, ../sass/_mixins.scss */
       footer.footer.navbar .pane-social-links a.social_link.linkedin:empty:before {
         display: none; }
-      /* line 131, ../sass/partials/_space-header-footer.scss */
+      /* line 132, ../sass/partials/_space-header-footer.scss */
       footer.footer.navbar .pane-social-links a.social_link.linkedin:before {
         margin-right: 0 !important; }
-  /* line 137, ../sass/partials/_space-header-footer.scss */
+  /* line 138, ../sass/partials/_space-header-footer.scss */
   footer.footer.navbar .pane-ideal-main-openideal-credits {
     float: right;
     clear: right;
     color: #fff; }
-    /* line 141, ../sass/partials/_space-header-footer.scss */
+    /* line 142, ../sass/partials/_space-header-footer.scss */
     footer.footer.navbar .pane-ideal-main-openideal-credits a {
       font-weight: bold;
       color: #028cbb; }
+  @media all and (max-width: 767px) {
+    /* line 144, ../sass/partials/_space-header-footer.scss */
+    footer.footer.navbar .pane-ideal-main-openideal-credits {
+      text-align: center; } }
 
-/* line 145, ../sass/partials/_space-header-footer.scss */
+/* line 147, ../sass/partials/_space-header-footer.scss */
 .navbar-collapse {
   border: none; }
 
 @media all and (min-width: 767px) {
-  /* line 147, ../sass/partials/_space-header-footer.scss */
+  /* line 149, ../sass/partials/_space-header-footer.scss */
   .nav > li {
     float: left; } }
+/* line 154, ../sass/partials/_space-header-footer.scss */
+.footer {
+  border-top: none; }
+
+@media all and (max-width: 767px) {
+  /* line 158, ../sass/partials/_space-header-footer.scss */
+  .pane-social-links {
+    width: 176px;
+    margin: 0 auto;
+    float: none !important; }
+
+  /* line 159, ../sass/partials/_space-header-footer.scss */
+  footer.footer.navbar {
+    position: relative; } }
 /*-----------------------------------------------
                      Bottom
 -----------------------------------------------*/
-/* line 155, ../sass/partials/_space-header-footer.scss */
+/* line 165, ../sass/partials/_space-header-footer.scss */
 .panels-ipe footer.footer.navbar {
   bottom: 57px; }
 
@@ -1721,39 +1752,39 @@ body .panels-bootstrap-inner_page {
       padding-right: 0;
       margin-left: 0;
       width: 100%; } }
-  /* line 23, ../sass/partials/_inner-pages.scss */
+  /* line 24, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page #panel-bootstrap-region-center {
     margin-bottom: 20px;
     background-color: #f3f3f3; }
-    /* line 26, ../sass/partials/_inner-pages.scss */
+    /* line 27, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page #panel-bootstrap-region-center .panel-pane {
       margin-bottom: 17px; }
-  /* line 29, ../sass/partials/_inner-pages.scss */
+  /* line 30, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page #panel-bootstrap-region-content_bottom,
   body .panels-bootstrap-inner_page #panel-bootstrap-region-sidebar {
     padding: 0; }
-  /* line 35, ../sass/partials/_inner-pages.scss */
+  /* line 36, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page .pane-node-title h3 {
     margin: 12px 0 0 0;
     font-size: 30px; }
-  /* line 42, ../sass/partials/_inner-pages.scss */
+  /* line 43, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page .pane-user-picture {
     float: left;
     margin: 5px 10px 5px 5px;
     width: 35px; }
-  /* line 50, ../sass/partials/_inner-pages.scss */
+  /* line 51, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page .pane-node-author {
     background: #e0e0e0;
     height: 45px;
     margin-bottom: 22px !important;
     padding-left: 10px; }
-    /* line 55, ../sass/partials/_inner-pages.scss */
+    /* line 56, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page .pane-node-author .username {
       display: inline-block;
       margin-top: 12px;
       font-weight: bold;
       font-size: 13px; }
-  /* line 65, ../sass/partials/_inner-pages.scss */
+  /* line 66, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page .pane-node-field-status {
     float: right;
     margin-top: -52px;
@@ -1767,7 +1798,7 @@ body .panels-bootstrap-inner_page {
     /* line 41, ../sass/_mixins.scss */
     body .panels-bootstrap-inner_page .pane-node-field-status .field-item:empty:before {
       display: none; }
-  /* line 75, ../sass/partials/_inner-pages.scss */
+  /* line 76, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page .pane-node-created {
     float: right;
     margin-top: -57px;
@@ -1782,12 +1813,12 @@ body .panels-bootstrap-inner_page {
     /* line 41, ../sass/_mixins.scss */
     body .panels-bootstrap-inner_page .pane-node-created .pane-content:empty:before {
       display: none; }
-    /* line 82, ../sass/partials/_inner-pages.scss */
+    /* line 83, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page .pane-node-created .pane-content:before {
       margin-right: 5px;
       position: relative;
       top: 2px; }
-  /* line 92, ../sass/partials/_inner-pages.scss */
+  /* line 93, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page .pane-node-field-share {
     cursor: default;
     position: relative;
@@ -1796,11 +1827,11 @@ body .panels-bootstrap-inner_page {
     margin-top: -57px;
     margin-right: 13px;
     color: #028cbb; }
-    /* line 100, ../sass/partials/_inner-pages.scss */
+    /* line 101, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page .pane-node-field-share:hover .pane-content {
       display: block;
       opacity: 1; }
-    /* line 101, ../sass/partials/_inner-pages.scss */
+    /* line 102, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page .pane-node-field-share .pane-title {
       font-size: 13px;
       font-weight: bold;
@@ -1814,12 +1845,12 @@ body .panels-bootstrap-inner_page {
       /* line 41, ../sass/_mixins.scss */
       body .panels-bootstrap-inner_page .pane-node-field-share .pane-title:empty:before {
         display: none; }
-      /* line 106, ../sass/partials/_inner-pages.scss */
+      /* line 107, ../sass/partials/_inner-pages.scss */
       body .panels-bootstrap-inner_page .pane-node-field-share .pane-title:before {
         font-weight: normal;
         position: relative;
         top: 3px; }
-    /* line 112, ../sass/partials/_inner-pages.scss */
+    /* line 113, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page .pane-node-field-share .pane-content {
       opacity: 0;
       display: none;
@@ -1831,17 +1862,17 @@ body .panels-bootstrap-inner_page {
       padding: 5px 15px;
       background: #BDBDBD;
       color: black; }
-      /* line 123, ../sass/partials/_inner-pages.scss */
+      /* line 124, ../sass/partials/_inner-pages.scss */
       body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton {
         overflow: hidden;
         display: inline-block;
         width: 25px;
         line-height: 1;
         height: 25px; }
-        /* line 129, ../sass/partials/_inner-pages.scss */
+        /* line 130, ../sass/partials/_inner-pages.scss */
         body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton iframe, body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton .IN-widget {
           opacity: 0; }
-        /* line 131, ../sass/partials/_inner-pages.scss */
+        /* line 132, ../sass/partials/_inner-pages.scss */
         body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton:before {
           position: absolute; }
         /* line 30, ../sass/_mixins.scss */
@@ -1853,10 +1884,10 @@ body .panels-bootstrap-inner_page {
         /* line 41, ../sass/_mixins.scss */
         body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton:empty:before {
           display: none; }
-        /* line 135, ../sass/partials/_inner-pages.scss */
+        /* line 136, ../sass/partials/_inner-pages.scss */
         body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton:hover {
           color: #050075; }
-        /* line 138, ../sass/partials/_inner-pages.scss */
+        /* line 139, ../sass/partials/_inner-pages.scss */
         body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton + .social-botton {
           margin-left: 10px; }
           /* line 30, ../sass/_mixins.scss */
@@ -1868,7 +1899,7 @@ body .panels-bootstrap-inner_page {
           /* line 41, ../sass/_mixins.scss */
           body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton + .social-botton:empty:before {
             display: none; }
-          /* line 140, ../sass/partials/_inner-pages.scss */
+          /* line 141, ../sass/partials/_inner-pages.scss */
           body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton + .social-botton:hover {
             color: #028cbb; }
         /* line 30, ../sass/_mixins.scss */
@@ -1880,7 +1911,7 @@ body .panels-bootstrap-inner_page {
         /* line 41, ../sass/_mixins.scss */
         body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton + .social-botton + .social-botton:empty:before {
           display: none; }
-        /* line 146, ../sass/partials/_inner-pages.scss */
+        /* line 147, ../sass/partials/_inner-pages.scss */
         body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton + .social-botton + .social-botton:hover {
           color: red; }
         /* line 30, ../sass/_mixins.scss */
@@ -1892,62 +1923,62 @@ body .panels-bootstrap-inner_page {
         /* line 41, ../sass/_mixins.scss */
         body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton + .social-botton + .social-botton + .social-botton:empty:before {
           display: none; }
-        /* line 152, ../sass/partials/_inner-pages.scss */
+        /* line 153, ../sass/partials/_inner-pages.scss */
         body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton + .social-botton + .social-botton + .social-botton:hover {
           color: #006081; }
-  /* line 160, ../sass/partials/_inner-pages.scss */
+  /* line 161, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page .pane-node-field-challenge-ref {
     margin-bottom: 8px;
     font-size: 19px;
     font-weight: lighter; }
-    /* line 164, ../sass/partials/_inner-pages.scss */
+    /* line 165, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page .pane-node-field-challenge-ref .pane-title {
       margin: 0 7px 0 0;
       line-height: 25px;
       float: left;
       font-size: 19px; }
-  /* line 174, ../sass/partials/_inner-pages.scss */
+  /* line 175, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page .pane-node-body {
     line-height: 22px; }
-  /* line 181, ../sass/partials/_inner-pages.scss */
+  /* line 182, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-title {
     font-size: 20px;
     margin-bottom: 12px;
     padding-bottom: 5px;
     border-bottom: 1px solid; }
-  /* line 187, ../sass/partials/_inner-pages.scss */
+  /* line 188, ../sass/partials/_inner-pages.scss */
   body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content {
     position: relative; }
-    /* line 189, ../sass/partials/_inner-pages.scss */
+    /* line 190, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-prev, body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-next {
       position: absolute;
       top: 45%;
       font-size: 0; }
-      /* line 193, ../sass/partials/_inner-pages.scss */
+      /* line 194, ../sass/partials/_inner-pages.scss */
       body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-prev:before, body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-next:before {
         background: #777575;
         font-family: 'OpenIdeal';
         font-size: 16px;
         color: #fff; }
-    /* line 200, ../sass/partials/_inner-pages.scss */
+    /* line 201, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-next {
       right: 0; }
-    /* line 201, ../sass/partials/_inner-pages.scss */
+    /* line 202, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-next:before {
       border-radius: 100px 0px 0 100px;
       content: "\e60a";
       padding: 14px 3px 14px 7px; }
-    /* line 206, ../sass/partials/_inner-pages.scss */
+    /* line 207, ../sass/partials/_inner-pages.scss */
     body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-prev:before {
       border-radius: 0 100px 100px 0;
       content: "\e60b";
       padding: 14px 7px 14px 3px; }
 
 /* --- pane-node-comment-form --- */
-/* line 218, ../sass/partials/_inner-pages.scss */
+/* line 219, ../sass/partials/_inner-pages.scss */
 .pane-node-comment-form {
   clear: both; }
-  /* line 220, ../sass/partials/_inner-pages.scss */
+  /* line 221, ../sass/partials/_inner-pages.scss */
   .pane-node-comment-form .pane-title {
     border-bottom: 1px solid #d5d5d5;
     padding-bottom: 8px;
@@ -1966,13 +1997,13 @@ body .panels-bootstrap-inner_page {
     /* line 41, ../sass/_mixins.scss */
     .pane-node-comment-form .pane-title:empty:before {
       display: none; }
-    /* line 224, ../sass/partials/_inner-pages.scss */
+    /* line 225, ../sass/partials/_inner-pages.scss */
     .pane-node-comment-form .pane-title:before {
       top: 2px;
       position: relative; }
 
 /* --- .comment-form --- */
-/* line 233, ../sass/partials/_inner-pages.scss */
+/* line 234, ../sass/partials/_inner-pages.scss */
 .comment-form {
   background: #f3f3f3;
   padding: 15px;
@@ -1981,42 +2012,42 @@ body .panels-bootstrap-inner_page {
   /* -- textarea -- */
   /* -- user-picture / username -- */
   /* -- submit -- */ }
-  /* line 238, ../sass/partials/_inner-pages.scss */
+  /* line 239, ../sass/partials/_inner-pages.scss */
   .comment-form .form-group {
     margin-bottom: 12px; }
-  /* line 242, ../sass/partials/_inner-pages.scss */
+  /* line 243, ../sass/partials/_inner-pages.scss */
   .comment-form textarea {
     font-size: 13px;
     padding: 7px 10px;
     height: 75px; }
-  /* line 247, ../sass/partials/_inner-pages.scss */
+  /* line 248, ../sass/partials/_inner-pages.scss */
   .comment-form label, .comment-form .grippie {
     display: none; }
-  /* line 248, ../sass/partials/_inner-pages.scss */
+  /* line 249, ../sass/partials/_inner-pages.scss */
   .comment-form .form-item-subject {
     display: none !important; }
-  /* line 252, ../sass/partials/_inner-pages.scss */
+  /* line 253, ../sass/partials/_inner-pages.scss */
   .comment-form .field-type-text-long ~ .form-item {
     display: table;
     float: left;
     margin-bottom: 0;
     margin-top: -3px; }
-  /* line 258, ../sass/partials/_inner-pages.scss */
+  /* line 259, ../sass/partials/_inner-pages.scss */
   .comment-form .user-picture {
     float: left;
     margin-right: 10px;
     width: 37px;
     height: 37px; }
-    /* line 263, ../sass/partials/_inner-pages.scss */
+    /* line 264, ../sass/partials/_inner-pages.scss */
     .comment-form .user-picture img {
       width: 100%; }
-  /* line 265, ../sass/partials/_inner-pages.scss */
+  /* line 266, ../sass/partials/_inner-pages.scss */
   .comment-form .username {
     display: table-cell;
     vertical-align: middle;
     font-weight: bold;
     font-size: 13px; }
-  /* line 274, ../sass/partials/_inner-pages.scss */
+  /* line 275, ../sass/partials/_inner-pages.scss */
   .comment-form .form-submit {
     float: right;
     font-weight: bold;
@@ -2032,85 +2063,85 @@ body .panels-bootstrap-inner_page {
     /* line 41, ../sass/_mixins.scss */
     .comment-form .form-submit:empty:before {
       display: none; }
-    /* line 280, ../sass/partials/_inner-pages.scss */
+    /* line 281, ../sass/partials/_inner-pages.scss */
     .comment-form .form-submit:before {
       top: 4px;
       position: relative;
       font-weight: normal; }
 
 /* --- pane-node-comments --- */
-/* line 290, ../sass/partials/_inner-pages.scss */
+/* line 291, ../sass/partials/_inner-pages.scss */
 .pane-node-comments {
   clear: both;
   font-size: 13px;
   /* -- links.list-inline -- */ }
-  /* line 293, ../sass/partials/_inner-pages.scss */
+  /* line 294, ../sass/partials/_inner-pages.scss */
   .pane-node-comments .comment ~ .comment, .pane-node-comments .comment ~ .indented .comment {
     border-top: 1px solid #d5d5d5;
     padding-top: 12px;
     margin-top: 3px; }
-  /* line 298, ../sass/partials/_inner-pages.scss */
+  /* line 299, ../sass/partials/_inner-pages.scss */
   .pane-node-comments .indented {
     padding-left: 47px; }
-  /* line 299, ../sass/partials/_inner-pages.scss */
+  /* line 300, ../sass/partials/_inner-pages.scss */
   .pane-node-comments .comment-form {
     display: none;
     margin: 35px 0px 10px; }
-  /* line 301, ../sass/partials/_inner-pages.scss */
+  /* line 302, ../sass/partials/_inner-pages.scss */
   .pane-node-comments .comment {
     /* -- user-picture / username -- */
     /* -- comment-body -- */
     /* -- field-name-field-vote -- */ }
-    /* line 305, ../sass/partials/_inner-pages.scss */
+    /* line 306, ../sass/partials/_inner-pages.scss */
     .pane-node-comments .comment > .user-picture {
       float: left;
       margin: 2px 10px 10px 0;
       width: 37px;
       height: 37px; }
-      /* line 310, ../sass/partials/_inner-pages.scss */
+      /* line 311, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment > .user-picture img {
         width: 100%; }
-    /* line 312, ../sass/partials/_inner-pages.scss */
+    /* line 313, ../sass/partials/_inner-pages.scss */
     .pane-node-comments .comment > span .username {
       font-weight: bold;
       float: left;
       margin-right: 5px; }
-    /* line 320, ../sass/partials/_inner-pages.scss */
+    /* line 321, ../sass/partials/_inner-pages.scss */
     .pane-node-comments .comment .submitted {
       margin: 0;
       font-style: normal; }
-      /* line 323, ../sass/partials/_inner-pages.scss */
+      /* line 324, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment .submitted .username {
         display: none; }
-      /* line 324, ../sass/partials/_inner-pages.scss */
+      /* line 325, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment .submitted .field-name-comment-body {
         margin-bottom: 3px; }
-      /* line 325, ../sass/partials/_inner-pages.scss */
+      /* line 326, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment .submitted span {
         float: left;
         margin-right: 10px; }
-    /* line 330, ../sass/partials/_inner-pages.scss */
+    /* line 331, ../sass/partials/_inner-pages.scss */
     .pane-node-comments .comment .field-name-field-vote {
       float: right; }
-      /* line 332, ../sass/partials/_inner-pages.scss */
+      /* line 333, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment .field-name-field-vote * {
         display: inline; }
-      /* line 334, ../sass/partials/_inner-pages.scss */
+      /* line 335, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment .field-name-field-vote .ajax-progress .glyphicon {
         margin: 0; }
-        /* line 336, ../sass/partials/_inner-pages.scss */
+        /* line 337, ../sass/partials/_inner-pages.scss */
         .pane-node-comments .comment .field-name-field-vote .ajax-progress .glyphicon:before {
           top: 0;
           margin: 0; }
-      /* line 339, ../sass/partials/_inner-pages.scss */
+      /* line 340, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment .field-name-field-vote .vud-link-reset, .pane-node-comments .comment .field-name-field-vote .field-label {
         display: none; }
-      /* line 342, ../sass/partials/_inner-pages.scss */
+      /* line 343, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment .field-name-field-vote .vud-widget-alternate {
         float: none;
         position: relative;
         margin: 0; }
-      /* line 345, ../sass/partials/_inner-pages.scss */
+      /* line 346, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment .field-name-field-vote .alternate-votes-display {
         font-size: 11px;
         height: auto;
@@ -2120,7 +2151,7 @@ body .panels-bootstrap-inner_page {
         line-height: 1.1;
         font-weight: bold;
         font-family: Arial; }
-      /* line 355, ../sass/partials/_inner-pages.scss */
+      /* line 356, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment .field-name-field-vote .up-active, .pane-node-comments .comment .field-name-field-vote .up-inactive {
         position: absolute;
         left: 7px;
@@ -2138,13 +2169,13 @@ body .panels-bootstrap-inner_page {
         /* line 41, ../sass/_mixins.scss */
         .pane-node-comments .comment .field-name-field-vote .up-active:empty:before, .pane-node-comments .comment .field-name-field-vote .up-inactive:empty:before {
           display: none; }
-        /* line 363, ../sass/partials/_inner-pages.scss */
+        /* line 364, ../sass/partials/_inner-pages.scss */
         .pane-node-comments .comment .field-name-field-vote .up-active:empty:before, .pane-node-comments .comment .field-name-field-vote .up-inactive:empty:before {
           display: inline-block !important; }
-      /* line 365, ../sass/partials/_inner-pages.scss */
+      /* line 366, ../sass/partials/_inner-pages.scss */
       .pane-node-comments .comment .field-name-field-vote .up-active:before {
         color: #8DD5A8; }
-  /* line 371, ../sass/partials/_inner-pages.scss */
+  /* line 372, ../sass/partials/_inner-pages.scss */
   .pane-node-comments .links.list-inline a {
     font-weight: bold;
     color: #43ac6a; }
@@ -2153,7 +2184,7 @@ body .panels-bootstrap-inner_page {
                         Challenge:  Inner - page
 -----------------------------------------------------------------------------*/
 /* ------------------------------- pane-ideal-challenge-challenge-add-idea-button --------------------------- */
-/* line 386, ../sass/partials/_inner-pages.scss */
+/* line 387, ../sass/partials/_inner-pages.scss */
 .pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success {
   display: inline-block;
   width: 100%;
@@ -2169,33 +2200,33 @@ body .panels-bootstrap-inner_page {
   /* line 41, ../sass/_mixins.scss */
   .pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success:empty:before {
     display: none; }
-  /* line 393, ../sass/partials/_inner-pages.scss */
+  /* line 394, ../sass/partials/_inner-pages.scss */
   .pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success:before {
     top: 2px;
     position: relative;
     margin-right: 10px; }
 
-/* line 401, ../sass/partials/_inner-pages.scss */
+/* line 402, ../sass/partials/_inner-pages.scss */
 #panel-bootstrap-column-main .pane-ideal-challenge-challenge-add-idea-button {
   padding: 0;
   width: 140px; }
-  /* line 404, ../sass/partials/_inner-pages.scss */
+  /* line 405, ../sass/partials/_inner-pages.scss */
   #panel-bootstrap-column-main .pane-ideal-challenge-challenge-add-idea-button a.btn.btn-success {
     font-size: 15px;
     font-weight: bold;
     padding: 7px 0 11px 0px;
     line-height: 15px; }
-    /* line 409, ../sass/partials/_inner-pages.scss */
+    /* line 410, ../sass/partials/_inner-pages.scss */
     #panel-bootstrap-column-main .pane-ideal-challenge-challenge-add-idea-button a.btn.btn-success:before {
       top: 6px;
       font-weight: normal;
       font-size: 24px; }
 
 /* ----------------------------------- pane-ideal-challenge-challenge-data ---------------------------------- */
-/* line 420, ../sass/partials/_inner-pages.scss */
+/* line 421, ../sass/partials/_inner-pages.scss */
 .pane-ideal-challenge-challenge-data {
   clear: both; }
-  /* line 422, ../sass/partials/_inner-pages.scss */
+  /* line 423, ../sass/partials/_inner-pages.scss */
   .pane-ideal-challenge-challenge-data .pane-title {
     background-color: #028cbb;
     color: white;
@@ -2213,50 +2244,50 @@ body .panels-bootstrap-inner_page {
     /* line 41, ../sass/_mixins.scss */
     .pane-ideal-challenge-challenge-data .pane-title:empty:before {
       display: none; }
-    /* line 425, ../sass/partials/_inner-pages.scss */
+    /* line 426, ../sass/partials/_inner-pages.scss */
     .pane-ideal-challenge-challenge-data .pane-title:before {
       margin-right: 13px; }
-  /* line 429, ../sass/partials/_inner-pages.scss */
+  /* line 430, ../sass/partials/_inner-pages.scss */
   .pane-ideal-challenge-challenge-data .pane-content {
     background-color: #028cbb;
     color: white;
     display: inline-block;
     width: 100%;
     padding: 0 10px 10px 10px; }
-    /* line 430, ../sass/partials/_inner-pages.scss */
+    /* line 431, ../sass/partials/_inner-pages.scss */
     .pane-ideal-challenge-challenge-data .pane-content .well {
       color: black; }
-    /* line 436, ../sass/partials/_inner-pages.scss */
+    /* line 437, ../sass/partials/_inner-pages.scss */
     .pane-ideal-challenge-challenge-data .pane-content a {
       color: white; }
-    /* line 437, ../sass/partials/_inner-pages.scss */
+    /* line 438, ../sass/partials/_inner-pages.scss */
     .pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row {
       margin-right: 0;
       margin-left: 0; }
-      /* line 440, ../sass/partials/_inner-pages.scss */
+      /* line 441, ../sass/partials/_inner-pages.scss */
       .pane-ideal-challenge-challenge-data .pane-content #challenge-dates.row .col-xs-4 {
         padding: 0 5px; }
-    /* line 444, ../sass/partials/_inner-pages.scss */
+    /* line 445, ../sass/partials/_inner-pages.scss */
     .pane-ideal-challenge-challenge-data .pane-content #challenge-dates .badge {
       background-color: #016ca2;
       color: white;
       width: 100%;
       border-radius: 30px;
       padding: 7px 0 12px 0; }
-      /* line 450, ../sass/partials/_inner-pages.scss */
+      /* line 451, ../sass/partials/_inner-pages.scss */
       .pane-ideal-challenge-challenge-data .pane-content #challenge-dates .badge .challenge-date-value {
         margin: 0;
         font-weight: bold;
         font-size: 29px; }
-      /* line 455, ../sass/partials/_inner-pages.scss */
+      /* line 456, ../sass/partials/_inner-pages.scss */
       .pane-ideal-challenge-challenge-data .pane-content #challenge-dates .badge .challenge-date-label {
         font-size: 15px; }
-    /* line 459, ../sass/partials/_inner-pages.scss */
+    /* line 460, ../sass/partials/_inner-pages.scss */
     .pane-ideal-challenge-challenge-data .pane-content #challenge-dates-start-end {
       margin: 9px 7px 0 7px; }
 
 /* ----------------------------------- pane-views-ideas-in-challenge-block ---------------------------------- */
-/* line 468, ../sass/partials/_inner-pages.scss */
+/* line 469, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block .pane-title {
   border-bottom: 1px solid #d5d5d5;
   padding-bottom: 8px;
@@ -2275,13 +2306,13 @@ body .panels-bootstrap-inner_page {
   /* line 41, ../sass/_mixins.scss */
   .pane-views-ideas-in-challenge-block .pane-title:empty:before {
     display: none; }
-  /* line 471, ../sass/partials/_inner-pages.scss */
+  /* line 472, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block .pane-title:before {
     margin: 0 5px 0 -6px; }
-/* line 474, ../sass/partials/_inner-pages.scss */
+/* line 475, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block ul {
   padding-left: 25px; }
-/* line 475, ../sass/partials/_inner-pages.scss */
+/* line 476, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block .views-row {
   color: #43ac6a;
   font-size: 20px;
@@ -2291,73 +2322,73 @@ body .panels-bootstrap-inner_page {
   display: list-item;
   margin-bottom: 25px;
   padding-bottom: 5px; }
-  /* line 478, ../sass/partials/_inner-pages.scss */
+  /* line 479, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block .views-row > div {
     color: black;
     font-size: 15px; }
-  /* line 485, ../sass/partials/_inner-pages.scss */
+  /* line 486, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block .views-row.views-row-last {
     margin-bottom: 0; }
-/* line 487, ../sass/partials/_inner-pages.scss */
+/* line 488, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block div.views-field-field-idea-image {
   display: inline-block;
   width: 36px;
   height: 36px;
   margin: 3px 10px 8px 0; }
-  /* line 492, ../sass/partials/_inner-pages.scss */
+  /* line 493, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block div.views-field-field-idea-image img {
     visibility: hidden; }
-/* line 494, ../sass/partials/_inner-pages.scss */
+/* line 495, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block div.views-field-title {
   display: inline;
   font-size: 19px;
   line-height: 22px;
   margin-bottom: 13px; }
-  /* line 499, ../sass/partials/_inner-pages.scss */
+  /* line 500, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block div.views-field-title a {
     color: black; }
-/* line 501, ../sass/partials/_inner-pages.scss */
+/* line 502, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block div.views-field-body {
   clear: both;
   font-size: 13px;
   line-height: 15px;
   margin-bottom: 12px; }
-/* line 507, ../sass/partials/_inner-pages.scss */
+/* line 508, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block div.views-field-created {
   display: inline;
   margin-right: 5px;
   font-size: 13px; }
-/* line 512, ../sass/partials/_inner-pages.scss */
+/* line 513, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block .views-field-name {
   display: inline;
   font-size: 13px;
   font-weight: bold;
   margin-right: 12px; }
-  /* line 517, ../sass/partials/_inner-pages.scss */
+  /* line 518, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block .views-field-name .views-label-name {
     font-size: 12px;
     font-weight: normal;
     margin-right: 4px; }
-/* line 522, ../sass/partials/_inner-pages.scss */
+/* line 523, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block div.views-field-field-vote {
   display: inline; }
-  /* line 524, ../sass/partials/_inner-pages.scss */
+  /* line 525, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block div.views-field-field-vote * {
     display: inline; }
-  /* line 526, ../sass/partials/_inner-pages.scss */
+  /* line 527, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block div.views-field-field-vote .ajax-progress .glyphicon {
     margin: 0; }
-    /* line 528, ../sass/partials/_inner-pages.scss */
+    /* line 529, ../sass/partials/_inner-pages.scss */
     .pane-views-ideas-in-challenge-block div.views-field-field-vote .ajax-progress .glyphicon:before {
       top: 0;
       margin: 0; }
-  /* line 531, ../sass/partials/_inner-pages.scss */
+  /* line 532, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block div.views-field-field-vote .vud-link-reset {
     display: none; }
-  /* line 532, ../sass/partials/_inner-pages.scss */
+  /* line 533, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block div.views-field-field-vote .vud-widget-alternate {
     float: none; }
-  /* line 533, ../sass/partials/_inner-pages.scss */
+  /* line 534, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block div.views-field-field-vote .alternate-votes-display {
     font-size: 13px;
     height: auto;
@@ -2375,18 +2406,18 @@ body .panels-bootstrap-inner_page {
     /* line 41, ../sass/_mixins.scss */
     .pane-views-ideas-in-challenge-block div.views-field-field-vote .alternate-votes-display:empty:before {
       display: none; }
-    /* line 541, ../sass/partials/_inner-pages.scss */
+    /* line 542, ../sass/partials/_inner-pages.scss */
     .pane-views-ideas-in-challenge-block div.views-field-field-vote .alternate-votes-display:before {
       position: relative;
       top: 1px; }
-  /* line 543, ../sass/partials/_inner-pages.scss */
+  /* line 544, ../sass/partials/_inner-pages.scss */
   .pane-views-ideas-in-challenge-block div.views-field-field-vote .up-active, .pane-views-ideas-in-challenge-block div.views-field-field-vote .up-inactive {
     display: none; }
 
 /*-----------------------------------------------------------------------------
                         Idea:  Inner - page
 -----------------------------------------------------------------------------*/
-/* line 553, ../sass/partials/_inner-pages.scss */
+/* line 554, ../sass/partials/_inner-pages.scss */
 .pane-node-field-vote {
   margin: 0 0 -4px !important;
   display: inline-block;
@@ -2415,26 +2446,26 @@ body .panels-bootstrap-inner_page {
       .vote-thumb { @include mixin-font-icon('\e60e',21px); }
     }
   }*/ }
-  /* line 557, ../sass/partials/_inner-pages.scss */
+  /* line 558, ../sass/partials/_inner-pages.scss */
   .pane-node-field-vote .pane-title {
     display: none; }
-  /* line 561, ../sass/partials/_inner-pages.scss */
+  /* line 562, ../sass/partials/_inner-pages.scss */
   .pane-node-field-vote .ajax-progress .glyphicon {
     margin: 0; }
-    /* line 563, ../sass/partials/_inner-pages.scss */
+    /* line 564, ../sass/partials/_inner-pages.scss */
     .pane-node-field-vote .ajax-progress .glyphicon:before {
       top: 0;
       margin: 0; }
-  /* line 566, ../sass/partials/_inner-pages.scss */
+  /* line 567, ../sass/partials/_inner-pages.scss */
   .pane-node-field-vote .vud-link-reset {
     display: none; }
-  /* line 569, ../sass/partials/_inner-pages.scss */
+  /* line 570, ../sass/partials/_inner-pages.scss */
   .pane-node-field-vote .vud-widget-alternate {
     width: 100%;
     text-align: center;
     margin: 0;
     height: auto; }
-  /* line 575, ../sass/partials/_inner-pages.scss */
+  /* line 576, ../sass/partials/_inner-pages.scss */
   .pane-node-field-vote .alternate-votes-display {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 55px;
@@ -2453,7 +2484,7 @@ body .panels-bootstrap-inner_page {
     /* line 41, ../sass/_mixins.scss */
     .pane-node-field-vote .alternate-votes-display:empty:before {
       display: none; }
-    /* line 584, ../sass/partials/_inner-pages.scss */
+    /* line 585, ../sass/partials/_inner-pages.scss */
     .pane-node-field-vote .alternate-votes-display:after {
       content: 'Votes';
       position: absolute;
@@ -2461,7 +2492,7 @@ body .panels-bootstrap-inner_page {
       left: 0px;
       font-size: 16px;
       font-weight: normal; }
-  /* line 593, ../sass/partials/_inner-pages.scss */
+  /* line 594, ../sass/partials/_inner-pages.scss */
   .pane-node-field-vote .up-active, .pane-node-field-vote .up-inactive {
     position: relative;
     top: -82px;
@@ -2482,20 +2513,20 @@ body .panels-bootstrap-inner_page {
     /* line 41, ../sass/_mixins.scss */
     .pane-node-field-vote .up-active:empty:before, .pane-node-field-vote .up-inactive:empty:before {
       display: none; }
-    /* line 604, ../sass/partials/_inner-pages.scss */
+    /* line 605, ../sass/partials/_inner-pages.scss */
     .pane-node-field-vote .up-active:empty:before, .pane-node-field-vote .up-inactive:empty:before {
       display: inline-block !important; }
-    /* line 605, ../sass/partials/_inner-pages.scss */
+    /* line 606, ../sass/partials/_inner-pages.scss */
     .pane-node-field-vote .up-active:after, .pane-node-field-vote .up-inactive:after {
       content: "Vote Up";
       font-size: 25px;
       font-weight: normal; }
 
-/* line 639, ../sass/partials/_inner-pages.scss */
+/* line 640, ../sass/partials/_inner-pages.scss */
 .pane-node-field-attachments {
   margin-bottom: 38px !important;
   clear: both; }
-  /* line 642, ../sass/partials/_inner-pages.scss */
+  /* line 643, ../sass/partials/_inner-pages.scss */
   .pane-node-field-attachments .pane-title {
     background-color: #028cbb;
     color: white;
@@ -2512,31 +2543,35 @@ body .panels-bootstrap-inner_page {
     /* line 41, ../sass/_mixins.scss */
     .pane-node-field-attachments .pane-title:empty:before {
       display: none; }
-  /* line 648, ../sass/partials/_inner-pages.scss */
+  /* line 649, ../sass/partials/_inner-pages.scss */
   .pane-node-field-attachments .field-item {
     font-size: 13px;
     font-weight: bold; }
-    /* line 651, ../sass/partials/_inner-pages.scss */
+    /* line 652, ../sass/partials/_inner-pages.scss */
     .pane-node-field-attachments .field-item + .field-item {
       border-top: 1px solid #d5d5d5;
       margin-top: 10px;
       padding-top: 15px; }
-    /* line 656, ../sass/partials/_inner-pages.scss */
+    /* line 657, ../sass/partials/_inner-pages.scss */
     .pane-node-field-attachments .field-item a:before {
       content: '';
       padding: 4px 10px;
       margin-right: 10px;
       background-position: -35px 0; }
-    /* line 662, ../sass/partials/_inner-pages.scss */
+    /* line 663, ../sass/partials/_inner-pages.scss */
     .pane-node-field-attachments .field-item a[type*='text']:before {
       background-position: -35px 0; }
-    /* line 663, ../sass/partials/_inner-pages.scss */
+    /* line 664, ../sass/partials/_inner-pages.scss */
     .pane-node-field-attachments .field-item a[type*='pdf']:before {
       background-position: -16px 0; }
-    /* line 664, ../sass/partials/_inner-pages.scss */
+    /* line 665, ../sass/partials/_inner-pages.scss */
     .pane-node-field-attachments .field-item img {
       display: none; }
 
+@media all and (max-width: 991px) and (min-width: 767px) {
+  /* line 671, ../sass/partials/_inner-pages.scss */
+  #panel-bootstrap-region-center.col-sm-12 {
+    margin-left: 0; } }
 /*-----------------------------------------------
                        END
 -----------------------------------------------*/

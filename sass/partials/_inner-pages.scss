@@ -20,6 +20,7 @@ body .panels-bootstrap-inner_page {
     width: 100%;
     }
   }
+ 
   #panel-bootstrap-region-center {
     margin-bottom: 20px;
     background-color: $light-gray;
@@ -665,5 +666,10 @@ body .panels-bootstrap-inner_page {
   }
 }
 
-
+ @media all and(max-width:991px) and(min-width:767px)
+  {
+   #panel-bootstrap-region-center.col-sm-12 { 
+    margin-left:0;
+    }
+  }
 
