@@ -672,4 +672,99 @@ body .panels-bootstrap-inner_page {
     margin-left:0;
     }
   }
+#popup{
+  .modal-header{
+    border-bottom:0;
+    h1{
+      margin-left: 25px;
+      margin-top: 10px;
+    }
+  }
+  .modal-body{
+    padding: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  p{
+    font-size:150%;
+  }
+  p.total-points{
+    font-size:125%;
+    background-color:#f2f2f2;
+    text-align:center;
+    padding:10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  p b{
+    color:#078fbc;
+  }
+  .modal-footer{
+    border:0;
+    text-align:center;
+    a, button{
+      margin-left:5px;
+      margin-right:5px;
+      background-color:$green;
+    }
+    .go-home{
+      @include icons-smart-sprite(icon-go-home);
+      background-color:$green;
+    }
+    .share-wrap{
+      position: relative;
+      &:hover .share-content { display: block; opacity: 1;  }
+      
+      .share-content{
+        opacity: 0;
+        display:none;
+        -webkit-transition: all 200ms;
+        position: absolute;
+        top: -48px;
+        right: 5px;
+        width: 167px;
+        padding: 5px 15px;
+        background: #BDBDBD;
+        color: black;
+        .social-botton {
+          overflow: hidden;
+          display: inline-block;
+          width: 25px;
+          line-height: 1;
+          height: 25px;
+          iframe, .IN-widget { opacity: 0; }
 
+          &:before { position: absolute; }
+
+          // 1
+          @include mixin-font-icon($fb-like,25px);
+          &:hover { color: #050075; }
+
+          // 2
+          +.social-botton { 
+            margin-left: 10px;   @include mixin-font-icon($twitter,25px); 
+            &:hover { color: $blue; } 
+          } 
+
+          // 3 
+          +.social-botton + .social-botton { 
+            @include mixin-font-icon($google,25px); 
+            &:hover { color: red; }
+          }  
+
+          // 4
+          +.social-botton + .social-botton + .social-botton { 
+            @include mixin-font-icon($linkedin,25px); 
+            &:hover { color: #006081; } 
+          }  
+        }
+      }
+
+      .share-btn{
+        @include icons-smart-sprite(icon-share);
+        background-color:$green;
+      }
+    }
+    
+  }
+}
