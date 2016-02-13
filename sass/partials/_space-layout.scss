@@ -49,11 +49,10 @@ body {
     &.navbar.container { max-width: none; }
   }
 
-  .region-page-bottom{
-    position: absolute;
-    left: 50%;
-    z-index:5;
-    margin-left: -50%;
+  .region-page-bottom {
+    position: fixed;
+    left: 0;
+    max-width: 100%;
   }
 
 }
