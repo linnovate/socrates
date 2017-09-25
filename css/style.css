@@ -927,24 +927,27 @@ body .region-page-bottom {
 
 /* line 59, ../sass/partials/_space-layout.scss */
 #panel-bootstrap-region-sidebar,
-#panel-bootstrap-region-content_views {
+#panel-bootstrap-region-content_views,
+#panel-bootstrap-region-center {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
   float: left;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
   /* line 68, ../sass/partials/_space-layout.scss */
-  #panel-bootstrap-region-content_views {
+  #panel-bootstrap-region-content_views,
+  .panels-bootstrap-ideal_two_column #panel-bootstrap-region-center {
     width: 66.66666667%;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 74, ../sass/partials/_space-layout.scss */
-  #panel-bootstrap-region-sidebar {
+  #panel-bootstrap-row-1 #panel-bootstrap-region-sidebar,
+  #panel-bootstrap-row-main-row  #panel-bootstrap-region-sidebar {
     width: 33.33333333%;
   }
 }
