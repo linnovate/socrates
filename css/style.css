@@ -963,6 +963,12 @@ body.panels-ipe .panel-pane,
 .panel-pane {
   margin-bottom: 2.7em;
 }
+.panel-pane.vud-anonymous{
+  margin-bottom: 0.4em;
+  text-align: center;
+  font-size: 1em;
+}
+
 
 @media all and (max-width: 767px) {
   /* line 91, ../sass/partials/_space-layout.scss */
