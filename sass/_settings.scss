@@ -1,4 +1,12 @@
- 
+@charset "UTF-8";
+// @source - [@Stephn-R](https://github.com/sass/sass/issues/1395#issuecomment-57483844)
+// @description converts 1 or more characters into a unicode
+// @markup {scss}
+// unicode("e655"); // "\e655"
+@function unicode($str){
+ @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+};
+
 /*-----------------------------------------------
                    Typography
 -----------------------------------------------*/
@@ -24,58 +32,58 @@ $icons-smart-layout:smart;
 //fix url image-sprite
 .icons-smart-sprite{
   background: url('../images/icons-smart-sc6718674dc.png') no-repeat;
-} 
+}
 
 /*-----------------------------------------------
                    Font icon
 -----------------------------------------------*/
 
-$comment: '\e608';
+$comment: unicode('e608');
 
-$eye: '\e601';
+$eye: unicode('e601');
 
-$list: '\e604';
+$list: unicode('e604');
 
-$calendar: '\e607';
+$calendar: unicode('e607');
 
-$light: '\e619';
+$light: unicode('e619');
 
-$vote: '\e60f';
+$vote: unicode('e60f');
 
-$vote-dislike: '\e60e';
+$vote-dislike: unicode('e60e');
 
-$idea: '\e60c';
+$idea: unicode('e60c');
 
-$user: '\e602';
+$user: unicode('e602');
 
-$challenge: '\e609';
+$challenge: unicode('e609');
 
-$discussions: '\e606';
+$discussions: unicode('e606');
 
-$share: '\e60d';
+$share: unicode('e60d');
 
-$arrow-right: '\e60a';
+$arrow-right: unicode('e60a');
 
-$arrow-left: '\e60b';
+$arrow-left: unicode('e60b');
 
-$attachments: '\e610';
+$attachments: unicode('e610');
 
 
-$fb-like: '\e61a';
+$fb-like: unicode('e61a');
 
-$google: '\e61b';
+$google: unicode('e61b');
 
-$linkedin: '\e61c';
+$linkedin: unicode('e61c');
 
-$twitter: '\e61d';
+$twitter: unicode('e61d');
 
-$facebook-footer: '\e611';
+$facebook-footer: unicode('e611');
 
-$twitter-footer: '\e612';
+$twitter-footer: unicode('e612');
 
-$google-footer: '\e613';
+$google-footer: unicode('e613');
 
-$linkedin-footer: '\e614';
+$linkedin-footer: unicode('e614');
 
 /*-----------------------------------------------
                    Colors

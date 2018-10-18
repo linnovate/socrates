@@ -2,11 +2,11 @@
 /* #############################################
  * #####    Socrates - drupal theming.     #####
  * #############################################
- *  
+ *
  * Socrates theme main stylesheet.
  *
  *  Index
- *  ----------- 
+ *  -----------
  *  1. Imports
  *
  *  2. General
@@ -38,7 +38,7 @@
   background-repeat: no-repeat;
 }
 
-/* line 25, ../sass/_settings.scss */
+/* line 33, ../sass/_settings.scss */
 .icons-smart-sprite, .pane-node-field-attachments .field-item a:before, .pane-node-field-attachments .field-item a[type*='text']:before, .pane-node-field-attachments .field-item a[type*='pdf']:before, #popup .modal-footer .go-home, #popup .modal-footer .share-wrap .share-btn {
   background: url("../images/icons-smart-sc6718674dc.png") no-repeat;
 }
@@ -110,7 +110,7 @@ img {
 /* line 30, ../sass/_mixins.scss */
 .glyphicon-comment:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e608";
   margin-right: 7px;
 }
 /* line 41, ../sass/_mixins.scss */
@@ -125,7 +125,7 @@ img {
 /* line 30, ../sass/_mixins.scss */
 .glyphicon-read:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e601";
   margin-right: 7px;
   font-size: 18px;
 }
@@ -141,7 +141,7 @@ img {
 /* line 30, ../sass/_mixins.scss */
 .glyphicon-th-list:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e604";
   margin-right: 7px;
 }
 /* line 41, ../sass/_mixins.scss */
@@ -152,7 +152,7 @@ img {
 /* line 30, ../sass/_mixins.scss */
 .glyphicon-calendar:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e607";
   margin-right: 7px;
   font-size: 16px;
 }
@@ -164,7 +164,7 @@ img {
 /* line 30, ../sass/_mixins.scss */
 .glyphicon-map-marker:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e619";
   margin-right: 7px;
   font-size: 18px;
 }
@@ -324,7 +324,7 @@ img {
 /* line 30, ../sass/_mixins.scss */
 .row-bottom-openideal .vote .alternate-votes-display:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60f";
   margin-right: 7px;
   font-size: 13px;
   color: #43ac6a;
@@ -383,7 +383,7 @@ img {
 /* line 30, ../sass/_mixins.scss */
 .pane-views-f82b385d04a27538a1646ec3e53c5fef .pane-title:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e609";
   margin-right: 7px;
   font-size: 28px;
 }
@@ -465,7 +465,7 @@ img {
 /* line 30, ../sass/_mixins.scss */
 .pane-custom .add-idea:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60c";
   margin-right: 7px;
   font-size: 28px;
 }
@@ -633,7 +633,7 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content .top.idea-page.idea-page .votes .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content .top.idea-page.idea-page .votes .count:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60f";
   margin-right: 7px;
   font-size: 43px;
   color: #43ac6a;
@@ -657,7 +657,7 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content .top.idea-page .dislikes .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content .top.idea-page .dislikes .count:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60e";
   margin-right: 7px;
   font-size: 43px;
   color: #A8A8A8;
@@ -673,7 +673,7 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content .top.ideas .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content .top.ideas .count:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e619";
   margin-right: 7px;
   font-size: 55px;
 }
@@ -688,7 +688,7 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content .top.challenges .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content .top.challenges .count:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e609";
   margin-right: 7px;
   font-size: 55px;
 }
@@ -751,7 +751,7 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content table.counts .ideas .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts .ideas .count:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60c";
   margin-right: 7px;
   font-size: 22px;
   color: #43ac6a;
@@ -767,7 +767,7 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content table.counts .users .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts .users .count:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e602";
   margin-right: 7px;
   font-size: 22px;
   color: #43ac6a;
@@ -783,7 +783,7 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content table.counts .votes .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts .votes .count:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60f";
   margin-right: 7px;
   font-size: 22px;
   color: #43ac6a;
@@ -799,7 +799,7 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content table.counts .views .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts .views .count:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e601";
   margin-right: 7px;
   font-size: 28px;
   color: #43ac6a;
@@ -828,7 +828,7 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content table.counts .phase .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts .phase .count:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e604";
   margin-right: 7px;
   font-size: 18px;
   color: #43ac6a;
@@ -844,7 +844,7 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content table.counts .comments .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content table.counts .comments .count:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e608";
   margin-right: 7px;
   font-size: 22px;
   color: #43ac6a;
@@ -969,7 +969,7 @@ body.panels-ipe .panel-pane, .panel-pane {
 /*-----------------------------------------------
                      Top
 -----------------------------------------------*/
-/* line 6, ../sass/partials/_space-header-footer.scss */
+/* line 5, ../sass/partials/_space-header-footer.scss */
 .region-page-top {
   z-index: 2;
 }
@@ -977,98 +977,98 @@ body.panels-ipe .panel-pane, .panel-pane {
 /*-----------------------------------------------
                      Header
 -----------------------------------------------*/
-/* line 16, ../sass/partials/_space-header-footer.scss */
+/* line 15, ../sass/partials/_space-header-footer.scss */
 header#navbar {
   z-index: 1;
   /* --- logo --- */
   /* --- menu --- */
   /* --- search --- */
 }
-/* line 18, ../sass/partials/_space-header-footer.scss */
+/* line 17, ../sass/partials/_space-header-footer.scss */
 header#navbar .navbar-collapse {
   padding: 0;
 }
-/* line 20, ../sass/partials/_space-header-footer.scss */
+/* line 19, ../sass/partials/_space-header-footer.scss */
 header#navbar .panel-pane {
   margin-bottom: 0;
   float: left;
 }
-/* line 24, ../sass/partials/_space-header-footer.scss */
+/* line 23, ../sass/partials/_space-header-footer.scss */
 header#navbar .pane-page-logo {
   display: table;
   height: 45px;
   margin-right: 10px;
 }
-/* line 28, ../sass/partials/_space-header-footer.scss */
+/* line 27, ../sass/partials/_space-header-footer.scss */
 header#navbar .pane-page-logo .pane-content {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 31, ../sass/partials/_space-header-footer.scss */
+/* line 30, ../sass/partials/_space-header-footer.scss */
 header#navbar .pane-page-logo .pane-content img {
   max-height: 40px;
 }
-/* line 37, ../sass/partials/_space-header-footer.scss */
+/* line 36, ../sass/partials/_space-header-footer.scss */
 header#navbar .user-picture {
   float: left;
   width: 37px;
   height: 37px;
   margin-top: 4px;
 }
-/* line 42, ../sass/partials/_space-header-footer.scss */
+/* line 41, ../sass/partials/_space-header-footer.scss */
 header#navbar .user-picture img {
   width: 100%;
 }
 @media all and (max-width: 767px) {
-  /* line 45, ../sass/partials/_space-header-footer.scss */
+  /* line 44, ../sass/partials/_space-header-footer.scss */
   header#navbar .pane-system-main-menu {
     float: none;
   }
 }
-/* line 50, ../sass/partials/_space-header-footer.scss */
+/* line 49, ../sass/partials/_space-header-footer.scss */
 header#navbar .nav > li {
   /*float: left;*/
 }
-/* line 52, ../sass/partials/_space-header-footer.scss */
+/* line 51, ../sass/partials/_space-header-footer.scss */
 header#navbar .nav > li a {
   color: white;
   padding: 13px 15px;
 }
 @media all and (max-width: 991px) {
-  /* line 54, ../sass/partials/_space-header-footer.scss */
+  /* line 53, ../sass/partials/_space-header-footer.scss */
   header#navbar .nav > li a {
     color: white;
     padding: 13px 10px;
   }
 }
-/* line 57, ../sass/partials/_space-header-footer.scss */
+/* line 56, ../sass/partials/_space-header-footer.scss */
 header#navbar .nav > li a:hover, header#navbar .nav > li a:focus {
   text-decoration: none;
   background-color: #000;
 }
-/* line 64, ../sass/partials/_space-header-footer.scss */
+/* line 63, ../sass/partials/_space-header-footer.scss */
 header#navbar .pane-system-user-menu {
   float: right;
 }
 @media all and (max-width: 767px) {
-  /* line 66, ../sass/partials/_space-header-footer.scss */
+  /* line 65, ../sass/partials/_space-header-footer.scss */
   header#navbar .pane-system-user-menu {
     float: none;
   }
 }
-/* line 70, ../sass/partials/_space-header-footer.scss */
+/* line 69, ../sass/partials/_space-header-footer.scss */
 header#navbar .pane-search-form {
   float: right;
   margin-left: 5px;
 }
-/* line 73, ../sass/partials/_space-header-footer.scss */
+/* line 72, ../sass/partials/_space-header-footer.scss */
 header#navbar .pane-search-form input.form-text {
   height: 36px;
   padding: 0px 10px;
   width: 170px;
   margin-top: 4px;
 }
-/* line 79, ../sass/partials/_space-header-footer.scss */
+/* line 78, ../sass/partials/_space-header-footer.scss */
 header#navbar .pane-search-form .input-group-btn {
   display: none;
 }
@@ -1076,7 +1076,7 @@ header#navbar .pane-search-form .input-group-btn {
 /*-----------------------------------------------
                      Footer
 -----------------------------------------------*/
-/* line 92, ../sass/partials/_space-header-footer.scss */
+/* line 91, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar {
   left: 0;
   bottom: 0;
@@ -1084,62 +1084,62 @@ footer.footer.navbar {
   /* --- social-links --- */
   /* --- openideal-credits --- */
 }
-/* line 95, ../sass/partials/_space-header-footer.scss */
+/* line 94, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .panel-pane {
   margin-bottom: 0;
   float: left;
 }
 @media all and (max-width: 767px) {
-  /* line 97, ../sass/partials/_space-header-footer.scss */
+  /* line 96, ../sass/partials/_space-header-footer.scss */
   footer.footer.navbar .panel-pane {
     float: none !important;
   }
 }
-/* line 101, ../sass/partials/_space-header-footer.scss */
+/* line 100, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar ul.nav {
   margin: 15px 0;
 }
-/* line 103, ../sass/partials/_space-header-footer.scss */
+/* line 102, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar ul.nav > li {
   float: left;
 }
-/* line 105, ../sass/partials/_space-header-footer.scss */
+/* line 104, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar ul.nav > li a {
   color: white;
 }
 @media all and (max-width: 767px) {
-  /* line 108, ../sass/partials/_space-header-footer.scss */
+  /* line 107, ../sass/partials/_space-header-footer.scss */
   footer.footer.navbar ul.nav > li {
     float: none !important;
   }
 }
-/* line 110, ../sass/partials/_space-header-footer.scss */
+/* line 109, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar ul.nav a:hover, footer.footer.navbar ul.nav a:focus {
   text-decoration: none;
   background-color: #000;
 }
-/* line 118, ../sass/partials/_space-header-footer.scss */
+/* line 117, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-social-links {
   float: right;
 }
-/* line 120, ../sass/partials/_space-header-footer.scss */
+/* line 119, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-social-links a.social_link {
   font-size: 0;
 }
-/* line 122, ../sass/partials/_space-header-footer.scss */
+/* line 121, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-social-links a.social_link:before {
   font-size: 37px;
   margin-right: 9px !important;
   color: #D8D8D8;
 }
-/* line 127, ../sass/partials/_space-header-footer.scss */
+/* line 126, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-social-links a.social_link:hover:before {
   color: #ccc8c8;
 }
 /* line 30, ../sass/_mixins.scss */
 footer.footer.navbar .pane-social-links a.social_link.facebook:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e611";
   margin-right: 7px;
 }
 /* line 41, ../sass/_mixins.scss */
@@ -1149,7 +1149,7 @@ footer.footer.navbar .pane-social-links a.social_link.facebook:empty:before {
 /* line 30, ../sass/_mixins.scss */
 footer.footer.navbar .pane-social-links a.social_link.twitter:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e612";
   margin-right: 7px;
 }
 /* line 41, ../sass/_mixins.scss */
@@ -1159,7 +1159,7 @@ footer.footer.navbar .pane-social-links a.social_link.twitter:empty:before {
 /* line 30, ../sass/_mixins.scss */
 footer.footer.navbar .pane-social-links a.social_link.google:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e613";
   margin-right: 7px;
 }
 /* line 41, ../sass/_mixins.scss */
@@ -1169,60 +1169,60 @@ footer.footer.navbar .pane-social-links a.social_link.google:empty:before {
 /* line 30, ../sass/_mixins.scss */
 footer.footer.navbar .pane-social-links a.social_link.linkedin:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e614";
   margin-right: 7px;
 }
 /* line 41, ../sass/_mixins.scss */
 footer.footer.navbar .pane-social-links a.social_link.linkedin:empty:before {
   display: none;
 }
-/* line 131, ../sass/partials/_space-header-footer.scss */
+/* line 130, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-social-links a.social_link.linkedin:before {
   margin-right: 0 !important;
 }
-/* line 137, ../sass/partials/_space-header-footer.scss */
+/* line 136, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-ideal-main-openideal-credits {
   float: right;
   clear: right;
   color: #fff;
 }
-/* line 141, ../sass/partials/_space-header-footer.scss */
+/* line 140, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-ideal-main-openideal-credits a {
   font-weight: bold;
   color: #028cbb;
 }
 @media all and (max-width: 767px) {
-  /* line 143, ../sass/partials/_space-header-footer.scss */
+  /* line 142, ../sass/partials/_space-header-footer.scss */
   footer.footer.navbar .pane-ideal-main-openideal-credits {
     text-align: center;
   }
 }
 
-/* line 146, ../sass/partials/_space-header-footer.scss */
+/* line 145, ../sass/partials/_space-header-footer.scss */
 .navbar-collapse {
   border: none;
 }
 
 @media all and (min-width: 767px) {
-  /* line 148, ../sass/partials/_space-header-footer.scss */
+  /* line 147, ../sass/partials/_space-header-footer.scss */
   .nav > li {
     float: left;
   }
 }
-/* line 152, ../sass/partials/_space-header-footer.scss */
+/* line 151, ../sass/partials/_space-header-footer.scss */
 .footer {
   border-top: none;
 }
 
 @media all and (max-width: 767px) {
-  /* line 157, ../sass/partials/_space-header-footer.scss */
+  /* line 156, ../sass/partials/_space-header-footer.scss */
   .pane-social-links {
     width: 176px;
     margin: 0 auto;
     float: none !important;
   }
 
-  /* line 158, ../sass/partials/_space-header-footer.scss */
+  /* line 157, ../sass/partials/_space-header-footer.scss */
   footer.footer.navbar {
     position: relative;
   }
@@ -1230,7 +1230,7 @@ footer.footer.navbar .pane-ideal-main-openideal-credits a {
 /*-----------------------------------------------
                      Bottom
 -----------------------------------------------*/
-/* line 164, ../sass/partials/_space-header-footer.scss */
+/* line 163, ../sass/partials/_space-header-footer.scss */
 .panels-ipe footer.footer.navbar {
   bottom: 57px;
 }
@@ -1420,7 +1420,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* line 30, ../sass/_mixins.scss */
 .pane-views-highlighted-content-block .pane-content .views-field-type:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e606";
   margin-right: 7px;
   font-size: 24px;
   color: #028cbb;
@@ -1436,7 +1436,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* line 30, ../sass/_mixins.scss */
 .pane-views-highlighted-content-block .pane-content .views-field-type.Challenge:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e609";
   margin-right: 7px;
   font-size: 24px;
   color: #028cbb;
@@ -1448,7 +1448,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* line 30, ../sass/_mixins.scss */
 .pane-views-highlighted-content-block .pane-content .views-field-type.Iead:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60c";
   margin-right: 7px;
   font-size: 24px;
   color: #028cbb;
@@ -1544,7 +1544,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* line 30, ../sass/_mixins.scss */
 .pane-panels-mini.pane-latest-and-greatest .pane-views-activity-block-1 .pane-title:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e602";
   margin-right: 7px;
   font-size: 24px;
   color: #028cbb;
@@ -1556,7 +1556,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* line 30, ../sass/_mixins.scss */
 .pane-panels-mini.pane-latest-and-greatest .pane-views-activity-block-2 .pane-title:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e619";
   margin-right: 7px;
   font-size: 24px;
   color: #028cbb;
@@ -1568,7 +1568,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* line 30, ../sass/_mixins.scss */
 .pane-panels-mini.pane-latest-and-greatest .pane-views-activity-block-3 .pane-title:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e606";
   margin-right: 7px;
   font-size: 24px;
   color: #028cbb;
@@ -1704,7 +1704,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* line 30, ../sass/_mixins.scss */
 .pane-views-head-to-head-ideas-block .pane-content .view-content .col .thumbnail .views-field-field-vote .alternate-votes-display:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60f";
   margin-right: 7px;
   font-size: 22px;
   color: #43ac6a;
@@ -1726,7 +1726,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* line 30, ../sass/_mixins.scss */
 .pane-views-head-to-head-ideas-block .pane-content .view-content .col .thumbnail .views-field-field-vote .up-active:before, .pane-views-head-to-head-ideas-block .pane-content .view-content .col .thumbnail .views-field-field-vote .up-inactive:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60f";
   margin-right: 7px;
   font-size: 20px;
   color: #fff;
@@ -2139,7 +2139,7 @@ body .panels-bootstrap-inner_page .pane-node-field-status {
 /* line 30, ../sass/_mixins.scss */
 body .panels-bootstrap-inner_page .pane-node-field-status .field-item:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e604";
   margin-right: 7px;
 }
 /* line 41, ../sass/_mixins.scss */
@@ -2156,7 +2156,7 @@ body .panels-bootstrap-inner_page .pane-node-created {
 /* line 30, ../sass/_mixins.scss */
 body .panels-bootstrap-inner_page .pane-node-created .pane-content:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e607";
   margin-right: 7px;
   font-size: 16px;
 }
@@ -2194,7 +2194,7 @@ body .panels-bootstrap-inner_page .pane-node-field-share .pane-title {
 /* line 30, ../sass/_mixins.scss */
 body .panels-bootstrap-inner_page .pane-node-field-share .pane-title:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60d";
   margin-right: 7px;
   font-size: 19px;
 }
@@ -2240,7 +2240,7 @@ body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-b
 /* line 30, ../sass/_mixins.scss */
 body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e61a";
   margin-right: 7px;
   font-size: 25px;
 }
@@ -2259,7 +2259,7 @@ body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-b
 /* line 30, ../sass/_mixins.scss */
 body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton + .social-botton:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e61d";
   margin-right: 7px;
   font-size: 25px;
 }
@@ -2274,7 +2274,7 @@ body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-b
 /* line 30, ../sass/_mixins.scss */
 body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton + .social-botton + .social-botton:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e61b";
   margin-right: 7px;
   font-size: 25px;
 }
@@ -2289,7 +2289,7 @@ body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-b
 /* line 30, ../sass/_mixins.scss */
 body .panels-bootstrap-inner_page .pane-node-field-share .pane-content .social-botton + .social-botton + .social-botton + .social-botton:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e61c";
   margin-right: 7px;
   font-size: 25px;
 }
@@ -2349,13 +2349,13 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 203, ../sass/partials/_inner-pages.scss */
 body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-next:before {
   border-radius: 100px 0px 0 100px;
-  content: "";
+  content: "\e60a";
   padding: 14px 3px 14px 7px;
 }
 /* line 208, ../sass/partials/_inner-pages.scss */
 body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-prev:before {
   border-radius: 0 100px 100px 0;
-  content: "";
+  content: "\e60b";
   padding: 14px 7px 14px 3px;
 }
 
@@ -2377,7 +2377,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 .pane-node-comment-form .pane-title:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e608";
   margin-right: 7px;
   font-size: 24px;
   color: #43ac6a;
@@ -2456,7 +2456,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 .comment-form .form-submit:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e608";
   margin-right: 7px;
   font-size: 17px;
   color: #fff;
@@ -2623,7 +2623,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 .pane-ideal-challenge-challenge-add-idea-button .challenge-add-idea-button a.btn-success:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60c";
   margin-right: 7px;
   font-size: 28px;
 }
@@ -2675,7 +2675,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 .pane-ideal-challenge-challenge-data .pane-title:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e607";
   margin-right: 7px;
   font-size: 19px;
 }
@@ -2749,7 +2749,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 .pane-views-ideas-in-challenge-block .pane-title:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e619";
   margin-right: 7px;
   font-size: 25px;
   color: #43ac6a;
@@ -2871,7 +2871,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 .pane-views-ideas-in-challenge-block div.views-field-field-vote .alternate-votes-display:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60f";
   margin-right: 7px;
   font-size: 13px;
   color: #43ac6a;
@@ -2960,7 +2960,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 .pane-node-field-vote .alternate-votes-display:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60f";
   margin-right: 7px;
   font-size: 43px;
   color: #43ac6a;
@@ -2993,7 +2993,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 .pane-node-field-vote .up-active:before, .pane-node-field-vote .up-inactive:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e60f";
   margin-right: 7px;
   font-size: 22px;
   color: #fff;
@@ -3030,7 +3030,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 .pane-node-field-attachments .pane-title:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e610";
   margin-right: 7px;
   font-size: 19px;
 }
@@ -3164,7 +3164,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 #popup .modal-footer .share-wrap .share-content .social-botton:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e61a";
   margin-right: 7px;
   font-size: 25px;
 }
@@ -3183,7 +3183,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 #popup .modal-footer .share-wrap .share-content .social-botton + .social-botton:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e61d";
   margin-right: 7px;
   font-size: 25px;
 }
@@ -3198,7 +3198,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 #popup .modal-footer .share-wrap .share-content .social-botton + .social-botton + .social-botton:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e61b";
   margin-right: 7px;
   font-size: 25px;
 }
@@ -3213,7 +3213,7 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 30, ../sass/_mixins.scss */
 #popup .modal-footer .share-wrap .share-content .social-botton + .social-botton + .social-botton + .social-botton:before {
   font-family: "OpenIdeal";
-  content: "";
+  content: "\e61c";
   margin-right: 7px;
   font-size: 25px;
 }

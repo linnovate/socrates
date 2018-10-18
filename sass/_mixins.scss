@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 /*-----------------------------------------------
                     Mixins
 -----------------------------------------------*/
@@ -59,8 +59,8 @@
   box-sizing: border-box;
   a { color: #fff; }
   &:empty, &.empty { padding: 0; }
-  @if $line-height { 
-    line-height: $line-height; 
+  @if $line-height {
+    line-height: $line-height;
   }
 }
 
@@ -74,13 +74,13 @@
   right: 45%;
   border: $width solid transparent;
   @if $color {
-    @if $direction == left { border-right: $width solid $color; }  
+    @if $direction == left { border-right: $width solid $color; }
     @if $direction == right { border-left: $width solid $color; }
     @if $direction == bottom { border-top: $width solid $color; }
     @if $direction == top { border-bottom: $width solid $color; }
   }
   @else {
-    @if $direction == left { border-right: $width solid; }  
+    @if $direction == left { border-right: $width solid; }
     @if $direction == right { border-left: $width solid; }
     @if $direction == bottom { border-top: $width solid; }
     @if $direction == top { border-bottom: $width solid; }
