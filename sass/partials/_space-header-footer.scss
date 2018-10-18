@@ -90,13 +90,12 @@ header#navbar {
 
 
 footer.footer.navbar {
-position:fixed;
-left:0;
-bottom:0;
+  left:0;
+  bottom:0;
   .panel-pane { margin-bottom: 0; float: left; }
-@media all and (max-width: 767px) {
-.panel-pane { float:none !important; }
-}
+  @media all and (max-width: 767px) {
+    .panel-pane { float:none !important; }
+  }
   /* --- menu --- */
 
   ul.nav{
@@ -151,7 +150,7 @@ bottom:0;
     }
 }
 .footer
-{ 
+{
   border-top:none;
 }
 @media all and (max-width: 767px) {
