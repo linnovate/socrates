@@ -1182,47 +1182,49 @@ footer.footer.navbar .pane-social-links a.social_link.linkedin:before {
 }
 /* line 136, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-ideal-main-openideal-credits {
-  float: right;
-  clear: right;
+  float: none;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
   color: #fff;
 }
-/* line 140, ../sass/partials/_space-header-footer.scss */
+/* line 142, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-ideal-main-openideal-credits a {
   font-weight: bold;
   color: #028cbb;
 }
 @media all and (max-width: 767px) {
-  /* line 142, ../sass/partials/_space-header-footer.scss */
+  /* line 144, ../sass/partials/_space-header-footer.scss */
   footer.footer.navbar .pane-ideal-main-openideal-credits {
     text-align: center;
   }
 }
 
-/* line 145, ../sass/partials/_space-header-footer.scss */
+/* line 147, ../sass/partials/_space-header-footer.scss */
 .navbar-collapse {
   border: none;
 }
 
 @media all and (min-width: 767px) {
-  /* line 147, ../sass/partials/_space-header-footer.scss */
+  /* line 149, ../sass/partials/_space-header-footer.scss */
   .nav > li {
     float: left;
   }
 }
-/* line 151, ../sass/partials/_space-header-footer.scss */
+/* line 153, ../sass/partials/_space-header-footer.scss */
 .footer {
   border-top: none;
 }
 
 @media all and (max-width: 767px) {
-  /* line 156, ../sass/partials/_space-header-footer.scss */
+  /* line 158, ../sass/partials/_space-header-footer.scss */
   .pane-social-links {
     width: 176px;
     margin: 0 auto;
     float: none !important;
   }
 
-  /* line 157, ../sass/partials/_space-header-footer.scss */
+  /* line 159, ../sass/partials/_space-header-footer.scss */
   footer.footer.navbar {
     position: relative;
   }
@@ -1230,7 +1232,7 @@ footer.footer.navbar .pane-ideal-main-openideal-credits a {
 /*-----------------------------------------------
                      Bottom
 -----------------------------------------------*/
-/* line 163, ../sass/partials/_space-header-footer.scss */
+/* line 165, ../sass/partials/_space-header-footer.scss */
 .panels-ipe footer.footer.navbar {
   bottom: 57px;
 }

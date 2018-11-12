@@ -134,8 +134,10 @@ footer.footer.navbar {
   /* --- openideal-credits --- */
 
   .pane-ideal-main-openideal-credits {
-    float: right;
-    clear: right;
+    float: none;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
     color: #fff;
     a { font-weight: bold; color: $blue; }
   }
