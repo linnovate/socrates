@@ -997,9 +997,6 @@ body.panels-ipe .panel-pane,
 /*-----------------------------------------------
                      Header
 -----------------------------------------------*/
-header#navbar {
-  z-index: 2;
-}
 /* line 18, ../sass/partials/_space-header-footer.scss */
 header#navbar .navbar-collapse {
   padding: 0;
