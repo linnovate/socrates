@@ -997,12 +997,8 @@ body.panels-ipe .panel-pane,
 /*-----------------------------------------------
                      Header
 -----------------------------------------------*/
-/* line 16, ../sass/partials/_space-header-footer.scss */
 header#navbar {
-  z-index: 1;
-  /* --- logo --- */
-  /* --- menu --- */
-  /* --- search --- */
+  z-index: 2;
 }
 /* line 18, ../sass/partials/_space-header-footer.scss */
 header#navbar .navbar-collapse {
