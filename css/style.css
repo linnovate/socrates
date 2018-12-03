@@ -2877,6 +2877,9 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
 /* line 524, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block div.views-field-field-vote {
   display: inline;
+  float: right;
+  margin-top: 6px;
+  font-size: 13px;
 }
 /* line 526, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block div.views-field-field-vote * {
@@ -2891,42 +2894,58 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
   top: 0;
   margin: 0;
 }
-/* line 533, ../sass/partials/_inner-pages.scss */
-.pane-views-ideas-in-challenge-block div.views-field-field-vote .vud-link-reset {
-  display: none;
-}
 /* line 534, ../sass/partials/_inner-pages.scss */
+.pane-views-ideas-in-challenge-block div.views-field-field-vote .vud-link-reset,
+.pane-views-ideas-in-challenge-block div.views-field-field-vote .field-label {
+  float: none;
+}
 .pane-views-ideas-in-challenge-block div.views-field-field-vote .vud-widget-alternate {
   float: none;
+  position: relative;
+  margin: 0;
 }
 /* line 535, ../sass/partials/_inner-pages.scss */
 .pane-views-ideas-in-challenge-block div.views-field-field-vote .alternate-votes-display {
-  font-size: 13px;
+  font-size: 11px;
   height: auto;
-  border: 0;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 20px;
+  padding: 5px 8px 3px 23px;
   line-height: 1.1;
   font-weight: bold;
   font-family: Arial;
-}
-/* line 34, ../sass/_mixins.scss */
-.pane-views-ideas-in-challenge-block div.views-field-field-vote .alternate-votes-display:before {
-  font-family: "OpenIdeal";
-  content: "\e60f";
-  margin-right: 7px;
-  font-size: 13px;
-  color: #43ac6a;
 }
 /* line 45, ../sass/_mixins.scss */
 .pane-views-ideas-in-challenge-block div.views-field-field-vote .alternate-votes-display:empty:before {
   display: none;
 }
-/* line 543, ../sass/partials/_inner-pages.scss */
-.pane-views-ideas-in-challenge-block div.views-field-field-vote .alternate-votes-display:before {
-  position: relative;
-  top: 1px;
-}
 /* line 545, ../sass/partials/_inner-pages.scss */
-.pane-views-ideas-in-challenge-block div.views-field-field-vote .up-active, .pane-views-ideas-in-challenge-block div.views-field-field-vote .up-inactive {
+.pane-views-ideas-in-challenge-block div.views-field-field-vote .up-active,
+.pane-views-ideas-in-challenge-block div.views-field-field-vote .up-inactive {
+  position: absolute;
+  left: 7px;
+  top: -1px;
+  width: auto;
+  display: inline-block;
+  background: none;
+}
+.pane-views-ideas-in-challenge-block div.views-field-field-vote .up-active:before,
+.pane-views-ideas-in-challenge-block div.views-field-field-vote .up-inactive:before {
+  font-family: "OpenIdeal";
+  content: "\e605";
+  margin-right: 7px;
+  font-size: 13px;
+  color: #43ac6a;
+
+}
+.pane-views-ideas-in-challenge-block div.views-field-field-vote .up-active:empty:before,
+.pane-views-ideas-in-challenge-block div.views-field-field-vote .up-inactive:empty:before {
+  display: inline-block !important;
+}
+.pane-views-ideas-in-challenge-block div.views-field-field-vote .up-active:before {
+  color: #8DD5A8;
+}
+.pane-views-ideas-in-challenge-block div.views-field-field-vote .vud-link-reset {
   display: none;
 }
 
