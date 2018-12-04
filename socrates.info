@@ -37,8 +37,9 @@ settings[bootstrap_navbar_position] = 'fixed-top'
 ; Advanced
 ; --------------
 
-settings[bootstrap_cdn] = 3.3.7
-settings[bootstrap_bootswatch] = 'yeti'
+; The following configuration has moved to idea.install
+;settings[bootstrap_cdn] = 3.3.7
+;settings[bootstrap_bootswatch] = 'yeti'
 
 ; For information on choosing the desired method, please read the Drupal
 ; Bootstrap sub-theme "how-to" documentation:
