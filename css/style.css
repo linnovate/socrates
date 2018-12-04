@@ -918,11 +918,9 @@ body .footer {
 body .footer.navbar.container {
   max-width: none;
 }
-/* line 51, ../sass/partials/_space-layout.scss */
-body .region-page-bottom {
-  position: fixed;
+
+div#panels-ipe-control-container {
   left: 0;
-  max-width: 100%;
 }
 
 /* line 59, ../sass/partials/_space-layout.scss */
