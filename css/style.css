@@ -1228,6 +1228,7 @@ footer.footer.navbar .pane-ideal-main-openideal-credits a {
 /* line 153, ../sass/partials/_space-header-footer.scss */
 .footer {
   border-top: none;
+  z-index: 1;
 }
 
 @media all and (max-width: 767px) {
