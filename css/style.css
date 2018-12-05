@@ -1044,6 +1044,9 @@ header#navbar .user-picture img {
 header#navbar .nav > li {
   /*float: left;*/
 }
+header#navbar .nav > li a {
+  padding: 13px 15px;
+}
 @media all and (max-width: 991px) {
   /* line 54, ../sass/partials/_space-header-footer.scss */
   header#navbar .nav > li a {
