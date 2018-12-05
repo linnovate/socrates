@@ -1044,11 +1044,6 @@ header#navbar .user-picture img {
 header#navbar .nav > li {
   /*float: left;*/
 }
-/* line 52, ../sass/partials/_space-header-footer.scss */
-header#navbar .nav > li a {
-  color: white;
-  padding: 13px 15px;
-}
 @media all and (max-width: 991px) {
   /* line 54, ../sass/partials/_space-header-footer.scss */
   header#navbar .nav > li a {
@@ -1059,7 +1054,7 @@ header#navbar .nav > li a {
 /* line 57, ../sass/partials/_space-header-footer.scss */
 header#navbar .nav > li a:hover, header#navbar .nav > li a:focus {
   text-decoration: none;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /* line 64, ../sass/partials/_space-header-footer.scss */
 header#navbar .pane-system-user-menu {

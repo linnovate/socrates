@@ -89,9 +89,7 @@
     <?php if (!empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
+          <?php print render($page['navigation']); ?>
         </nav>
       </div>
     <?php endif; ?>
