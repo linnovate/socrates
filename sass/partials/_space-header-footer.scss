@@ -1,3 +1,4 @@
+
 /*-----------------------------------------------
                      Top
 -----------------------------------------------*/
@@ -89,12 +90,13 @@ header#navbar {
 
 
 footer.footer.navbar {
-  left:0;
-  bottom:0;
+position:fixed;
+left:0;
+bottom:0;
   .panel-pane { margin-bottom: 0; float: left; }
-  @media all and (max-width: 767px) {
-    .panel-pane { float:none !important; }
-  }
+@media all and (max-width: 767px) {
+.panel-pane { float:none !important; }
+}
   /* --- menu --- */
 
   ul.nav{
@@ -134,10 +136,8 @@ footer.footer.navbar {
   /* --- openideal-credits --- */
 
   .pane-ideal-main-openideal-credits {
-    float: none;
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
+    float: right;
+    clear: right;
     color: #fff;
     a { font-weight: bold; color: $blue; }
   }
@@ -151,7 +151,7 @@ footer.footer.navbar {
     }
 }
 .footer
-{
+{ 
   border-top:none;
 }
 @media all and (max-width: 767px) {
