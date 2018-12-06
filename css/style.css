@@ -497,8 +497,6 @@ img {
 }
 /* line 79, ../sass/partials/_general-blocks.scss */
 .pane-views-activity-block .pane-title {
-  background-color: #028cbb;
-  color: white;
   padding: 8px 15px;
   font-size: 26px;
   margin: 0;
@@ -513,11 +511,6 @@ img {
   width: 100%;
   font-size: 14px;
   line-height: 15px;
-  color: black;
-}
-/* line 90, ../sass/partials/_general-blocks.scss */
-.pane-views-activity-block .pane-content .views-row a {
-  color: black;
 }
 /* line 91, ../sass/partials/_general-blocks.scss */
 .pane-views-activity-block .pane-content .views-row .user-image {
@@ -543,10 +536,6 @@ img {
 .pane-ideal-blocks-idea-stats .pane-title,
 .pane-ideal-blocks-challenge-stats .pane-title,
 .pane-ideal-blocks-ideal-key-stats .pane-title {
-  background-color: #028cbb;
-  color: white;
-  padding: 8px 15px;
-  font-size: 26px;
   margin: 0;
   padding: 11px 12px;
   font-size: 20px;
@@ -582,7 +571,6 @@ img {
 .pane-ideal-blocks-challenge-stats .pane-content .top .count,
 .pane-ideal-blocks-ideal-key-stats .pane-content .top .count {
   text-align: center;
-  color: #43ac6a;
   font-size: 55px;
   font-weight: bold;
   margin: 9px 0;
@@ -591,6 +579,7 @@ img {
 .pane-ideal-blocks-idea-stats .pane-content .top .count:before,
 .pane-ideal-blocks-challenge-stats .pane-content .top .count:before,
 .pane-ideal-blocks-ideal-key-stats .pane-content .top .count:before {
+  color: #43ac6a;
   margin-right: 11px;
   font-weight: normal;
 }
@@ -602,7 +591,6 @@ img {
   margin-left: 4px;
   font-size: 29px;
   font-weight: normal;
-  color: black;
 }
 /* line 148, ../sass/partials/_general-blocks.scss */
 .pane-ideal-blocks-idea-stats .pane-content .top.idea-page,
@@ -1401,15 +1389,13 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* ----------------------------------- pane-views-highlighted-content-block --------------------------------- */
 /* line 118, ../sass/partials/_front-page.scss */
 .pane-views-highlighted-content-block .pane-title {
-  background-color: #028cbb;
-  color: white;
   padding: 8px 15px;
   font-size: 26px;
   margin: 0;
 }
 /* line 121, ../sass/partials/_front-page.scss */
 .pane-views-highlighted-content-block .pane-content {
-  background: #f3f3f3;
+  background: rgba(0, 0, 0, 0.05);
   padding: 16px 9px;
   margin-bottom: 10px;
   /* --- views-row --- */
@@ -1476,10 +1462,6 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
   font-weight: bold;
   float: left;
   margin-right: 5px;
-  color: black;
-}
-/* line 154, ../sass/partials/_front-page.scss */
-.pane-views-highlighted-content-block .pane-content .views-field-title a {
   color: black;
 }
 /* line 159, ../sass/partials/_front-page.scss */
@@ -1609,8 +1591,6 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* ---------------------------------------------- pane-custom ----------------------------------------------- */
 /* line 238, ../sass/partials/_front-page.scss */
 .pane-custom .pane-title {
-  background-color: #028cbb;
-  color: white;
   padding: 8px 15px;
   font-size: 26px;
   margin: 0;
