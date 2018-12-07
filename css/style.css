@@ -1318,13 +1318,11 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
   margin-bottom: 13px;
   font-size: 30px;
   background-color: transparent;
-  color: black;
 }
 /* line 65, ../sass/partials/_front-page.scss */
 .pane-views-challenges-featured-front-block .view-all {
   float: right;
   margin-top: -40px;
-  color: black;
 }
 /* line 70, ../sass/partials/_front-page.scss */
 .pane-views-challenges-featured-front-block .row {
@@ -1501,10 +1499,8 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 .pane-panels-mini.pane-latest-and-greatest > .pane-title {
   border-bottom: 1px solid #d5d5d5;
   padding-bottom: 8px;
-  margin-bottom: 13px;
   font-size: 30px;
   background-color: transparent;
-  color: black;
   margin-bottom: 1em;
 }
 /* line 191, ../sass/partials/_front-page.scss */
@@ -1521,11 +1517,6 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
   width: 100%;
   font-size: 14px;
   line-height: 15px;
-  color: black;
-}
-/* line 202, ../sass/partials/_front-page.scss */
-.pane-panels-mini.pane-latest-and-greatest .pane-content .views-row a {
-  color: black;
 }
 /* line 203, ../sass/partials/_front-page.scss */
 .pane-panels-mini.pane-latest-and-greatest .pane-content .views-row .user-image {
@@ -1604,7 +1595,6 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
   margin-bottom: 13px;
   font-size: 30px;
   background-color: transparent;
-  color: black;
 }
 /* line 249, ../sass/partials/_front-page.scss */
 .pane-views-head-to-head-ideas-block .pane-content {
@@ -1617,7 +1607,8 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 }
 /* line 252, ../sass/partials/_front-page.scss */
 .pane-views-head-to-head-ideas-block .pane-content .view-content {
-  border-top: 5px solid black;
+  border-top: 5px solid;
+/*rgba(235, 235, 235, 0.4) */
   padding-top: 10px;
 }
 /* line 255, ../sass/partials/_front-page.scss */
@@ -1714,6 +1705,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
   line-height: 1.1;
   font-weight: bold;
   font-family: Arial;
+  color: black;
 }
 /* line 34, ../sass/_mixins.scss */
 .pane-views-head-to-head-ideas-block .pane-content .view-content .col .thumbnail .views-field-field-vote .alternate-votes-display:before {
@@ -1785,6 +1777,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
   font-size: 13px;
   line-height: 15px;
   margin-bottom: 1em;
+  color: #222222;
 }
 /* line 378, ../sass/partials/_front-page.scss */
 .pane-views-head-to-head-ideas-block .pane-content .view-content .col .thumbnail .views-field-picture {
@@ -1806,7 +1799,7 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
   font-size: 14px;
   max-width: 95%;
   max-width: calc(100% - 20px);
-  left: 0;
+  left: 15px;
   right: 0;
   margin: 0 auto;
 }
