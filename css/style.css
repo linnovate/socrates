@@ -1853,10 +1853,9 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 }
 /* line 14, ../sass/partials/_list-pages.scss */
 .view-challenges-list .views-row {
-  background: #f3f3f3;
+  background: rgba(187, 187, 187, 0.2);
   overflow: hidden;
-  padding: 15px 15px 0px 18px;
-  color: black;
+  padding: 15px 15px 0 18px;
 }
 /* line 19, ../sass/partials/_list-pages.scss */
 .view-challenges-list .views-row .row {
@@ -1890,10 +1889,6 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* line 43, ../sass/partials/_list-pages.scss */
 .view-challenges-list .views-field-title h3 {
   margin: 0;
-}
-/* line 44, ../sass/partials/_list-pages.scss */
-.view-challenges-list .views-field-title a {
-  color: black;
 }
 /* line 49, ../sass/partials/_list-pages.scss */
 .view-challenges-list .views-field-body {
