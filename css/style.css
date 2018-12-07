@@ -1186,7 +1186,7 @@ footer.footer.navbar .pane-social-links a.social_link.linkedin:before {
 footer.footer.navbar .pane-ideal-main-openideal-credits {
   float: right;
   clear: right;
-  color: #fff;
+  color: rgba(127, 127, 127, 1);
 }
 /* line 142, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-ideal-main-openideal-credits a {
