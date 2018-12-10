@@ -1186,7 +1186,7 @@ footer.footer.navbar .pane-social-links a.social_link.linkedin:before {
 footer.footer.navbar .pane-ideal-main-openideal-credits {
   float: right;
   clear: right;
-  color: #fff;
+  color: rgba(127, 127, 127, 1);
 }
 /* line 142, ../sass/partials/_space-header-footer.scss */
 footer.footer.navbar .pane-ideal-main-openideal-credits a {
@@ -1241,6 +1241,12 @@ footer.footer.navbar .pane-ideal-main-openideal-credits a {
 /*-----------------------------------------------
                     Pages
 -----------------------------------------------*/
+.table > tbody > tr > td {
+  border-color: rgba(180, 180, 180, 0.4);
+}
+.table > thead > tr > th {
+  border-color: rgba(180, 180, 180, 0.4);
+}
 /*-----------------------------------------------
                    Front - page
 -----------------------------------------------*/
@@ -1854,10 +1860,9 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 }
 /* line 14, ../sass/partials/_list-pages.scss */
 .view-challenges-list .views-row {
-  background: #f3f3f3;
+  background: rgba(187, 187, 187, 0.2);
   overflow: hidden;
-  padding: 15px 15px 0px 18px;
-  color: black;
+  padding: 15px 15px 0 18px;
 }
 /* line 19, ../sass/partials/_list-pages.scss */
 .view-challenges-list .views-row .row {
@@ -1891,10 +1896,6 @@ h2 .pane-views-default-challenge-block .text, .pane-views-default-challenge-bloc
 /* line 43, ../sass/partials/_list-pages.scss */
 .view-challenges-list .views-field-title h3 {
   margin: 0;
-}
-/* line 44, ../sass/partials/_list-pages.scss */
-.view-challenges-list .views-field-title a {
-  color: black;
 }
 /* line 49, ../sass/partials/_list-pages.scss */
 .view-challenges-list .views-field-body {
@@ -1966,7 +1967,6 @@ body.page-ideas #panel-bootstrap-region-center {
 .pane-quicktabs-all-ideas ul.quicktabs-tabs li a {
   font-weight: normal;
   font-size: 16px;
-  color: black;
   display: inline-block;
   padding-bottom: 4px;
 }
@@ -2099,7 +2099,7 @@ body .panels-bootstrap-inner_page #panel-bootstrap-column-main {
 /* line 24, ../sass/partials/_inner-pages.scss */
 body .panels-bootstrap-inner_page #panel-bootstrap-region-center {
   margin-bottom: 20px;
-  background-color: #f3f3f3;
+  background-color: rgba(187, 187, 187, 0.2);
 }
 /* line 27, ../sass/partials/_inner-pages.scss */
 body .panels-bootstrap-inner_page #panel-bootstrap-region-center .panel-pane {
@@ -2123,7 +2123,7 @@ body .panels-bootstrap-inner_page .pane-user-picture {
 }
 /* line 51, ../sass/partials/_inner-pages.scss */
 body .panels-bootstrap-inner_page .pane-node-author {
-  background: #e0e0e0;
+  background: rgba(187, 187, 187, 0.4);
   height: 45px;
   margin-bottom: 22px !important;
   padding-left: 10px;
@@ -2185,7 +2185,7 @@ body .panels-bootstrap-inner_page .pane-node-field-share {
   float: right;
   margin-top: -57px;
   margin-right: 13px;
-  color: #028cbb;
+  color: rgba(2, 70, 90, 0.5);
 }
 /* line 102, ../sass/partials/_inner-pages.scss */
 body .panels-bootstrap-inner_page .pane-node-field-share:hover .pane-content {
