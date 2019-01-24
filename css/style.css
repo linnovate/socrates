@@ -1277,7 +1277,7 @@ footer.footer.navbar .pane-ideal-main-openideal-credits a {
   width: 8px;
   height: 8px;
   margin: 0 -1px 0 0;
-  background-color: #028cbb;
+  background-color: transparent;
 }
 /* line 32, ../sass/partials/_front-page.scss */
 .pane-views-default-challenge-block .views-field-field-challenge-image img {
@@ -3305,6 +3305,9 @@ header#navbar .navbar-collapse{
   }
   body{
     padding-bottom: 90px;
+  }
+  body .main-container.container{
+    margin: 40px auto 48px;
   }
   footer.footer.navbar {
     bottom: 0;
