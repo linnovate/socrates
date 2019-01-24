@@ -3256,6 +3256,77 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
   background-color: #43ac6a;
 }
 
+body{
+  min-width: 100%;
+}
+.row-bottom-openideal .author{
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px){
+  #panel-bootstrap-region-sidebar, #panel-bootstrap-region-content_views, #panel-bootstrap-region-center{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  body header#navbar > .container, body .footer .region-footer{
+    max-width: 100%;
+  }
+  body .main-container.container{
+    margin: 40px auto 48px;
+  }
+}
+@media (max-width: 560px){
+  .pane-views-head-to-head-ideas-block .pane-content .view-footer{
+    top: 52.5%;
+  }
+  .row-bottom-openideal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row-bottom-openideal > div{
+    margin-bottom: 5px;
+  }
+  .row-bottom-openideal .author{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row-bottom-openideal .dates{
+    margin-top: 0;
+  }
+  .view-ideas-all .views-field-field-idea-image{
+    float: none;
+  }
+}
+@media (max-width: 500px){
+  .panel-1col .panel-col > div{
+    display: flex;
+  }
+  header#navbar .pane-system-main-menu{
+    margin-right: 55%;
+  }
+  body .panels-bootstrap-inner_page .pane-node-field-share,
+  body .panels-bootstrap-inner_page .pane-node-created{
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+  .pane-quicktabs-all-ideas ul.quicktabs-tabs li:hover a, .pane-quicktabs-all-ideas ul.quicktabs-tabs li.active a{
+    padding-bottom: 0;
+  }
+  .pane-quicktabs-all-ideas ul.quicktabs-tabs li a{
+    padding-top: 2px;
+  }
+
+}
+@media (max-width: 374px){
+  .pane-views-head-to-head-ideas-block .pane-content .view-footer{
+    top: 53.5%;
+  }
+}
+
 /*-----------------------------------------------
                        END
 -----------------------------------------------*/
