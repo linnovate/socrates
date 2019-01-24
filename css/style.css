@@ -3277,6 +3277,24 @@ footer.footer.navbar {
   -ms-flex-align: center;
   align-items: center;
 }
+.navbar > .container{
+  position: relative;
+}
+.navbar .secondary{
+  margin-right: 150px;
+}
+header#navbar .navbar-collapse{
+  margin-top: 5px;
+}
+.navbar .form-search{
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+.navbar .form-search .input-group-btn{
+  display: none;
+}
+
 @media (max-width: 767px){
   #panel-bootstrap-region-sidebar, #panel-bootstrap-region-content_views, #panel-bootstrap-region-center{
     padding-right: 0;
@@ -3298,6 +3316,29 @@ footer.footer.navbar {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .navbar .form-search{
+    right: 100px;
+  }
+  .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
+    max-height: 100%;
+  }
+  .navbar .navbar-collapse{
+    overflow: hidden;
+  }
+  .navbar .navbar-collapse nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .navbar .navbar-collapse .navbar-nav{
+    margin: 7.5px 10px;
+  }
+  .navbar .navbar-collapse .secondary{
+    margin-right: 40px;
   }
 }
 @media (max-width: 560px){
