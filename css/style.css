@@ -3274,25 +3274,28 @@ body{
   body .main-container.container{
     margin: 40px auto 48px;
   }
+  footer.footer.navbar{
+    position: fixed;
+  }
 }
 @media (max-width: 560px){
   .pane-views-head-to-head-ideas-block .pane-content .view-footer{
     top: 52.5%;
   }
-  .row-bottom-openideal{
+  .view-ideas-all .row-bottom-openideal{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .row-bottom-openideal > div{
+  .view-ideas-all .row-bottom-openideal > div{
     margin-bottom: 5px;
   }
-  .row-bottom-openideal .author{
+  .view-ideas-all .row-bottom-openideal .author{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .row-bottom-openideal .dates{
+  .view-ideas-all .row-bottom-openideal .dates{
     margin-top: 0;
   }
   .view-ideas-all .views-field-field-idea-image{
