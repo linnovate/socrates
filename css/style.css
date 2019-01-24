@@ -3256,11 +3256,25 @@ body .panels-bootstrap-inner_page .pane-node-field-idea-image .pane-content .bx-
   background-color: #43ac6a;
 }
 
+html {
+  height: 100%;
+}
 body{
   min-width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+footer.footer.navbar {
+  position: fixed;
 }
 .row-bottom-openideal .author{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 @media (max-width: 767px){
@@ -3271,11 +3285,19 @@ body{
   body header#navbar > .container, body .footer .region-footer{
     max-width: 100%;
   }
-  body .main-container.container{
-    margin: 40px auto 48px;
+  body{
+    padding-bottom: 90px;
   }
-  footer.footer.navbar{
-    position: fixed;
+  footer.footer.navbar {
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 @media (max-width: 560px){
@@ -3283,16 +3305,30 @@ body{
     top: 52.5%;
   }
   .view-ideas-all .row-bottom-openideal{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .view-ideas-all .row-bottom-openideal > div{
     margin-bottom: 5px;
   }
   .view-ideas-all .row-bottom-openideal .author{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .view-ideas-all .row-bottom-openideal .dates{
@@ -3304,7 +3340,17 @@ body{
 }
 @media (max-width: 500px){
   .panel-1col .panel-col > div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+  }
+  .footer .panel-1col .panel-col > div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   header#navbar .pane-system-main-menu{
     margin-right: 55%;
