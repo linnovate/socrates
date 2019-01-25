@@ -3281,18 +3281,22 @@ footer.footer.navbar {
   position: relative;
 }
 .navbar .secondary{
-  margin-right: 150px;
-}
-header#navbar .navbar-collapse{
-  margin-top: 5px;
+  margin-right: 165px;
 }
 .navbar .form-search{
   position: absolute;
-  top: 8px;
-  right: 0;
+  top: 4px;
+  right: 15px;
 }
 .navbar .form-search .input-group-btn{
   display: none;
+}
+.navbar .form-search .form-control{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.navbar .logo{
+  margin-top: 4px;
 }
 @media (min-width: 767px) and (max-width: 992px){
   .navbar .form-search{
@@ -3326,6 +3330,7 @@ header#navbar .navbar-collapse{
   }
   .navbar .form-search{
     right: 100px;
+    top: 8px;
   }
   .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
     max-height: 100%;
