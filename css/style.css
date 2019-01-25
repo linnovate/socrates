@@ -3330,6 +3330,9 @@ footer.footer.navbar {
     -ms-flex-align: center;
     align-items: center;
   }
+  .navbar .navbar-header{
+    position: relative;
+  }
   .navbar .form-search{
     right: 100px;
     top: 50%;
