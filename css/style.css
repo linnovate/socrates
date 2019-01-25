@@ -3352,10 +3352,13 @@ header#navbar .navbar-collapse{
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .pane-views-head-to-head-ideas-block .pane-content .view-footer{
+    top: 52.5%;
+  }
 }
 @media (max-width: 560px){
   .pane-views-head-to-head-ideas-block .pane-content .view-footer{
-    top: 52.5%;
+    top: 53.5%;
   }
   .view-ideas-all .row-bottom-openideal{
     display: -webkit-box;
@@ -3465,7 +3468,7 @@ header#navbar .navbar-collapse{
 }
 @media (max-width: 374px){
   .pane-views-head-to-head-ideas-block .pane-content .view-footer{
-    top: 53.5%;
+    top: 55%;
   }
 }
 @media (max-width: 345px){
