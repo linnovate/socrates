@@ -3431,6 +3431,29 @@ header#navbar .navbar-collapse{
     margin-left: 2px;
   }
 }
+@media (max-width: 400px){
+  .pane-views-default-challenge-block .views-field-field-challenge-image .img-responsive{
+    min-height: 250px;
+  }
+  .pane-views-default-challenge-block .views-field-field-challenge-image img{
+    height: 100%;
+  }
+  .pane-views-default-challenge-block .row-bottom-openideal{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .pane-views-default-challenge-block .row-bottom-openideal .dates{
+    max-width: 100%;
+    margin-bottom: 12px;
+    margin-left: 2px;
+  }
+}
 @media (max-width: 374px){
   .pane-views-head-to-head-ideas-block .pane-content .view-footer{
     top: 53.5%;
