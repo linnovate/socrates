@@ -1035,13 +1035,13 @@ header#navbar .nav > li {
 header#navbar .nav > li a {
   padding: 13px 15px;
 }
-@media all and (max-width: 991px) {
-  /* line 54, ../sass/partials/_space-header-footer.scss */
+/*@media all and (max-width: 991px) {
+   line 54, ../sass/partials/_space-header-footer.scss 
   header#navbar .nav > li a {
     color: white;
     padding: 13px 10px;
   }
-}
+}*/
 /* line 57, ../sass/partials/_space-header-footer.scss */
 header#navbar .nav > li a:hover, header#navbar .nav > li a:focus {
   text-decoration: none;
@@ -3294,7 +3294,11 @@ header#navbar .navbar-collapse{
 .navbar .form-search .input-group-btn{
   display: none;
 }
-
+@media (min-width: 767px) and (max-width: 992px){
+  .navbar .form-search{
+    top: 55px;
+  }
+}
 @media (max-width: 767px){
   #panel-bootstrap-region-sidebar, #panel-bootstrap-region-content_views, #panel-bootstrap-region-center{
     padding-right: 0;
