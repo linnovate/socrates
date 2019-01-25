@@ -3343,6 +3343,15 @@ header#navbar .navbar-collapse{
   .navbar .navbar-collapse .secondary{
     margin-right: 40px;
   }
+  .view-community .view-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 @media (max-width: 560px){
   .pane-views-head-to-head-ideas-block .pane-content .view-footer{
