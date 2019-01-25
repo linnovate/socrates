@@ -3288,7 +3288,8 @@ footer.footer.navbar {
   top: 4px;
   right: 15px;
 }
-.navbar .form-search .input-group-btn{
+.navbar .form-search .input-group-btn,
+.navbar .form-search .form-actions{
   display: none;
 }
 .navbar .form-search .form-control{
@@ -3300,7 +3301,8 @@ footer.footer.navbar {
 }
 @media (min-width: 767px) and (max-width: 992px){
   .navbar .form-search{
-    top: 55px;
+    top: calc(100% - 4px);
+    transform: translateY(-100%);
   }
 }
 @media (max-width: 767px){
@@ -3330,7 +3332,8 @@ footer.footer.navbar {
   }
   .navbar .form-search{
     right: 100px;
-    top: 8px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
     max-height: 100%;
