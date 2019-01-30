@@ -3442,20 +3442,12 @@ footer.footer.navbar {
   .pane-quicktabs-all-ideas ul.quicktabs-tabs li a{
     padding-top: 2px;
   }
-  .view-challenges-list .row-bottom-openideal{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-bottom: 10px;
-  }
-  .view-challenges-list .row-bottom-openideal .dates{
-    max-width: 100%;
-    margin-bottom: 12px;
-    margin-left: 2px;
+}
+@media (max-width: 420px) {
+  .view-ideas-all .row-bottom-openideal .author{
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 }
 @media (max-width: 400px){
@@ -3465,20 +3457,27 @@ footer.footer.navbar {
   .pane-views-default-challenge-block .views-field-field-challenge-image img{
     height: 100%;
   }
-  .pane-views-default-challenge-block .row-bottom-openideal{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-bottom: 10px;
-  }
+
   .pane-views-default-challenge-block .row-bottom-openideal .dates{
     max-width: 100%;
     margin-bottom: 12px;
     margin-left: 2px;
+  }
+  .row-bottom-openideal .author .picture img{
+    width: 30px;
+    height: 30px;
+  }
+  .row-bottom-openideal .author{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .row-bottom-openideal{
+    padding: 0;
   }
 }
 @media (max-width: 374px){
@@ -3491,6 +3490,9 @@ footer.footer.navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .row-bottom-openideal .author .picture img{
+    margin: 5px 10px 0 7px;
   }
 }
 
