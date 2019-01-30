@@ -3375,18 +3375,6 @@ footer.footer.navbar {
   .pane-views-head-to-head-ideas-block .pane-content .view-footer{
     top: 53.5%;
   }
-  .view-ideas-all .row-bottom-openideal{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
   .view-ideas-all .row-bottom-openideal > div{
     margin-bottom: 5px;
   }
