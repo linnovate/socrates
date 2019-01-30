@@ -3306,6 +3306,9 @@ footer.footer.navbar {
   }
 }
 @media (max-width: 767px){
+  body header#navbar{
+    padding: 5px 0;
+  }
   #panel-bootstrap-region-sidebar, #panel-bootstrap-region-content_views, #panel-bootstrap-region-center{
     padding-right: 0;
     padding-left: 0;
