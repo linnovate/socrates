@@ -3328,6 +3328,9 @@ body{
     -ms-flex-align: center;
     align-items: center;
   }
+  .panels-ipe footer.footer.navbar{
+    bottom: 0;
+  }
   .navbar .navbar-header{
     position: relative;
   }
