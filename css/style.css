@@ -3266,9 +3266,6 @@ body{
   margin: 0;
   position: relative;
 }
-footer.footer.navbar {
-  position: fixed;
-}
 .row-bottom-openideal .author{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3323,6 +3320,7 @@ footer.footer.navbar {
     margin: 40px auto 48px;
   }
   footer.footer.navbar {
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 90px;
@@ -3332,6 +3330,9 @@ footer.footer.navbar {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .panels-ipe footer.footer.navbar{
+    bottom: 0;
   }
   .navbar .navbar-header{
     position: relative;
